@@ -1,0 +1,5 @@
+E:\U-I-T\NhapMonCongNghePhanMem\PhanMemQuanLyDaiLy\QuanLyDaiLy\DTO_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.dll
+E:\U-I-T\NhapMonCongNghePhanMem\PhanMemQuanLyDaiLy\QuanLyDaiLy\DTO_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.pdb
+E:\U-I-T\NhapMonCongNghePhanMem\PhanMemQuanLyDaiLy\QuanLyDaiLy\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.csprojResolveAssemblyReference.cache
+E:\U-I-T\NhapMonCongNghePhanMem\PhanMemQuanLyDaiLy\QuanLyDaiLy\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.dll
+E:\U-I-T\NhapMonCongNghePhanMem\PhanMemQuanLyDaiLy\QuanLyDaiLy\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.pdb
