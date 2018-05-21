@@ -10,53 +10,94 @@ namespace DAL_QuanLyDaiLy
 {
     class ResultQuery
     {
-        private ResultQuery getResult;
-
-        internal ResultQuery GetResult
+        
+        public static int ProcGetResult(SqlConnection conn,string proc,string[] arrInQuery, string result,Object[] arrInParams)
         {
-            get
-            {
-                if (getResult == null)
-                {
-                    getResult = new ResultQuery();
-                }
-                return getResult;
-            }
-
-            set
-            {
-                getResult = value;
-            }
-        }
-        public DataTable QueryGetDataTable(string query,Object[] arrParameter=null)
-        {
-            DataTable dt = new DataTable();
-            SqlConnection conn = DBUtils.GetDBConnection();
-            SqlCommand cmd = new SqlCommand(query, conn);
+            int kq;
+            SqlCommand cmd = new SqlCommand(proc, conn);
             cmd.CommandType = CommandType.StoredProcedure;
-            string[] arrQuery = query.Split(' ');
-            int i = 0;
-            foreach(string items in arrQuery)
+            //int i = 0;
+            //foreach(string itemsIn in arrInQuery)
+            //{
+            //    cmd.Parameters.AddWithValue(itemsIn, arrInParams[i]);
+            //    cmd.Parameters[itemsIn].Direction = ParameterDirection.Input;
+            //    i++;
+            //}
+            for(int j = 0; j < arrInQuery.Length; j++)
             {
-                if (items.Contains('@'))
-                {
-                    cmd.Parameters.AddWithValue(items, arrParameter[i]);
-                    i++;
-                }
-               
+                cmd.Parameters.AddWithValue( arrInQuery[j], arrInParams[j]);
+                cmd.Parameters[arrInQuery[j]].Direction = ParameterDirection.Input;
+                //cmd.Parameters.AddWithValue("@TenDL", tenDL);
+                //cmd.Parameters["@TenDL"].Direction = ParameterDirection.Input;
             }
+            cmd.Parameters.Add(result, SqlDbType.Int).Direction = ParameterDirection.Output;
+
             try
             {
                 conn.Open();
-                SqlDataAdapter sda = new SqlDataAdapter(cmd);
-                sda.Fill(dt);
-
+                cmd.ExecuteNonQuery();
+                kq = (int)cmd.Parameters[ result].Value;
+                return kq;
             }
             finally
             {
                 conn.Close();
             }
-            return dt;
         }
+        public static DataTable GetTableResult(SqlConnection conn, string query)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(query);
+                cmd.CommandType = CommandType.Text;
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                return dt;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            
+        }
+
+       
     }
 }
+////string proc = "PR_InsertDl";
+////string[] arrInQuery = { "@TenDL", "@SDT", "@DiaChi", "@NgayTiepNhan", "@TenLoaiDL", "@CMND", "@Quan" };
+////object result = "@result";
+////Object[] arrInParams = { tenDL, sdt, diaChi, ngayNhan, tenDL, cmnd, quan };
+////kq = ResultQuery.ProcGetResult(conn,proc, arrInQuery, result, arrInParams);
+////Console.WriteLine(arrInQuery.Length + " " + arrInQuery[6]);
+////return kq;
+
+//cmd.Parameters.AddWithValue("@TenDL", tenDL);
+//cmd.Parameters["@TenDL"].Direction = ParameterDirection.Input;
+//cmd.Parameters.AddWithValue("@SDT", sdt);
+//cmd.Parameters["@SDT"].Direction = ParameterDirection.Input;
+//cmd.Parameters.AddWithValue("@DiaChi", diaChi);
+//cmd.Parameters["@DiaChi"].Direction = ParameterDirection.Input;
+//cmd.Parameters.AddWithValue("@NgayTiepNhan", ngayNhan);
+//cmd.Parameters["@NgayTiepNhan"].Direction = ParameterDirection.Input;
+//cmd.Parameters.AddWithValue("@TenLoaiDL", loaiDL);
+//cmd.Parameters["@TenLoaiDL"].Direction = ParameterDirection.Input;
+//cmd.Parameters.AddWithValue("@CMND", cmnd);
+//cmd.Parameters["@CMND"].Direction = ParameterDirection.Input;
+//cmd.Parameters.AddWithValue("@Quan", quan);
+//cmd.Parameters["@Quan"].Direction = ParameterDirection.Input;
+//cmd.Parameters.Add("@result", SqlDbType.Int).Direction = ParameterDirection.Output;
+//try
+//{
+//    conn.Open();
+//    cmd.ExecuteNonQuery();
+//    kq = (int)cmd.Parameters["@result"].Value;
+//    return kq;
+//}
+//finally
+//{
+//    conn.Close();
+//}

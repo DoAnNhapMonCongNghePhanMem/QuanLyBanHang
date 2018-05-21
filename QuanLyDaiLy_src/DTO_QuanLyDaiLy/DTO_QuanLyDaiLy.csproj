@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO_DaiLy.cs" />
+    <Compile Include="DTO_LoaiDL.cs" />
     <Compile Include="DTO_NhanVienQuanLy.cs" />
     <Compile Include="DTO_ThongTinTaiKhoan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
