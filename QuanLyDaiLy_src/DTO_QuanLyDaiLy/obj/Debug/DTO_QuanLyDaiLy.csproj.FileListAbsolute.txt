@@ -3,3 +3,8 @@ E:\U-I-T\NhapMonCongNghePhanMem\PhanMemQuanLyDaiLy\QuanLyDaiLy\DTO_QuanLyDaiLy\b
 E:\U-I-T\NhapMonCongNghePhanMem\PhanMemQuanLyDaiLy\QuanLyDaiLy\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.csprojResolveAssemblyReference.cache
 E:\U-I-T\NhapMonCongNghePhanMem\PhanMemQuanLyDaiLy\QuanLyDaiLy\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.dll
 E:\U-I-T\NhapMonCongNghePhanMem\PhanMemQuanLyDaiLy\QuanLyDaiLy\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.pdb
+C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.dll
+C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.pdb
+C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.csprojResolveAssemblyReference.cache
+C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.dll
+C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.pdb

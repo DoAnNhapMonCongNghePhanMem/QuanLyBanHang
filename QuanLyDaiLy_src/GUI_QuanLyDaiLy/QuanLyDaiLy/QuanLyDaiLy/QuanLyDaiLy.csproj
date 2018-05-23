@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1B39D3A1-70B5-4D2D-80E8-FE4AD55A4AA7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLyDaiLy</RootNamespace>
+    <AssemblyName>QuanLyDaiLy</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>C:\Users\Duy Linh\Desktop\Bunifu UI WinForms 1.5.5.2\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox, Version=1.5.5.2, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\Duy Linh\Desktop\Bunifu UI WinForms 1.5.5.2\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKetXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKetXuat.Designer.cs">
+      <DependentUpon>FormKetXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLuuTru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLuuTru.Designer.cs">
+      <DependentUpon>FormLuuTru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuyDinhTienNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuyDinhTienNo.Designer.cs">
+      <DependentUpon>FormQuyDinhTienNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThayDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThayDoiMatKhau.Designer.cs">
+      <DependentUpon>FormThayDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToChuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToChuc.Designer.cs">
+      <DependentUpon>FormToChuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="page_BaoCaoCongNo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="page_BaoCaoCongNo.Designer.cs">
+      <DependentUpon>page_BaoCaoCongNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="page_BaoCaoDoanhSo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="page_BaoCaoDoanhSo.Designer.cs">
+      <DependentUpon>page_BaoCaoDoanhSo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="page_HoSo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="page_HoSo.Designer.cs">
+      <DependentUpon>page_HoSo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="page_MatHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="page_MatHang.Designer.cs">
+      <DependentUpon>page_MatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="page_PhieuThuTien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="page_PhieuThuTien.Designer.cs">
+      <DependentUpon>page_PhieuThuTien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="page_PhieuXuatHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="page_PhieuXuatHang.Designer.cs">
+      <DependentUpon>page_PhieuXuatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="page_QuyChe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="page_QuyChe.Designer.cs">
+      <DependentUpon>page_QuyChe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FormQuyCheToChuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuyCheToChuc.Designer.cs">
+      <DependentUpon>FormQuyCheToChuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuyDinhMatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuyDinhMatHang.Designer.cs">
+      <DependentUpon>FormQuyDinhMatHang.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormDangNhap.resx">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKetXuat.resx">
+      <DependentUpon>FormKetXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLuuTru.resx">
+      <DependentUpon>FormLuuTru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuyDinhTienNo.resx">
+      <DependentUpon>FormQuyDinhTienNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThayDoiMatKhau.resx">
+      <DependentUpon>FormThayDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToChuc.resx">
+      <DependentUpon>FormToChuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="page_BaoCaoCongNo.resx">
+      <DependentUpon>page_BaoCaoCongNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="page_BaoCaoDoanhSo.resx">
+      <DependentUpon>page_BaoCaoDoanhSo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="page_HoSo.resx">
+      <DependentUpon>page_HoSo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="page_MatHang.resx">
+      <DependentUpon>page_MatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="page_PhieuThuTien.resx">
+      <DependentUpon>page_PhieuThuTien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="page_PhieuXuatHang.resx">
+      <DependentUpon>page_PhieuXuatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="page_QuyChe.resx">
+      <DependentUpon>page_QuyChe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormQuyCheToChuc.resx">
+      <DependentUpon>FormQuyCheToChuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuyDinhMatHang.resx">
+      <DependentUpon>FormQuyDinhMatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

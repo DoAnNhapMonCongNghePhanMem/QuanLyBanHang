@@ -7,3 +7,12 @@ E:\U-I-T\NhapMonCongNghePhanMem\PhanMemQuanLyDaiLy\QuanLyDaiLy\BUS_QuanLyDaiLy\b
 E:\U-I-T\NhapMonCongNghePhanMem\PhanMemQuanLyDaiLy\QuanLyDaiLy\BUS_QuanLyDaiLy\obj\Debug\BUS_QuanLyDaiLy.csprojResolveAssemblyReference.cache
 E:\U-I-T\NhapMonCongNghePhanMem\PhanMemQuanLyDaiLy\QuanLyDaiLy\BUS_QuanLyDaiLy\obj\Debug\BUS_QuanLyDaiLy.dll
 E:\U-I-T\NhapMonCongNghePhanMem\PhanMemQuanLyDaiLy\QuanLyDaiLy\BUS_QuanLyDaiLy\obj\Debug\BUS_QuanLyDaiLy.pdb
+C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\BUS_QuanLyDaiLy\bin\Debug\BUS_QuanLyDaiLy.dll
+C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\BUS_QuanLyDaiLy\bin\Debug\BUS_QuanLyDaiLy.pdb
+C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\BUS_QuanLyDaiLy\bin\Debug\DAL_QuanLyDaiLy.dll
+C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\BUS_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.dll
+C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\BUS_QuanLyDaiLy\bin\Debug\DAL_QuanLyDaiLy.pdb
+C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\BUS_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.pdb
+C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\BUS_QuanLyDaiLy\obj\Debug\BUS_QuanLyDaiLy.csprojResolveAssemblyReference.cache
+C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\BUS_QuanLyDaiLy\obj\Debug\BUS_QuanLyDaiLy.dll
+C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\BUS_QuanLyDaiLy\obj\Debug\BUS_QuanLyDaiLy.pdb
