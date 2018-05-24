@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace QuanLyDaiLy
 {
-    public partial class FormKetXuat : Form
+    public partial class FormChuongTrinhQLDL : Form
     {
-        public FormKetXuat()
+        public FormChuongTrinhQLDL()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
@@ -27,7 +32,36 @@ namespace QuanLyDaiLy
             WindowState = FormWindowState.Minimized;
         }
 
-        private void FormKetXuat_Load(object sender, EventArgs e)
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            FormToChuc f = new FormToChuc();
+            f.Show();
+        }
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            FormLuuTru f = new FormLuuTru();
+            f.Show();
+        }
+
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+            FormKetXuat f = new FormKetXuat();
+            f.Show();
+        }
+
+        private void bunifuFlatButton5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void bunifuFlatButton4_Click(object sender, EventArgs e)
+        {
+            FormTroGiup f = new FormTroGiup();
+            f.Show();
+        }
+
+        private void FormChuongTrinhQLDL_Load(object sender, EventArgs e)
         {
 
         }

@@ -39,7 +39,7 @@ namespace QuanLyDaiLy
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
         private bool mouseDown;
         private Point lastLocation;
@@ -64,6 +64,21 @@ namespace QuanLyDaiLy
         private void FormToChuc_MouseUp(object sender, MouseEventArgs e)
         {
             mouseDown = false;
+        }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void page_HoSo1_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormToChuc_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

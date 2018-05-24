@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyDaiLy
 {
-    public partial class FormKetXuat : Form
+    public partial class FormTroGiup : Form
     {
-        public FormKetXuat()
+        public FormTroGiup()
         {
             InitializeComponent();
         }
@@ -24,10 +24,25 @@ namespace QuanLyDaiLy
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Minimized;
+            WindowState = FormWindowState.Maximized;
         }
 
-        private void FormKetXuat_Load(object sender, EventArgs e)
+        private void btnGioiThieu_Click(object sender, EventArgs e)
+        {
+            page_GioiThieu1.BringToFront();
+        }
+
+        private void btnHuongDanSuDung_Click(object sender, EventArgs e)
+        {
+            page_HuongDanSuDung1.BringToFront();
+        }
+
+        private void btnThayDoiMatKhau_Click(object sender, EventArgs e)
+        {
+            page_DoiMatKhau1.BringToFront();
+        }
+
+        private void FormTroGiup_Load(object sender, EventArgs e)
         {
 
         }

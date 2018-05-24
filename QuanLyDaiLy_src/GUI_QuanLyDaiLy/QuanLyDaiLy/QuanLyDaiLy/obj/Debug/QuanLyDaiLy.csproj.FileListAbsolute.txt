@@ -42,4 +42,8 @@ C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\Q
 C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\QuanLyDaiLy\QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormKetXuat.resources
 C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\QuanLyDaiLy\QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_BaoCaoCongNo.resources
 C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\QuanLyDaiLy\QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_BaoCaoDoanhSo.resources
-C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\QuanLyDaiLy\QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormThayDoiMatKhau.resources
+C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\QuanLyDaiLy\QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormChuongTrinhQLDL.resources
+C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\QuanLyDaiLy\QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormTroGiup.resources
+C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\QuanLyDaiLy\QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_DoiMatKhau.resources
+C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\QuanLyDaiLy\QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_GioiThieu.resources
+C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\QuanLyDaiLy\QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_HuongDanSuDung.resources

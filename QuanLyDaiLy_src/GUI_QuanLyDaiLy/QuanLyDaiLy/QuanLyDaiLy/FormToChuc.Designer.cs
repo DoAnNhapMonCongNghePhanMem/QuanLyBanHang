@@ -170,6 +170,7 @@
             this.bunifuImageButton2.TabIndex = 7;
             this.bunifuImageButton2.TabStop = false;
             this.bunifuImageButton2.Zoom = 10;
+            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
             // 
             // page_HoSo1
             // 
@@ -178,6 +179,7 @@
             this.page_HoSo1.Name = "page_HoSo1";
             this.page_HoSo1.Size = new System.Drawing.Size(719, 496);
             this.page_HoSo1.TabIndex = 3;
+            this.page_HoSo1.Load += new System.EventHandler(this.page_HoSo1_Load_1);
             // 
             // page_QuyChe1
             // 
@@ -210,6 +212,7 @@
             this.Name = "FormToChuc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormToChuc";
+            this.Load += new System.EventHandler(this.FormToChuc_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormToChuc_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FormTochuc_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FormToChuc_MouseUp);

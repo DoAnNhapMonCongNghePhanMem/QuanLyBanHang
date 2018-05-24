@@ -58,6 +58,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormChuongTrinhQLDL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChuongTrinhQLDL.Designer.cs">
+      <DependentUpon>FormChuongTrinhQLDL.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,17 +89,17 @@
     <Compile Include="FormQuyDinhTienNo.Designer.cs">
       <DependentUpon>FormQuyDinhTienNo.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormThayDoiMatKhau.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormThayDoiMatKhau.Designer.cs">
-      <DependentUpon>FormThayDoiMatKhau.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormToChuc.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormToChuc.Designer.cs">
       <DependentUpon>FormToChuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTroGiup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTroGiup.Designer.cs">
+      <DependentUpon>FormTroGiup.cs</DependentUpon>
     </Compile>
     <Compile Include="page_BaoCaoCongNo.cs">
       <SubType>UserControl</SubType>
@@ -107,11 +113,29 @@
     <Compile Include="page_BaoCaoDoanhSo.Designer.cs">
       <DependentUpon>page_BaoCaoDoanhSo.cs</DependentUpon>
     </Compile>
+    <Compile Include="page_DoiMatKhau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="page_DoiMatKhau.Designer.cs">
+      <DependentUpon>page_DoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="page_GioiThieu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="page_GioiThieu.Designer.cs">
+      <DependentUpon>page_GioiThieu.cs</DependentUpon>
+    </Compile>
     <Compile Include="page_HoSo.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="page_HoSo.Designer.cs">
       <DependentUpon>page_HoSo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="page_HuongDanSuDung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="page_HuongDanSuDung.Designer.cs">
+      <DependentUpon>page_HuongDanSuDung.cs</DependentUpon>
     </Compile>
     <Compile Include="page_MatHang.cs">
       <SubType>UserControl</SubType>
@@ -151,6 +175,9 @@
     <Compile Include="FormQuyDinhMatHang.Designer.cs">
       <DependentUpon>FormQuyDinhMatHang.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormChuongTrinhQLDL.resx">
+      <DependentUpon>FormChuongTrinhQLDL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDangNhap.resx">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,11 +190,11 @@
     <EmbeddedResource Include="FormQuyDinhTienNo.resx">
       <DependentUpon>FormQuyDinhTienNo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormThayDoiMatKhau.resx">
-      <DependentUpon>FormThayDoiMatKhau.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormToChuc.resx">
       <DependentUpon>FormToChuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTroGiup.resx">
+      <DependentUpon>FormTroGiup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="page_BaoCaoCongNo.resx">
       <DependentUpon>page_BaoCaoCongNo.cs</DependentUpon>
@@ -175,8 +202,17 @@
     <EmbeddedResource Include="page_BaoCaoDoanhSo.resx">
       <DependentUpon>page_BaoCaoDoanhSo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="page_DoiMatKhau.resx">
+      <DependentUpon>page_DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="page_GioiThieu.resx">
+      <DependentUpon>page_GioiThieu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="page_HoSo.resx">
       <DependentUpon>page_HoSo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="page_HuongDanSuDung.resx">
+      <DependentUpon>page_HuongDanSuDung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="page_MatHang.resx">
       <DependentUpon>page_MatHang.cs</DependentUpon>

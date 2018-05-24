@@ -68,7 +68,7 @@
             this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuMaterialTextbox2.HintText = "Mật khẩu";
             this.bunifuMaterialTextbox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bunifuMaterialTextbox2.isPassword = false;
+            this.bunifuMaterialTextbox2.isPassword = true;
             this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(133)))), ((int)(((byte)(19)))));
             this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.DarkGray;
             this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(133)))), ((int)(((byte)(19)))));
@@ -129,6 +129,7 @@
             this.btnDangNhap.Size = new System.Drawing.Size(261, 60);
             this.btnDangNhap.TabIndex = 1;
             this.btnDangNhap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // pictureBox1
             // 
@@ -204,6 +205,7 @@
             this.Name = "FormDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormDangNhap_FormClosing);
             this.Load += new System.EventHandler(this.FormDangNhap_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormDangNhap_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FormDangNhap_MouseMove);

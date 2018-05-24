@@ -59,11 +59,26 @@ namespace QuanLyDaiLy
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
-            
+            WindowState = FormWindowState.Minimized;
         }
 
         private void bunifuMaterialTextbox2_OnValueChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void FormDangNhap_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn có thực sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+                e.Cancel = true;
+        }
+
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            FormChuongTrinhQLDL f = new FormChuongTrinhQLDL();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
 
         }
     }
