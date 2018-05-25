@@ -1,13 +1,13 @@
-﻿using System;
+﻿using DAL_QuanLyDaiLy;
+using DTO_QuanLyDaiLy;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DAL_QuanLyDaiLy;
-using System.Collections;
-using DTO_QuanLyDaiLy;
 
-namespace GUI_QuanLyDaiLy
+namespace QuanLyDaiLy
 {
     static class Program
     {
@@ -19,7 +19,7 @@ namespace GUI_QuanLyDaiLy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-             Application.Run(new Form1());
+            Application.Run(new FormDangNhap());
             Console.WriteLine("khánh-------------------------------");
 
             //DAL_QuanLyTaiKhoan d = new DAL_QuanLyTaiKhoan();
@@ -35,6 +35,7 @@ namespace GUI_QuanLyDaiLy
             }
             //int kq=tn.ThemDaiLy("đại lý 4", "09092222", "ktx khu a ", "2018-2-20", "Loại 2", "206014565", "Quận 9");
             //Console.WriteLine(kq);
+
         }
     }
 }

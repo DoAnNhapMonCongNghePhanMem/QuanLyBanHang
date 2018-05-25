@@ -10,6 +10,5 @@ C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\o
 C:\Users\Duy Linh\Documents\GitHub\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.pdb
 E:\SchoolProject\IntroduceOfSoftwareDevelopment\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.dll
 E:\SchoolProject\IntroduceOfSoftwareDevelopment\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.pdb
-E:\SchoolProject\IntroduceOfSoftwareDevelopment\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.csprojResolveAssemblyReference.cache
 E:\SchoolProject\IntroduceOfSoftwareDevelopment\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.dll
 E:\SchoolProject\IntroduceOfSoftwareDevelopment\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.pdb

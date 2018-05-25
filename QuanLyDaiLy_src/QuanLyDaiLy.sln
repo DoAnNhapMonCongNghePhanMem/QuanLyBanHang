@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO_QuanLyDaiLy", "DTO_Quan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BUS_QuanLyDaiLy", "BUS_QuanLyDaiLy\BUS_QuanLyDaiLy.csproj", "{AC4C74E4-FF83-4C44-BC54-E038FA0F3E26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI_QuanLyDaiLy", "GUI_QuanLyDaiLy\GUI_QuanLyDaiLy.csproj", "{55601409-5B38-4F48-B89E-F435C5EF6A0D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI_QuanLyDaiLy", "GUI_QuanLyDaiLy\GUI_QuanLyDaiLy.csproj", "{1B39D3A1-70B5-4D2D-80E8-FE4AD55A4AA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{AC4C74E4-FF83-4C44-BC54-E038FA0F3E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC4C74E4-FF83-4C44-BC54-E038FA0F3E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC4C74E4-FF83-4C44-BC54-E038FA0F3E26}.Release|Any CPU.Build.0 = Release|Any CPU
-		{55601409-5B38-4F48-B89E-F435C5EF6A0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{55601409-5B38-4F48-B89E-F435C5EF6A0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{55601409-5B38-4F48-B89E-F435C5EF6A0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{55601409-5B38-4F48-B89E-F435C5EF6A0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B39D3A1-70B5-4D2D-80E8-FE4AD55A4AA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B39D3A1-70B5-4D2D-80E8-FE4AD55A4AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B39D3A1-70B5-4D2D-80E8-FE4AD55A4AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B39D3A1-70B5-4D2D-80E8-FE4AD55A4AA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
