@@ -19,7 +19,7 @@ namespace GUI_QuanLyDaiLy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            // Application.Run(new Form1());
+             Application.Run(new Form1());
             Console.WriteLine("khánh-------------------------------");
 
             //DAL_QuanLyTaiKhoan d = new DAL_QuanLyTaiKhoan();
