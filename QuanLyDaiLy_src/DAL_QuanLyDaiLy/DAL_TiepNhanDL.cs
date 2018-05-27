@@ -12,7 +12,7 @@ namespace DAL_QuanLyDaiLy
 {
     public class DAL_TiepNhanDL
     {
-        private SqlConnection conn = DBUtils.GetDBConnection();
+        private  SqlConnection conn = DBUtils.GetDBConnection();
         public DAL_TiepNhanDL()
         {
 
@@ -58,6 +58,48 @@ namespace DAL_QuanLyDaiLy
             {
                 conn.Close();
             }
+        }
+	public int SuaDaiLy(DTO_DaiLy newDaiLy)
+        {
+            int result;
+            int idDaiLy = newDaiLy.IdDL;
+            string tenDL = newDaiLy.TenDaiLy;
+            string sdt = newDaiLy.Sdt;
+            string diaChi = newDaiLy.DiaChi;
+            string ngayNhan = newDaiLy.NgayNhan;
+            int idLoaiDL = newDaiLy.IdLoaiDL;
+            string cmnd = newDaiLy.Cmnd;
+            string quan = newDaiLy.Quan;
+            string query = "UPDATE DaiLy SET TenDaiLy = N'" + tenDL + "', SDT = '" + sdt + "',DiaChi=N'" + diaChi + "',NgayTiepNhan='" + ngayNhan + "',IdLoaiDL='" + idLoaiDL + "',CMND='" + cmnd + "',Quan=N'" + quan + "'WHERE IdDaiLy=" + idDaiLy;
+            result = ResultQuery.GetResultQuery(conn, query);
+            return result;
+        }
+        public int XoaDaiLy(int idDaiLy)
+        {
+            string query = "delete from DaiLy where IdDaiLy=" + idDaiLy;
+            int result=ResultQuery.GetResultQuery(conn, query);
+            return result;
+        }
+        public ArrayList DsDaiLy()
+        {
+            ArrayList al = new ArrayList();
+            string query = "select * from DaiLy";
+            DataTable tb = ResultQuery.GetTableResult(conn, query);
+            foreach (DataRow r in tb.Rows)
+            {
+                int id = (int)r["IdDaiLy"];
+                string tenDL = r["TenDaiLy"].ToString();
+                string sdt = r["SDT"].ToString();
+                string diaChi = r["DiaChi"].ToString();
+                string ngayNhan = r["NgayTiepNhan"].ToString();
+                int idLoaiDL = (int)r["IdLoaiDL"];
+                string cmnd = r["CMND"].ToString();
+                string quan = r["Quan"].ToString();
+                float tienNo = (float)r["TienNo"];
+                DTO_DaiLy dl = new DTO_DaiLy(id, idLoaiDL, tenDL, sdt, diaChi, ngayNhan, cmnd, quan, tienNo);
+                al.Add(dl);
+            }
+            return al;
         }
     }
 }
