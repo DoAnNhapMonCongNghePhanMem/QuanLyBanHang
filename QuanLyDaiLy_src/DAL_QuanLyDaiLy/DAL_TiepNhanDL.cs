@@ -12,16 +12,16 @@ namespace DAL_QuanLyDaiLy
 {
     public class DAL_TiepNhanDL
     {
-        private  SqlConnection conn = DBUtils.GetDBConnection();
+        private static SqlConnection conn = DBUtils.GetDBConnection();
         public DAL_TiepNhanDL()
         {
 
         }
-        public ArrayList GetLoaiDL()
+        public static ArrayList GetLoaiDL()
         {
             ArrayList arrList = new ArrayList();
             DataTable dt = new DataTable();
-            dt=ResultQuery.GetTableResult(conn, "SELECT * FROM LoaiDaiLy ");
+            dt = ResultQuery.GetTableResult(conn, "SELECT * FROM LoaiDaiLy ");
             int id;
             string ten;
             foreach (DataRow r in dt.Rows)
@@ -34,7 +34,7 @@ namespace DAL_QuanLyDaiLy
 
             return arrList;
         }
-        public int ThemDaiLy(string tenDL, string sdt, string diaChi, string ngayNhan, string loaiDL, string cmnd, string quan)
+        public static int ThemDaiLy(string tenDL, string sdt, string diaChi, string ngayNhan, string loaiDL, string cmnd, string quan)
         {
             int kq;
             SqlCommand cmd = new SqlCommand("PR_InsertDl", conn);
@@ -59,7 +59,7 @@ namespace DAL_QuanLyDaiLy
                 conn.Close();
             }
         }
-	public int SuaDaiLy(DTO_DaiLy newDaiLy)
+        public static int SuaDaiLy(DTO_DaiLy newDaiLy)
         {
             int result;
             int idDaiLy = newDaiLy.IdDL;
@@ -74,13 +74,13 @@ namespace DAL_QuanLyDaiLy
             result = ResultQuery.GetResultQuery(conn, query);
             return result;
         }
-        public int XoaDaiLy(int idDaiLy)
+        public static  int XoaDaiLy(int idDaiLy)
         {
             string query = "delete from DaiLy where IdDaiLy=" + idDaiLy;
-            int result=ResultQuery.GetResultQuery(conn, query);
+            int result = ResultQuery.GetResultQuery(conn, query);
             return result;
         }
-        public ArrayList DsDaiLy()
+        public static ArrayList DsDaiLy()
         {
             ArrayList al = new ArrayList();
             string query = "select * from DaiLy";

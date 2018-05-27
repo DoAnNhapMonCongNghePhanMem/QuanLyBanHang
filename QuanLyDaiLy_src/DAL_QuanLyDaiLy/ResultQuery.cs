@@ -10,8 +10,8 @@ namespace DAL_QuanLyDaiLy
 {
     class ResultQuery
     {
-        
-        public static int ProcGetResult(SqlConnection conn,string proc,string[] arrInQuery, string result,Object[] arrInParams)
+
+        public static int ProcGetResult(SqlConnection conn, string proc, string[] arrInQuery, string result, Object[] arrInParams)
         {
             int kq;
             SqlCommand cmd = new SqlCommand(proc, conn);
@@ -60,9 +60,9 @@ namespace DAL_QuanLyDaiLy
             {
                 conn.Close();
             }
-            
+
         }
-	public static int GetResultQuery(SqlConnection conn, string query, object[] values = null)
+        public static int GetResultQuery(SqlConnection conn, string query, object[] values = null)
         {
             int result;
             try
@@ -71,27 +71,18 @@ namespace DAL_QuanLyDaiLy
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.CommandType = CommandType.Text;
                 if (values != null)
-{
-
+                {
                     string[] listPara = query.Split(' ');
-        
-           	    int i = 0;
-              
-                    foreach (string item in listPara){
-
-                        if (item.Contains('@')){
-
+                    int i = 0;
+                    foreach (string item in listPara)
+                    {
+                        if (item.Contains('@'))
+                        {
                             cmd.Parameters.AddWithValue(item, values[i]);
-
-			    i++;
-
+                            i++;
                         }
-
                     }
-
                 }
-
-
                 result = cmd.ExecuteNonQuery();
                 return result;
             }
@@ -100,8 +91,6 @@ namespace DAL_QuanLyDaiLy
                 conn.Close();
             }
         }
-
-       
     }
 }
 ////string proc = "PR_InsertDl";

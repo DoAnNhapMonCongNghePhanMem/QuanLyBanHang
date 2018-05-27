@@ -10,14 +10,13 @@ namespace DAL_QuanLyDaiLy
 {
     public class DAL_QuanLyTaiKhoan
     {
-        private SqlConnection conn=DBUtils.GetDBConnection();
-
+        private static SqlConnection conn = DBUtils.GetDBConnection();
 
         public DAL_QuanLyTaiKhoan()
         {
 
         }
-        public int KiemTraDangNhap(string userName,string pass)
+        public static int KiemTraDangNhap(string userName, string pass)
         {
             SqlCommand cmd = new SqlCommand("PR_CheckLogin", conn);
             //cmd.CommandText = "PR_CheckLogin";
@@ -36,9 +35,9 @@ namespace DAL_QuanLyDaiLy
             {
                 conn.Close();
             }
-            
+
         }
-	public int KiemTraDangKy(string cmnd,string tenNV,string ngaySinh,string queQuan,string sdt,string userName,string pass,int phanQuyen,int trangThai)
+        public static int KiemTraDangKy(string cmnd, string tenNV, string ngaySinh, string queQuan, string sdt, string userName, string pass, int phanQuyen, int trangThai)
         {
             int result;
             SqlCommand cmd = new SqlCommand("PR_DangKi", conn);
@@ -52,7 +51,7 @@ namespace DAL_QuanLyDaiLy
             cmd.Parameters.Add("@Pass", SqlDbType.VarChar).Value = pass;
             cmd.Parameters.Add("@PhanQuyen", SqlDbType.Int).Value = phanQuyen;
             cmd.Parameters.Add("@TrangThai", SqlDbType.Int).Value = trangThai;
-            cmd.Parameters.Add("@result", SqlDbType.Int).Direction =ParameterDirection.Output;
+            cmd.Parameters.Add("@result", SqlDbType.Int).Direction = ParameterDirection.Output;
             try
             {
                 conn.Open();
@@ -64,8 +63,8 @@ namespace DAL_QuanLyDaiLy
             {
                 conn.Close();
             }
-        }  
-        
-       
+        }
+
+
     }
 }
