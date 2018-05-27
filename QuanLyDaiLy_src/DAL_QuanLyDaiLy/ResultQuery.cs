@@ -16,27 +16,27 @@ namespace DAL_QuanLyDaiLy
             int kq;
             SqlCommand cmd = new SqlCommand(proc, conn);
             cmd.CommandType = CommandType.StoredProcedure;
-            //int i = 0;
-            //foreach(string itemsIn in arrInQuery)
-            //{
-            //    cmd.Parameters.AddWithValue(itemsIn, arrInParams[i]);
-            //    cmd.Parameters[itemsIn].Direction = ParameterDirection.Input;
-            //    i++;
-            //}
-            for(int j = 0; j < arrInQuery.Length; j++)
+            int i = 0;
+            foreach (string itemsIn in arrInQuery)
             {
-                cmd.Parameters.AddWithValue( arrInQuery[j], arrInParams[j]);
-                cmd.Parameters[arrInQuery[j]].Direction = ParameterDirection.Input;
-                //cmd.Parameters.AddWithValue("@TenDL", tenDL);
-                //cmd.Parameters["@TenDL"].Direction = ParameterDirection.Input;
+                cmd.Parameters.AddWithValue(itemsIn, arrInParams[i]);
+                cmd.Parameters[itemsIn].Direction = ParameterDirection.Input;
+                i++;
             }
+            //for (int j = 0; j < arrInQuery.Length; j++)
+            //{
+            //    cmd.Parameters.AddWithValue(arrInQuery[j], arrInParams[j]);
+            //    cmd.Parameters[arrInQuery[j]].Direction = ParameterDirection.Input;
+            //    //cmd.Parameters.AddWithValue("@TenDL", tenDL);
+            //    //cmd.Parameters["@TenDL"].Direction = ParameterDirection.Input;
+            //}
             cmd.Parameters.Add(result, SqlDbType.Int).Direction = ParameterDirection.Output;
 
             try
             {
                 conn.Open();
                 cmd.ExecuteNonQuery();
-                kq = (int)cmd.Parameters[ result].Value;
+                kq = (int)cmd.Parameters[result].Value;
                 return kq;
             }
             finally
@@ -49,10 +49,9 @@ namespace DAL_QuanLyDaiLy
             try
             {
                 conn.Open();
-                SqlCommand cmd = new SqlCommand(query);
+                SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.CommandType = CommandType.Text;
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
-
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 return dt;
@@ -62,6 +61,44 @@ namespace DAL_QuanLyDaiLy
                 conn.Close();
             }
             
+        }
+	public static int GetResultQuery(SqlConnection conn, string query, object[] values = null)
+        {
+            int result;
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.CommandType = CommandType.Text;
+                if (values != null)
+{
+
+                    string[] listPara = query.Split(' ');
+        
+           	    int i = 0;
+              
+                    foreach (string item in listPara){
+
+                        if (item.Contains('@')){
+
+                            cmd.Parameters.AddWithValue(item, values[i]);
+
+			    i++;
+
+                        }
+
+                    }
+
+                }
+
+
+                result = cmd.ExecuteNonQuery();
+                return result;
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
 
        

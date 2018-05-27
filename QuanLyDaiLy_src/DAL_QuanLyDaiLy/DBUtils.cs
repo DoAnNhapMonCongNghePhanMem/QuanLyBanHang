@@ -9,7 +9,7 @@ namespace DAL_QuanLyDaiLy
 {
     class DBUtils
     {
-        private static DBUtils DBConnection;
+        //private static DBUtils DBConnection;
 
 
         public DBUtils()
