@@ -17,6 +17,11 @@ namespace DAL_QuanLyDaiLy
         {
 
         }
+        /*
+         * 0 thêm thành công
+         * 1 tên đại lý tồn tại
+         * 2 lỗi thêm
+         */
         public static int ThemDaiLy(string tenDL, string sdt, string diaChi, string ngayNhan, string loaiDL, string cmnd, string quan)
         {
             int kq;
@@ -42,6 +47,11 @@ namespace DAL_QuanLyDaiLy
                 conn.Close();
             }
         }
+        /*
+         *SuaDaiLy trả về 
+         * 0 : sửa thất bại
+         * 1 : sửa thành công
+         */
         public static int SuaDaiLy(DTO_DaiLy newDaiLy)
         {
             int result;
@@ -57,6 +67,12 @@ namespace DAL_QuanLyDaiLy
             result = ResultQuery.GetResultQuery(conn, query);
             return result;
         }
+        /*
+         *XoaDaiLy trả về 
+         * 0 : sửa thất bại
+         * 1 : sửa thành công
+         */
+       
         public static  int XoaDaiLy(int idDaiLy)
         {
             string query = "delete from DaiLy where IdDaiLy=" + idDaiLy;
@@ -78,7 +94,7 @@ namespace DAL_QuanLyDaiLy
                 int idLoaiDL = (int)r["IdLoaiDL"];
                 string cmnd = r["CMND"].ToString();
                 string quan = r["Quan"].ToString();
-                float tienNo = (float)r["TienNo"];
+                float tienNo = (float) Convert.ToDouble(r["TienNo"]);
                 DTO_DaiLy dl = new DTO_DaiLy(id, idLoaiDL, tenDL, sdt, diaChi, ngayNhan, cmnd, quan, tienNo);
                 al.Add(dl);
             }

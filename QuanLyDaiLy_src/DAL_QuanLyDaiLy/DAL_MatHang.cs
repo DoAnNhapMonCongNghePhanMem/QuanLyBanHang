@@ -1,5 +1,4 @@
-﻿using DTO_QuanLyDaiLy;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
@@ -7,40 +6,41 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DTO_QuanLyDaiLy;
 
 namespace DAL_QuanLyDaiLy
 {
-    public class DAL_LoaiDaiLy
+    public class DAL_MatHang
     {
         private static SqlConnection conn = DBUtils.GetDBConnection();
-        public static ArrayList DSLoaiDaiLy()
+        public static ArrayList DSLoaiDaiLyL()
         {
             ArrayList arrList = new ArrayList();
             DataTable dt = new DataTable();
-            dt = ResultQuery.GetTableResult(conn, "SELECT * FROM LoaiDaiLy ");
+            dt = ResultQuery.GetTableResult(conn, "SELECT * FROM MatHang");
             int id;
             string ten;
             foreach (DataRow r in dt.Rows)
             {
-                id = (int)r["IdLoaiDL"];
-                ten = r["TenLoaiDL"].ToString();
-                DTO_LoaiDL loaiDL = new DTO_LoaiDL(id, ten);
-                arrList.Add(loaiDL);
+                id = (int)r["IdMatHang"];
+                ten = r["TenMatHang"].ToString();
+                DTO_MatHang matHang = new DTO_MatHang(id, ten);
+                arrList.Add(matHang);
             }
 
             return arrList;
         }
         /*
-         * ThemLoaiDaiLy trả về 
+         * ThemMatHang trả về
          * 1:thành công
          * 0:thất bại
          */
-        public static int ThemLoaiDaiLy(string tenLoaiDL)
+        public static int ThemMatHang(string tenMatHang)
         {
-            int kq=0;
-            SqlCommand cmd = new SqlCommand("PR_InsertLoaiDaiLy", conn);
+            int kq = 0;
+            SqlCommand cmd = new SqlCommand("PR_InsertMatHang", conn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@TenLoaiDL", SqlDbType.NVarChar).Value = tenLoaiDL;
+            cmd.Parameters.Add("@TenMatHang", SqlDbType.NVarChar).Value = tenMatHang;
             try
             {
                 conn.Open();
@@ -53,26 +53,27 @@ namespace DAL_QuanLyDaiLy
             }
         }
         /*
-         * XoaLoaiDaiLy trả về 
+         * XoaMatHang trả về
          * 1:thành công
          * 0:thất bại
          */
-        public static int XoaLoaiDaiLy(int id)
+        public static int XoaMatHang(int id)
         {
-            string query = "delete LoaiDaiLy where IdLoaiDL=" + id;
+            string query = "delete MatHang where IdMatHang=" + id;
             int result = ResultQuery.GetResultQuery(conn, query);
             return result;
         }
         /*
-         * CapNhatLoaiDaiLy trả về 
+         * CapNhatMatHang trả về
          * 1:thành công
          * 0:thất bại
          */
-        public static int CapNhatLoaiDaiLy(DTO_LoaiDL loaiDL)
+        public static int CapNhatMatHang(DTO_MatHang matHang)
         {
-            string query = "update LoaiDaiLy set TenLoaiDL =N'" + loaiDL.TenLoaiDL + "' where IdLoaiDL=" +loaiDL.IdLoaiDL;
+            string query = "update MatHang set TenMatHang=N'"+matHang.TenMatHang+"' where IdMatHang="+matHang.IdMatHang;
             int result = ResultQuery.GetResultQuery(conn, query);
             return result;
         }
+
     }
 }

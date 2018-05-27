@@ -22,10 +22,10 @@ namespace QuanLyDaiLy
             //Application.Run(new FormDangNhap());
             Console.WriteLine("khánh-------------------------------");
 
-            int a = DAL_QuanLyTaiKhoan.KiemTraDangNhap("LE CONG KHANH", "khanh181097");
-            Console.WriteLine(a);
+            //int a = DAL_QuanLyTaiKhoan.KiemTraDangNhap("LE CONG KHANH", "khanh181097");
+            //Console.WriteLine(a);
 
-            
+
             //ArrayList arrList = DAL_TiepNhanDL.GetLoaiDL();
 
             //foreach (DTO_LoaiDL item in arrList)
@@ -36,6 +36,13 @@ namespace QuanLyDaiLy
             //int kq=tn.ThemDaiLy("đại lý 4", "09092222", "ktx khu a ", "2018-2-20", "Loại 2", "206014565", "Quận 9");
             //Console.WriteLine(kq);
 
+            //int kq= DAL_MatHang.XoaMatHang(4);
+            // Console.WriteLine(kq);
+
+            // ArrayList al = DAL_DaiLy.DsDaiLy();
+            DateTime a = new DateTime(2018,10,1);
+            int b = DAL_CongNo.ThemCongNo(7, a, 200000, 50000, 0);
+            Console.WriteLine(b);
         }
     }
 }

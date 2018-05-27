@@ -16,8 +16,17 @@ namespace DAL_QuanLyDaiLy
         {
 
         }
+
+        /*
+         * hàm KiemTraDangNhap trả lại
+         * 0 : cho phép đăng nhập
+         * 1 : UserName không chính xác
+         * 2 : Pass không chính xác
+         * 3 : Tài khoản bị block bới Admin
+         */
         public static int KiemTraDangNhap(string userName, string pass)
         {
+            
             SqlCommand cmd = new SqlCommand("PR_CheckLogin", conn);
             //cmd.CommandText = "PR_CheckLogin";
             cmd.CommandType = CommandType.StoredProcedure;
@@ -37,6 +46,13 @@ namespace DAL_QuanLyDaiLy
             }
 
         }
+        /*
+         * hàm KiemTraDangKy trả về
+         * 0 : dangki thanh cong
+         * 1 : UserName đã tồn tại
+         * 2 : nhan vien đã co tai khoan
+         * 3 : Lỗi khi insert 
+         */
         public static int KiemTraDangKy(string cmnd, string tenNV, string ngaySinh, string queQuan, string sdt, string userName, string pass, int phanQuyen, int trangThai)
         {
             int result;

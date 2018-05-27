@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_CongNo.cs" />
     <Compile Include="DAL_LoaiDaiLy.cs" />
+    <Compile Include="DAL_MatHang.cs" />
     <Compile Include="DAL_QuanLyTaiKhoan.cs" />
     <Compile Include="DBSqlServerUtils.cs" />
     <Compile Include="DBUtils.cs" />

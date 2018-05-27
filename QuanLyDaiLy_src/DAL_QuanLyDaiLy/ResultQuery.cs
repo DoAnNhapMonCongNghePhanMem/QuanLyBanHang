@@ -70,19 +70,19 @@ namespace DAL_QuanLyDaiLy
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.CommandType = CommandType.Text;
-                if (values != null)
-                {
-                    string[] listPara = query.Split(' ');
-                    int i = 0;
-                    foreach (string item in listPara)
-                    {
-                        if (item.Contains('@'))
-                        {
-                            cmd.Parameters.AddWithValue(item, values[i]);
-                            i++;
-                        }
-                    }
-                }
+                //if (values != null)
+                //{
+                //    string[] listPara = query.Split(' ');
+                //    int i = 0;
+                //    foreach (string item in listPara)
+                //    {
+                //        if (item.Contains('@'))
+                //        {
+                //            cmd.Parameters.AddWithValue(item, values[i]);
+                //            i++;
+                //        }
+                //    }
+                //}
                 result = cmd.ExecuteNonQuery();
                 return result;
             }

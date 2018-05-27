@@ -19,3 +19,10 @@ E:\SchoolProject\IntroduceOfSoftwareDevelopment\QuanLyDaiLy\QuanLyDaiLy_src\DAL_
 E:\SchoolProject\IntroduceOfSoftwareDevelopment\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\obj\Debug\DAL_QuanLyDaiLy.csprojResolveAssemblyReference.cache
 E:\SchoolProject\IntroduceOfSoftwareDevelopment\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\obj\Debug\DAL_QuanLyDaiLy.dll
 E:\SchoolProject\IntroduceOfSoftwareDevelopment\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\obj\Debug\DAL_QuanLyDaiLy.pdb
+C:\Users\leeco\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\bin\Debug\DAL_QuanLyDaiLy.dll
+C:\Users\leeco\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\bin\Debug\DAL_QuanLyDaiLy.pdb
+C:\Users\leeco\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.dll
+C:\Users\leeco\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.pdb
+C:\Users\leeco\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\obj\Debug\DAL_QuanLyDaiLy.csprojResolveAssemblyReference.cache
+C:\Users\leeco\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\obj\Debug\DAL_QuanLyDaiLy.dll
+C:\Users\leeco\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\obj\Debug\DAL_QuanLyDaiLy.pdb
