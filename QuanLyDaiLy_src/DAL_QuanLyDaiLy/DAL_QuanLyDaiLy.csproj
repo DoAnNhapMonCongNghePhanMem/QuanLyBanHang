@@ -40,12 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_LoaiDaiLy.cs" />
     <Compile Include="DAL_QuanLyTaiKhoan.cs" />
     <Compile Include="DBSqlServerUtils.cs" />
     <Compile Include="DBUtils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResultQuery.cs" />
-    <Compile Include="DAL_TiepNhanDL.cs" />
+    <Compile Include="DAL_DaiLy.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DTO_QuanLyDaiLy\DTO_QuanLyDaiLy.csproj">

@@ -66,3 +66,6 @@ E:\SchoolProject\IntroduceOfSoftwareDevelopment\QuanLyDaiLy\QuanLyDaiLy_src\GUI_
 E:\SchoolProject\IntroduceOfSoftwareDevelopment\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\GUI_QuanLyDaiLy.csproj.GenerateResource.Cache
 E:\SchoolProject\IntroduceOfSoftwareDevelopment\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.exe
 E:\SchoolProject\IntroduceOfSoftwareDevelopment\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.pdb
+C:\Users\leeco\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\QuanLyDaiLy.exe.config
+C:\Users\leeco\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.exe
+C:\Users\leeco\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.pdb
