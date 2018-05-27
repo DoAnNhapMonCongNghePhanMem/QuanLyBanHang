@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO_QuanLyDaiLy
 {
-    class DTO_ThongTinTaiKhoan
+    public class DTO_ThongTinTaiKhoan
     {
         private string userName;
         private string pass;
