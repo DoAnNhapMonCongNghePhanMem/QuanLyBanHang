@@ -74,5 +74,12 @@ namespace DAL_QuanLyDaiLy
             int result = ResultQuery.GetResultQuery(conn, query);
             return result;
         }
+        public static string GetTenById(int id)
+        {
+            string query = "select TenQuan from Quan where IdQuan=" + id;
+            DataTable dt = ResultQuery.GetTableResult(conn, query);
+            DataRow r = dt.Rows[0];
+            return r["TenQuan"].ToString();
+        }
     }
 }
