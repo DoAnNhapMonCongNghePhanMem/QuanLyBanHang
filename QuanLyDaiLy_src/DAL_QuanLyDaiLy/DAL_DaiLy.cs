@@ -18,28 +18,27 @@ namespace DAL_QuanLyDaiLy
 
         }
         /*
-         * 0 thêm thành công
-         * 1 tên đại lý tồn tại
-         * 2 lỗi thêm
+         * 1 thêm thành công
+         * 0 tên đại lý tồn tại
+         * 
          */
-        public static int ThemDaiLy(string tenDL, string sdt, string diaChi, string ngayNhan, string loaiDL, string cmnd, string quan)
+        public static int ThemDaiLy(DTO_DaiLy daiLy)
         {
             int kq;
+            string ngayNhanSql = daiLy.NgayNhan.ToString("yyyy-MM-dd");
             SqlCommand cmd = new SqlCommand("PR_InsertDl", conn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@TenDL", SqlDbType.NVarChar).Value = tenDL;
-            cmd.Parameters.Add("@SDT", SqlDbType.VarChar).Value = sdt;
-            cmd.Parameters.Add("@DiaChi", SqlDbType.NVarChar).Value = diaChi;
-            cmd.Parameters.Add("@NgayTiepNhan", SqlDbType.Date).Value = ngayNhan;
-            cmd.Parameters.Add("@TenLoaiDL", SqlDbType.NVarChar).Value = loaiDL;
-            cmd.Parameters.Add("@CMND", SqlDbType.NVarChar).Value = cmnd;
-            cmd.Parameters.Add("@Quan", SqlDbType.NVarChar).Value = quan;
-            cmd.Parameters.Add("@result", SqlDbType.Int).Direction = ParameterDirection.Output;
+            cmd.Parameters.Add("@TenDL", SqlDbType.NVarChar).Value = daiLy.TenDaiLy;
+            cmd.Parameters.Add("@SDT", SqlDbType.VarChar).Value = daiLy.Sdt;
+            cmd.Parameters.Add("@DiaChi", SqlDbType.NVarChar).Value = daiLy.DiaChi;
+            cmd.Parameters.Add("@NgayTiepNhan", SqlDbType.Date).Value = ngayNhanSql;
+            cmd.Parameters.Add("@@IdLoaiDL", SqlDbType.Int).Value = daiLy.IdLoaiDL;
+            cmd.Parameters.Add("@CMND", SqlDbType.NVarChar).Value = daiLy.Cmnd;
+            cmd.Parameters.Add("@IdQuan", SqlDbType.Int).Value = daiLy.IdQuan;
             try
             {
                 conn.Open();
-                cmd.ExecuteNonQuery();
-                kq = (int)cmd.Parameters["@result"].Value;
+                kq=cmd.ExecuteNonQuery();
                 return kq;
             }
             finally
@@ -59,11 +58,12 @@ namespace DAL_QuanLyDaiLy
             string tenDL = newDaiLy.TenDaiLy;
             string sdt = newDaiLy.Sdt;
             string diaChi = newDaiLy.DiaChi;
-            string ngayNhan = newDaiLy.NgayNhan;
+            int idQuan = newDaiLy.IdQuan;
+            string ngayNhan= newDaiLy.NgayNhan.ToString("yyyy-MM-dd");
             int idLoaiDL = newDaiLy.IdLoaiDL;
             string cmnd = newDaiLy.Cmnd;
-            string quan = newDaiLy.Quan;
-            string query = "UPDATE DaiLy SET TenDaiLy = N'" + tenDL + "', SDT = '" + sdt + "',DiaChi=N'" + diaChi + "',NgayTiepNhan='" + ngayNhan + "',IdLoaiDL='" + idLoaiDL + "',CMND='" + cmnd + "',Quan=N'" + quan + "'WHERE IdDaiLy=" + idDaiLy;
+            
+            string query = "UPDATE DaiLy SET TenDaiLy = N'" + tenDL + "', SDT = '" + sdt + "',DiaChi=N'" + diaChi + "',NgayTiepNhan='" + ngayNhan + "',IdLoaiDL='" + idLoaiDL + "',CMND='" + cmnd + "',IdQuan=" + idQuan + " WHERE IdDaiLy=" + idDaiLy;
             result = ResultQuery.GetResultQuery(conn, query);
             return result;
         }
@@ -90,12 +90,12 @@ namespace DAL_QuanLyDaiLy
                 string tenDL = r["TenDaiLy"].ToString();
                 string sdt = r["SDT"].ToString();
                 string diaChi = r["DiaChi"].ToString();
-                string ngayNhan = r["NgayTiepNhan"].ToString();
+                int idquan =(int) r["IdQuan"];
+                DateTime ngayNhan = Convert.ToDateTime(r["NgayTiepNhan"]);
                 int idLoaiDL = (int)r["IdLoaiDL"];
                 string cmnd = r["CMND"].ToString();
-                string quan = r["Quan"].ToString();
                 float tienNo = (float) Convert.ToDouble(r["TienNo"]);
-                DTO_DaiLy dl = new DTO_DaiLy(id, idLoaiDL, tenDL, sdt, diaChi, ngayNhan, cmnd, quan, tienNo);
+                DTO_DaiLy dl = new DTO_DaiLy(id,idLoaiDL,tenDL,sdt,diaChi,idquan,ngayNhan,cmnd,tienNo);
                 al.Add(dl);
             }
             return al;

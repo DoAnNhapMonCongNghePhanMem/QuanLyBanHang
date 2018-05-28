@@ -7,6 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace QuanLyDaiLy
 {
     static class Program
@@ -40,9 +41,17 @@ namespace QuanLyDaiLy
             // Console.WriteLine(kq);
 
             // ArrayList al = DAL_DaiLy.DsDaiLy();
-            DateTime a = new DateTime(2018,10,1);
-            int b = DAL_CongNo.ThemCongNo(7, a, 200000, 50000, 0);
-            Console.WriteLine(b);
+            //DateTime a = new DateTime(2018,10,1);
+            // int b = DAL_CongNo.ThemCongNo(8, a, 200000, 50000, 0);
+            // Console.WriteLine(b);
+            //DTO_CongNo cn = new DTO_CongNo(7, a, 4000, 2000, 2000);           
+            //int kq=DAL_CongNo.CapNhatCongNo(cn);
+            //Console.WriteLine(kq);
+            ArrayList al = DAL_DaiLy.DsDaiLy();
+            foreach (DTO_DaiLy dl in al)
+            {
+                Console.WriteLine(dl.NgayNhan);
+            }
         }
     }
 }

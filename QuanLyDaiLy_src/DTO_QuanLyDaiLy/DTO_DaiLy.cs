@@ -8,62 +8,10 @@ namespace DTO_QuanLyDaiLy
 {
     public class DTO_DaiLy
     {
-        private int idDL, idLoaiDL;
+        private int idDL, idLoaiDL,idQuan;
         float tienNo;
-        private string tenDaiLy, sdt, diaChi, ngayNhan, cmnd, quan;
-        public DTO_DaiLy()
-        {
-
-        }
-        public DTO_DaiLy(int idDL, int idLoaiDL, string tenDaiLy, string sdt, string diaChi, string ngayNhan, string cmnd, string quan, float tienNo)
-        {
-            this.idDL = idDL;
-            this.idLoaiDL = idLoaiDL;
-            this.tenDaiLy = tenDaiLy;
-            this.sdt = sdt;
-            this.diaChi = diaChi;
-            this.ngayNhan = ngayNhan;
-            this.cmnd = cmnd;
-            this.quan = quan;
-            this.tienNo = tienNo;
-        }
-        public string Cmnd
-        {
-            get
-            {
-                return cmnd;
-            }
-
-            set
-            {
-                cmnd = value;
-            }
-        }
-        public float TienNo
-        {
-            get
-            {
-                return tienNo;
-            }
-
-            set
-            {
-                tienNo = value;
-            }
-        }
-
-        public string DiaChi
-        {
-            get
-            {
-                return diaChi;
-            }
-
-            set
-            {
-                diaChi = value;
-            }
-        }
+        private string tenDaiLy, sdt, diaChi, cmnd;
+        DateTime ngayNhan;
 
         public int IdDL
         {
@@ -91,29 +39,42 @@ namespace DTO_QuanLyDaiLy
             }
         }
 
-        public string NgayNhan
+        public int IdQuan
         {
             get
             {
-                return ngayNhan;
+                return idQuan;
             }
 
             set
             {
-                ngayNhan = value;
+                idQuan = value;
             }
         }
 
-        public string Quan
+        public float TienNo
         {
             get
             {
-                return quan;
+                return tienNo;
             }
 
             set
             {
-                quan = value;
+                tienNo = value;
+            }
+        }
+
+        public string TenDaiLy
+        {
+            get
+            {
+                return tenDaiLy;
+            }
+
+            set
+            {
+                tenDaiLy = value;
             }
         }
 
@@ -130,18 +91,62 @@ namespace DTO_QuanLyDaiLy
             }
         }
 
-        public string TenDaiLy
+        public string DiaChi
         {
             get
             {
-                return tenDaiLy;
+                return diaChi;
             }
 
             set
             {
-                tenDaiLy = value;
+                diaChi = value;
             }
         }
+
+        public string Cmnd
+        {
+            get
+            {
+                return cmnd;
+            }
+
+            set
+            {
+                cmnd = value;
+            }
+        }
+
+        public DateTime NgayNhan
+        {
+            get
+            {
+                return ngayNhan;
+            }
+
+            set
+            {
+                ngayNhan = value;
+            }
+        }
+
+        public DTO_DaiLy()
+        {
+
+        }
+        public DTO_DaiLy(int idDL, int idLoaiDL, string tenDaiLy, string sdt, string diaChi, int idquan, DateTime ngayNhan, string cmnd, float tienNo)
+        {
+            this.IdDL = idDL;
+            this.IdLoaiDL = idLoaiDL;
+            this.TenDaiLy = tenDaiLy;
+            this.Sdt = sdt;
+            this.DiaChi = diaChi;
+            this.NgayNhan = ngayNhan;
+            this.Cmnd = cmnd;
+            this.IdQuan = idquan;
+            this.TienNo = tienNo;
+        }
+        
 
     }
 }

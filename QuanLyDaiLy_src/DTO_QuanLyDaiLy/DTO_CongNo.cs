@@ -9,17 +9,9 @@ namespace DTO_QuanLyDaiLy
     public class DTO_CongNo
     {
         private int idDaiLy;
-        private DateTime thang;
+        private int thang;
         private float noDau, noCuoi, phatSinh;
 
-        public DTO_CongNo()
-        {
-
-        }
-        public DTO_CongNo(int id,DateTime thang,float nodau,float nocuoi,float phatsinh)
-        {
-            this.idDaiLy = id;
-        }
         public int IdDaiLy
         {
             get
@@ -33,7 +25,7 @@ namespace DTO_QuanLyDaiLy
             }
         }
 
-        public DateTime Thang
+        public int Thang
         {
             get
             {
@@ -84,5 +76,19 @@ namespace DTO_QuanLyDaiLy
                 phatSinh = value;
             }
         }
+
+        public DTO_CongNo()
+        {
+            
+        }
+        public DTO_CongNo(int id,int thang,float nodau,float nocuoi,float phatsinh)
+        {
+            this.IdDaiLy = id;
+            this.Thang = thang;
+            this.NoDau = nodau;
+            this.NoCuoi = nocuoi;
+            this.PhatSinh = phatsinh;
+        }
+       
     }
 }
