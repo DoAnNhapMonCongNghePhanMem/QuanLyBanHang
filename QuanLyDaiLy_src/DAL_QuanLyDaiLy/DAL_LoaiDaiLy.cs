@@ -74,5 +74,13 @@ namespace DAL_QuanLyDaiLy
             int result = ResultQuery.GetResultQuery(conn, query);
             return result;
         }
+
+        public static string GetTenById(int id)
+        {
+            string query = "select TenLoaiDL from LoaiDaiLy where IdLoaiDL=" + id;
+            DataTable dt = ResultQuery.GetTableResult(conn,query);
+            DataRow r = dt.Rows[0];
+            return r["TenLoaiDL"].ToString();
+        }
     }
 }

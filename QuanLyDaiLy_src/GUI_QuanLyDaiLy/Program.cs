@@ -47,11 +47,13 @@ namespace QuanLyDaiLy
             //DTO_CongNo cn = new DTO_CongNo(7, a, 4000, 2000, 2000);           
             //int kq=DAL_CongNo.CapNhatCongNo(cn);
             //Console.WriteLine(kq);
-            ArrayList al = DAL_DaiLy.DsDaiLy();
-            foreach (DTO_DaiLy dl in al)
-            {
-                Console.WriteLine(dl.NgayNhan);
-            }
+            //ArrayList al = DAL_DaiLy.DsDaiLy();
+            //foreach (DTO_DaiLy dl in al)
+            //{
+            //    Console.WriteLine(dl.NgayNhan);
+            //}
+            string tenloai = DAL_LoaiDaiLy.GetTenById(1);
+            Console.WriteLine(tenloai);
         }
     }
 }
