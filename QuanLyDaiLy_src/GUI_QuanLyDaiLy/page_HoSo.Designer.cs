@@ -38,26 +38,26 @@
             this.btnCapNhat = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnTim = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgvdl = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtdiachi = new System.Windows.Forms.TextBox();
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbloaidl = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtemail = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtngay = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtdienthoai = new System.Windows.Forms.TextBox();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbquan = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txttendl = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtmadl = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvdl)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -85,23 +85,23 @@
             this.panel2.Controls.Add(this.btnCapNhat);
             this.panel2.Controls.Add(this.btnTim);
             this.panel2.Controls.Add(this.bunifuThinButton21);
-            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.dtgvdl);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.txtdiachi);
             this.panel2.Controls.Add(this.bunifuButton2);
-            this.panel2.Controls.Add(this.comboBox2);
+            this.panel2.Controls.Add(this.cmbloaidl);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.textBox5);
+            this.panel2.Controls.Add(this.txtemail);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.textBox6);
+            this.panel2.Controls.Add(this.txtngay);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.txtdienthoai);
             this.panel2.Controls.Add(this.bunifuButton1);
-            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.cmbquan);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.txttendl);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txtmadl);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 52);
             this.panel2.Name = "panel2";
@@ -209,15 +209,15 @@
             this.bunifuThinButton21.TabIndex = 20;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dataGridView1
+            // dtgvdl
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.Location = new System.Drawing.Point(69, 210);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(587, 162);
-            this.dataGridView1.TabIndex = 17;
+            this.dtgvdl.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dtgvdl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvdl.GridColor = System.Drawing.SystemColors.Control;
+            this.dtgvdl.Location = new System.Drawing.Point(69, 210);
+            this.dtgvdl.Name = "dtgvdl";
+            this.dtgvdl.Size = new System.Drawing.Size(587, 162);
+            this.dtgvdl.TabIndex = 17;
             // 
             // label5
             // 
@@ -230,13 +230,13 @@
             this.label5.TabIndex = 16;
             this.label5.Text = "Địa chỉ";
             // 
-            // textBox4
+            // txtdiachi
             // 
-            this.textBox4.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox4.Location = new System.Drawing.Point(450, 168);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(165, 20);
-            this.textBox4.TabIndex = 15;
+            this.txtdiachi.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtdiachi.Location = new System.Drawing.Point(450, 168);
+            this.txtdiachi.Name = "txtdiachi";
+            this.txtdiachi.Size = new System.Drawing.Size(165, 20);
+            this.txtdiachi.TabIndex = 15;
             // 
             // bunifuButton2
             // 
@@ -272,13 +272,13 @@
             this.bunifuButton2.TabIndex = 14;
             this.bunifuButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox2
+            // cmbloaidl
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(450, 124);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(165, 21);
-            this.comboBox2.TabIndex = 13;
+            this.cmbloaidl.FormattingEnabled = true;
+            this.cmbloaidl.Location = new System.Drawing.Point(450, 124);
+            this.cmbloaidl.Name = "cmbloaidl";
+            this.cmbloaidl.Size = new System.Drawing.Size(165, 21);
+            this.cmbloaidl.TabIndex = 13;
             // 
             // label6
             // 
@@ -291,13 +291,13 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Email";
             // 
-            // textBox5
+            // txtemail
             // 
-            this.textBox5.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox5.Location = new System.Drawing.Point(450, 79);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(165, 20);
-            this.textBox5.TabIndex = 11;
+            this.txtemail.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtemail.Location = new System.Drawing.Point(450, 79);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(165, 20);
+            this.txtemail.TabIndex = 11;
             // 
             // label7
             // 
@@ -310,13 +310,13 @@
             this.label7.TabIndex = 10;
             this.label7.Text = "Ngày tiếp nhận";
             // 
-            // textBox6
+            // txtngay
             // 
-            this.textBox6.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox6.Location = new System.Drawing.Point(450, 34);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(165, 20);
-            this.textBox6.TabIndex = 9;
+            this.txtngay.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtngay.Location = new System.Drawing.Point(450, 34);
+            this.txtngay.Name = "txtngay";
+            this.txtngay.Size = new System.Drawing.Size(165, 20);
+            this.txtngay.TabIndex = 9;
             // 
             // label4
             // 
@@ -329,20 +329,20 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Điện Thoại";
             // 
-            // textBox3
+            // txtdienthoai
             // 
-            this.textBox3.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox3.Location = new System.Drawing.Point(109, 168);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(165, 20);
-            this.textBox3.TabIndex = 7;
+            this.txtdienthoai.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtdienthoai.Location = new System.Drawing.Point(109, 168);
+            this.txtdienthoai.Name = "txtdienthoai";
+            this.txtdienthoai.Size = new System.Drawing.Size(165, 20);
+            this.txtdienthoai.TabIndex = 7;
             // 
             // bunifuButton1
             // 
             this.bunifuButton1.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.bunifuButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.BackgroundImage")));
-            this.bunifuButton1.ButtonText = "Huyện";
+            this.bunifuButton1.ButtonText = "Quận";
             this.bunifuButton1.ButtonTextMarginLeft = 0;
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
             this.bunifuButton1.DisabledFillColor = System.Drawing.Color.Gray;
@@ -371,13 +371,13 @@
             this.bunifuButton1.TabIndex = 6;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox1
+            // cmbquan
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(109, 124);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(165, 21);
-            this.comboBox1.TabIndex = 5;
+            this.cmbquan.FormattingEnabled = true;
+            this.cmbquan.Location = new System.Drawing.Point(109, 124);
+            this.cmbquan.Name = "cmbquan";
+            this.cmbquan.Size = new System.Drawing.Size(165, 21);
+            this.cmbquan.TabIndex = 5;
             // 
             // label3
             // 
@@ -390,13 +390,13 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Tên ";
             // 
-            // textBox2
+            // txttendl
             // 
-            this.textBox2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox2.Location = new System.Drawing.Point(109, 79);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(165, 20);
-            this.textBox2.TabIndex = 3;
+            this.txttendl.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txttendl.Location = new System.Drawing.Point(109, 79);
+            this.txttendl.Name = "txttendl";
+            this.txttendl.Size = new System.Drawing.Size(165, 20);
+            this.txttendl.TabIndex = 3;
             // 
             // label2
             // 
@@ -409,13 +409,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Mã hồ sơ";
             // 
-            // textBox1
+            // txtmadl
             // 
-            this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox1.Location = new System.Drawing.Point(109, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(165, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtmadl.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtmadl.Location = new System.Drawing.Point(109, 34);
+            this.txtmadl.Name = "txtmadl";
+            this.txtmadl.Size = new System.Drawing.Size(165, 20);
+            this.txtmadl.TabIndex = 1;
             // 
             // page_HoSo
             // 
@@ -429,7 +429,7 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvdl)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -439,22 +439,22 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtmadl;
+        private System.Windows.Forms.DataGridView dtgvdl;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtdiachi;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbloaidl;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtngay;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtdienthoai;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbquan;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txttendl;
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuThinButton2 btnXoa;
         private Bunifu.Framework.UI.BunifuThinButton2 btnCapNhat;
