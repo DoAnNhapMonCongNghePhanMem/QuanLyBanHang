@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangNhap));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtpass = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtuser = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.btnDangNhap = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -48,8 +48,8 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.bunifuMaterialTextbox2);
-            this.panel1.Controls.Add(this.bunifuMaterialTextbox1);
+            this.panel1.Controls.Add(this.txtpass);
+            this.panel1.Controls.Add(this.txtuser);
             this.panel1.Controls.Add(this.btnDangNhap);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(90, 43);
@@ -57,53 +57,53 @@
             this.panel1.Size = new System.Drawing.Size(265, 505);
             this.panel1.TabIndex = 0;
             // 
-            // bunifuMaterialTextbox2
+            // txtpass
             // 
-            this.bunifuMaterialTextbox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuMaterialTextbox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuMaterialTextbox2.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuMaterialTextbox2.HintText = "Mật khẩu";
-            this.bunifuMaterialTextbox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bunifuMaterialTextbox2.isPassword = true;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(133)))), ((int)(((byte)(19)))));
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.DarkGray;
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(133)))), ((int)(((byte)(19)))));
-            this.bunifuMaterialTextbox2.LineThickness = 3;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(2, 235);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox2.MaxLength = 32767;
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(261, 37);
-            this.bunifuMaterialTextbox2.TabIndex = 3;
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuMaterialTextbox2.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox2_OnValueChanged);
+            this.txtpass.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtpass.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtpass.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtpass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtpass.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtpass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtpass.HintForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtpass.HintText = "Mật khẩu";
+            this.txtpass.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.txtpass.isPassword = true;
+            this.txtpass.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(133)))), ((int)(((byte)(19)))));
+            this.txtpass.LineIdleColor = System.Drawing.Color.DarkGray;
+            this.txtpass.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(133)))), ((int)(((byte)(19)))));
+            this.txtpass.LineThickness = 3;
+            this.txtpass.Location = new System.Drawing.Point(2, 235);
+            this.txtpass.Margin = new System.Windows.Forms.Padding(4);
+            this.txtpass.MaxLength = 32767;
+            this.txtpass.Name = "txtpass";
+            this.txtpass.Size = new System.Drawing.Size(261, 37);
+            this.txtpass.TabIndex = 3;
+            this.txtpass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtpass.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox2_OnValueChanged);
             // 
-            // bunifuMaterialTextbox1
+            // txtuser
             // 
-            this.bunifuMaterialTextbox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuMaterialTextbox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuMaterialTextbox1.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuMaterialTextbox1.HintText = "Tên người dùng";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(133)))), ((int)(((byte)(19)))));
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.DarkGray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(133)))), ((int)(((byte)(19)))));
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(0, 156);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.MaxLength = 32767;
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(261, 37);
-            this.bunifuMaterialTextbox1.TabIndex = 2;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtuser.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtuser.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtuser.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtuser.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtuser.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtuser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtuser.HintForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtuser.HintText = "Tên người dùng";
+            this.txtuser.isPassword = false;
+            this.txtuser.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(133)))), ((int)(((byte)(19)))));
+            this.txtuser.LineIdleColor = System.Drawing.Color.DarkGray;
+            this.txtuser.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(133)))), ((int)(((byte)(19)))));
+            this.txtuser.LineThickness = 3;
+            this.txtuser.Location = new System.Drawing.Point(0, 156);
+            this.txtuser.Margin = new System.Windows.Forms.Padding(4);
+            this.txtuser.MaxLength = 32767;
+            this.txtuser.Name = "txtuser";
+            this.txtuser.Size = new System.Drawing.Size(261, 37);
+            this.txtuser.TabIndex = 2;
+            this.txtuser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // btnDangNhap
             // 
@@ -225,8 +225,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuThinButton2 btnDangNhap;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtpass;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtuser;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
