@@ -40,11 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO_ChiTietXuat.cs" />
     <Compile Include="DTO_CongNo.cs" />
     <Compile Include="DTO_DaiLy.cs" />
+    <Compile Include="DTO_DoanhSo.cs" />
     <Compile Include="DTO_LoaiDL.cs" />
     <Compile Include="DTO_MatHang.cs" />
     <Compile Include="DTO_NhanVienQuanLy.cs" />
+    <Compile Include="DTO_PhieuThuTien.cs" />
+    <Compile Include="DTO_PhieuXuatHang.cs" />
     <Compile Include="DTO_ThongTinTaiKhoan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DTO_Quan.cs" />

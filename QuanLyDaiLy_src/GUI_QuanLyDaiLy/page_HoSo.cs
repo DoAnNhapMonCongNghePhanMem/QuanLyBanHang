@@ -107,5 +107,12 @@ namespace QuanLyDaiLy
 
             LoadListDL();
         }
+
+        private void Txtmadl_(object sender, EventArgs e)
+        {
+            
+        }
+
+        
     }
 }

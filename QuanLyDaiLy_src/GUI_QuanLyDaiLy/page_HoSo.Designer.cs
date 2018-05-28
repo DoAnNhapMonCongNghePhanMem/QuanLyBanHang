@@ -34,6 +34,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.nmtienno = new System.Windows.Forms.NumericUpDown();
+            this.txtcmnd = new System.Windows.Forms.TextBox();
             this.btnXoa = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnCapNhat = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnTim = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -55,12 +57,10 @@
             this.txttendl = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtmadl = new System.Windows.Forms.TextBox();
-            this.txtcmnd = new System.Windows.Forms.TextBox();
-            this.nmtienno = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvdl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmtienno)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvdl)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -113,6 +113,20 @@
             this.panel2.Size = new System.Drawing.Size(719, 444);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // nmtienno
+            // 
+            this.nmtienno.Location = new System.Drawing.Point(109, 6);
+            this.nmtienno.Name = "nmtienno";
+            this.nmtienno.Size = new System.Drawing.Size(120, 20);
+            this.nmtienno.TabIndex = 25;
+            // 
+            // txtcmnd
+            // 
+            this.txtcmnd.Location = new System.Drawing.Point(515, 0);
+            this.txtcmnd.Name = "txtcmnd";
+            this.txtcmnd.Size = new System.Drawing.Size(100, 20);
+            this.txtcmnd.TabIndex = 24;
             // 
             // btnXoa
             // 
@@ -423,20 +437,7 @@
             this.txtmadl.Name = "txtmadl";
             this.txtmadl.Size = new System.Drawing.Size(165, 20);
             this.txtmadl.TabIndex = 1;
-            // 
-            // txtcmnd
-            // 
-            this.txtcmnd.Location = new System.Drawing.Point(515, 0);
-            this.txtcmnd.Name = "txtcmnd";
-            this.txtcmnd.Size = new System.Drawing.Size(100, 20);
-            this.txtcmnd.TabIndex = 24;
-            // 
-            // nmtienno
-            // 
-            this.nmtienno.Location = new System.Drawing.Point(109, 6);
-            this.nmtienno.Name = "nmtienno";
-            this.nmtienno.Size = new System.Drawing.Size(120, 20);
-            this.nmtienno.TabIndex = 25;
+            this.txtmadl.TextChanged += new System.EventHandler(this.Txtmadl_);
             // 
             // page_HoSo
             // 
@@ -450,8 +451,8 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvdl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmtienno)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvdl)).EndInit();
             this.ResumeLayout(false);
 
         }

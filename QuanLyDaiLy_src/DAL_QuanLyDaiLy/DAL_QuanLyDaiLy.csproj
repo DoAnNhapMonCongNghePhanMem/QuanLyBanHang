@@ -40,9 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_ChiTietXuat.cs" />
     <Compile Include="DAL_CongNo.cs" />
+    <Compile Include="DAL_DoanhSo.cs" />
     <Compile Include="DAL_LoaiDaiLy.cs" />
     <Compile Include="DAL_MatHang.cs" />
+    <Compile Include="DAL_PhieuThuTien.cs" />
+    <Compile Include="DAL_PhieuXuat.cs" />
     <Compile Include="DAL_Quan.cs" />
     <Compile Include="DAL_QuanLyTaiKhoan.cs" />
     <Compile Include="DBSqlServerUtils.cs" />
