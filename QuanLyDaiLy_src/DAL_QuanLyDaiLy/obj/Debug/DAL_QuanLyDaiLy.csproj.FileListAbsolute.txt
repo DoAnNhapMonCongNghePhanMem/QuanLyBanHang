@@ -35,3 +35,12 @@ D:\GITHUT\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\obj\Debug\DAL_QuanLyDaiLy.
 D:\GITHUT\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\obj\Debug\DAL_QuanLyDaiLy.csproj.CopyComplete
 D:\GITHUT\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\obj\Debug\DAL_QuanLyDaiLy.dll
 D:\GITHUT\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\obj\Debug\DAL_QuanLyDaiLy.pdb
+C:\Users\vu\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\bin\Debug\DAL_QuanLyDaiLy.dll
+C:\Users\vu\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\bin\Debug\DAL_QuanLyDaiLy.pdb
+C:\Users\vu\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.dll
+C:\Users\vu\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.pdb
+C:\Users\vu\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\obj\Debug\DAL_QuanLyDaiLy.csprojAssemblyReference.cache
+C:\Users\vu\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\obj\Debug\DAL_QuanLyDaiLy.csproj.CoreCompileInputs.cache
+C:\Users\vu\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\obj\Debug\DAL_QuanLyDaiLy.csproj.CopyComplete
+C:\Users\vu\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\obj\Debug\DAL_QuanLyDaiLy.dll
+C:\Users\vu\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\obj\Debug\DAL_QuanLyDaiLy.pdb

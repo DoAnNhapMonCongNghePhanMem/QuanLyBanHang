@@ -55,9 +55,12 @@
             this.txttendl = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtmadl = new System.Windows.Forms.TextBox();
+            this.txtcmnd = new System.Windows.Forms.TextBox();
+            this.nmtienno = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvdl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmtienno)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -81,6 +84,8 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.nmtienno);
+            this.panel2.Controls.Add(this.txtcmnd);
             this.panel2.Controls.Add(this.btnXoa);
             this.panel2.Controls.Add(this.btnCapNhat);
             this.panel2.Controls.Add(this.btnTim);
@@ -133,6 +138,7 @@
             this.btnXoa.Size = new System.Drawing.Size(110, 60);
             this.btnXoa.TabIndex = 23;
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnCapNhat
             // 
@@ -208,6 +214,7 @@
             this.bunifuThinButton21.Size = new System.Drawing.Size(110, 60);
             this.bunifuThinButton21.TabIndex = 20;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // dtgvdl
             // 
@@ -417,6 +424,20 @@
             this.txtmadl.Size = new System.Drawing.Size(165, 20);
             this.txtmadl.TabIndex = 1;
             // 
+            // txtcmnd
+            // 
+            this.txtcmnd.Location = new System.Drawing.Point(515, 0);
+            this.txtcmnd.Name = "txtcmnd";
+            this.txtcmnd.Size = new System.Drawing.Size(100, 20);
+            this.txtcmnd.TabIndex = 24;
+            // 
+            // nmtienno
+            // 
+            this.nmtienno.Location = new System.Drawing.Point(109, 6);
+            this.nmtienno.Name = "nmtienno";
+            this.nmtienno.Size = new System.Drawing.Size(120, 20);
+            this.nmtienno.TabIndex = 25;
+            // 
             // page_HoSo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -430,6 +451,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvdl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmtienno)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -460,5 +482,7 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnCapNhat;
         private Bunifu.Framework.UI.BunifuThinButton2 btnTim;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private System.Windows.Forms.TextBox txtcmnd;
+        private System.Windows.Forms.NumericUpDown nmtienno;
     }
 }

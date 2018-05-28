@@ -32,7 +32,7 @@ namespace DAL_QuanLyDaiLy
             cmd.Parameters.Add("@SDT", SqlDbType.VarChar).Value = daiLy.Sdt;
             cmd.Parameters.Add("@DiaChi", SqlDbType.NVarChar).Value = daiLy.DiaChi;
             cmd.Parameters.Add("@NgayTiepNhan", SqlDbType.Date).Value = ngayNhanSql;
-            cmd.Parameters.Add("@@IdLoaiDL", SqlDbType.Int).Value = daiLy.IdLoaiDL;
+            cmd.Parameters.Add("@IdLoaiDL", SqlDbType.Int).Value = daiLy.IdLoaiDL;
             cmd.Parameters.Add("@CMND", SqlDbType.NVarChar).Value = daiLy.Cmnd;
             cmd.Parameters.Add("@IdQuan", SqlDbType.Int).Value = daiLy.IdQuan;
             try
@@ -67,12 +67,18 @@ namespace DAL_QuanLyDaiLy
             result = ResultQuery.GetResultQuery(conn, query);
             return result;
         }
+
+        public static int ThemDaiLy(DAL_DaiLy dl)
+        {
+            throw new NotImplementedException();
+        }
+
         /*
-         *XoaDaiLy trả về 
-         * 0 : sửa thất bại
-         * 1 : sửa thành công
-         */
-       
+*XoaDaiLy trả về 
+* 0 : sửa thất bại
+* 1 : sửa thành công
+*/
+
         public static  int XoaDaiLy(int idDaiLy)
         {
             string query = "delete from DaiLy where IdDaiLy=" + idDaiLy;

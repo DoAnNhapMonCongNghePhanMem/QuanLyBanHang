@@ -21,6 +21,7 @@ namespace QuanLyDaiLy
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FormDangNhap());
+            Application.Run(new FormChuongTrinhQLDL());
             Console.WriteLine("khánh-------------------------------");
 
             //int a = DAL_QuanLyTaiKhoan.KiemTraDangNhap("LE CONG KHANH", "khanh181097");
