@@ -30,6 +30,25 @@ namespace DAL_QuanLyDaiLy
 
             return arrList;
         }
+        //public List<DAL_DaiLy> search(string name)
+        //{
+        //    List<DAL_DaiLy> arrList = new List<DAL_DaiLy>();
+        //    DataTable dt = new DataTable();
+        //    string query = "select * from DaiLy where TenDaiLy =" + name;
+        //    dt = ResultQuery.GetTableResult(conn, query);
+        //    int id;
+        //    string ten;
+        //    foreach (DataRow r in dt.Rows)
+        //    {
+        //        id = (int)r["IdLoaiDL"];
+        //        ten = r["TenLoaiDL"].ToString();
+        //        DTO_LoaiDL loaiDL = new DTO_LoaiDL(id, ten);
+        //        arrList.Add(loaiDL);
+        //    }
+
+        //    return arrList;
+        //}
+
         /*
          * ThemLoaiDaiLy trả về 
          * 1:thành công
@@ -77,8 +96,15 @@ namespace DAL_QuanLyDaiLy
 
         public static string GetTenById(int id)
         {
+            //DTO_LoaiDL loaidl = null;
             string query = "select TenLoaiDL from LoaiDaiLy where IdLoaiDL=" + id;
             DataTable dt = ResultQuery.GetTableResult(conn,query);
+            //foreach (DataRow item in dt.Rows)
+            //{
+            //    loaidl = new DTO_LoaiDL(item);
+            //    return loaidl;
+            //}
+            //return loaidl;
             DataRow r = dt.Rows[0];
             return r["TenLoaiDL"].ToString();
         }

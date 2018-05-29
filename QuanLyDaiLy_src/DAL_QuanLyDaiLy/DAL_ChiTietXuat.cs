@@ -59,10 +59,12 @@ namespace DAL_QuanLyDaiLy
          */
         public static int XoaChiTietXuat(int idPhieuXuat)
         {
+
             string query = "delete ChiTietXuatHang where IdPhieuXuat=" + idPhieuXuat;
             int result = ResultQuery.GetResultQuery(conn, query);
             return result;
         }
+      
         /*
          * CapNhatChiTietXuat trả về 
          * 1:thành công

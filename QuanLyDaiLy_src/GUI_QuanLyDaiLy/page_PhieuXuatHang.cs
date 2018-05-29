@@ -16,6 +16,8 @@ namespace QuanLyDaiLy
         public page_PhieuXuatHang()
         {
             InitializeComponent();
+            Loadloaidl();
+            LoadListpxh();
         }
         void LoadListpxh()
         {
@@ -23,8 +25,44 @@ namespace QuanLyDaiLy
         }
         void Loadloaidl()
         {
-            cbMaDaiLyPXH.DataSource = DAL_LoaiDaiLy.DSLoaiDaiLy();
-            cbMaDaiLyPXH.DisplayMember = "TenLoaiDL";
+            //cbMaDaiLyPXH.DataSource = DAL_LoaiDaiLy.DSLoaiDaiLy();
+            //cbMaDaiLyPXH.DisplayMember = "TenLoaiDL";
+        }
+
+        private void btnXoaPXH_Click(object sender, EventArgs e)
+        {
+            //int rowindex = DtgvPXH.CurrentCell.RowIndex;
+
+            //if (DAL_PhieuXuat.XoaPhieuXuat(rowindex) == 1)
+            //{
+            //    DtgvPXH.Rows.RemoveAt(rowindex);
+            //    MessageBox.Show("xoa thanh cong");
+            //    LoadListpxh();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("loi");
+            //}
+
+            
+
+            //int idphieuxuat = Convert.ToInt32(txtmadl.Text);
+
+            //if(DAL_PhieuXuat.XoaPhieuXuat(idphieuxuat)==1)
+            //{
+            //    MessageBox.Show("xoa thanh cong");
+            //    LoadListpxh();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("loi xoa");
+            //}
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

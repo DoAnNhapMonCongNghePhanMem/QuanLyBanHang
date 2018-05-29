@@ -84,7 +84,7 @@ namespace DAL_QuanLyDaiLy
          * 1:thành công
          * 0:thất bại
          */
-        public static int XoaCongNo(string idDL)
+        public static int XoaCongNo(int idDL)
         {
             string query = "delete CongNo where IdDaiLy=" + idDL;
             int result = ResultQuery.GetResultQuery(conn, query);

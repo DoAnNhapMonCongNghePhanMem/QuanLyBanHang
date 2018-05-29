@@ -34,3 +34,9 @@ C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiL
 C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.csprojResolveAssemblyReference.cache
 C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.dll
 C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.pdb
+C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.dll
+C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.pdb
+C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.csprojAssemblyReference.cache
+C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.csproj.CoreCompileInputs.cache
+C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.dll
+C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.pdb

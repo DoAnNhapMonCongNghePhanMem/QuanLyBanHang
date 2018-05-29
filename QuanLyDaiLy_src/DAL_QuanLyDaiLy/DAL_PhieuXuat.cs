@@ -60,6 +60,10 @@ namespace DAL_QuanLyDaiLy
             int result = ResultQuery.GetResultQuery(conn, query);
             return result;
         }
+        //public void Xoapxbyid(int id)
+        //{
+        //    string query = "delete PhieuXuatHang where IdPhieuXuat=" + id;
+        //}
         /*
          * CapNhatPhieuXuat trả về 
          * 1:thành công

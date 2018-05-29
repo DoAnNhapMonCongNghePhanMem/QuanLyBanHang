@@ -41,6 +41,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtsearch = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvMatHang)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -93,6 +94,7 @@
             this.dtgvMatHang.Name = "dtgvMatHang";
             this.dtgvMatHang.Size = new System.Drawing.Size(587, 276);
             this.dtgvMatHang.TabIndex = 17;
+            this.dtgvMatHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvMatHang_CellContentClick);
             // 
             // btnThemMatHang
             // 
@@ -118,6 +120,7 @@
             this.btnThemMatHang.Size = new System.Drawing.Size(110, 60);
             this.btnThemMatHang.TabIndex = 20;
             this.btnThemMatHang.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnThemMatHang.Click += new System.EventHandler(this.btnThemMatHang_Click);
             // 
             // btnTimMatHang
             // 
@@ -143,6 +146,7 @@
             this.btnTimMatHang.Size = new System.Drawing.Size(110, 60);
             this.btnTimMatHang.TabIndex = 21;
             this.btnTimMatHang.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnTimMatHang.Click += new System.EventHandler(this.btnTimMatHang_Click);
             // 
             // btnCapNhatMatHang
             // 
@@ -168,6 +172,7 @@
             this.btnCapNhatMatHang.Size = new System.Drawing.Size(110, 60);
             this.btnCapNhatMatHang.TabIndex = 22;
             this.btnCapNhatMatHang.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnCapNhatMatHang.Click += new System.EventHandler(this.btnCapNhatMatHang_Click);
             // 
             // btnXoaMatHang
             // 
@@ -193,9 +198,11 @@
             this.btnXoaMatHang.Size = new System.Drawing.Size(110, 60);
             this.btnXoaMatHang.TabIndex = 23;
             this.btnXoaMatHang.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnXoaMatHang.Click += new System.EventHandler(this.btnXoaMatHang_Click);
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.txtsearch);
             this.panel2.Controls.Add(this.btnXoaMatHang);
             this.panel2.Controls.Add(this.btnCapNhatMatHang);
             this.panel2.Controls.Add(this.btnTimMatHang);
@@ -230,6 +237,13 @@
             this.panel1.Size = new System.Drawing.Size(719, 52);
             this.panel1.TabIndex = 1;
             // 
+            // txtsearch
+            // 
+            this.txtsearch.Location = new System.Drawing.Point(448, 70);
+            this.txtsearch.Name = "txtsearch";
+            this.txtsearch.Size = new System.Drawing.Size(165, 20);
+            this.txtsearch.TabIndex = 24;
+            // 
             // page_MatHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -260,5 +274,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txtsearch;
     }
 }

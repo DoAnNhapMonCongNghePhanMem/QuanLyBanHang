@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(page_HoSo));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.nmtienno = new System.Windows.Forms.NumericUpDown();
+            this.txttien = new System.Windows.Forms.TextBox();
             this.txtcmnd = new System.Windows.Forms.TextBox();
             this.btnXoa = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnCapNhat = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -45,8 +45,7 @@
             this.txtdiachi = new System.Windows.Forms.TextBox();
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.cmbloaidl = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtemail = new System.Windows.Forms.TextBox();
+            this.txtsearch = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtngay = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -57,9 +56,9 @@
             this.txttendl = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtmadl = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nmtienno)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvdl)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,7 +83,8 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.nmtienno);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.txttien);
             this.panel2.Controls.Add(this.txtcmnd);
             this.panel2.Controls.Add(this.btnXoa);
             this.panel2.Controls.Add(this.btnCapNhat);
@@ -95,8 +95,7 @@
             this.panel2.Controls.Add(this.txtdiachi);
             this.panel2.Controls.Add(this.bunifuButton2);
             this.panel2.Controls.Add(this.cmbloaidl);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.txtemail);
+            this.panel2.Controls.Add(this.txtsearch);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.txtngay);
             this.panel2.Controls.Add(this.label4);
@@ -114,18 +113,19 @@
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // nmtienno
+            // txttien
             // 
-            this.nmtienno.Location = new System.Drawing.Point(109, 6);
-            this.nmtienno.Name = "nmtienno";
-            this.nmtienno.Size = new System.Drawing.Size(120, 20);
-            this.nmtienno.TabIndex = 25;
+            this.txttien.Location = new System.Drawing.Point(450, 81);
+            this.txttien.Name = "txttien";
+            this.txttien.Size = new System.Drawing.Size(165, 20);
+            this.txttien.TabIndex = 26;
+            this.txttien.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtcmnd
             // 
-            this.txtcmnd.Location = new System.Drawing.Point(515, 0);
+            this.txtcmnd.Location = new System.Drawing.Point(450, 0);
             this.txtcmnd.Name = "txtcmnd";
-            this.txtcmnd.Size = new System.Drawing.Size(100, 20);
+            this.txtcmnd.Size = new System.Drawing.Size(165, 20);
             this.txtcmnd.TabIndex = 24;
             // 
             // btnXoa
@@ -178,6 +178,7 @@
             this.btnCapNhat.Size = new System.Drawing.Size(110, 60);
             this.btnCapNhat.TabIndex = 22;
             this.btnCapNhat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // btnTim
             // 
@@ -197,12 +198,13 @@
             this.btnTim.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(218)))));
             this.btnTim.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnTim.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(218)))));
-            this.btnTim.Location = new System.Drawing.Point(236, 379);
+            this.btnTim.Location = new System.Drawing.Point(109, 379);
             this.btnTim.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(110, 60);
             this.btnTim.TabIndex = 21;
             this.btnTim.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // bunifuThinButton21
             // 
@@ -222,7 +224,7 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(218)))));
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(84)))), ((int)(((byte)(218)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(96, 379);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(246, 379);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(110, 60);
@@ -239,6 +241,7 @@
             this.dtgvdl.Name = "dtgvdl";
             this.dtgvdl.Size = new System.Drawing.Size(587, 162);
             this.dtgvdl.TabIndex = 17;
+            this.dtgvdl.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvdl_CellContentClick);
             // 
             // label5
             // 
@@ -282,13 +285,13 @@
             this.bunifuButton2.IdleIconRightImage = null;
             this.bunifuButton2.Location = new System.Drawing.Point(342, 124);
             this.bunifuButton2.Name = "bunifuButton2";
-            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties1.BorderRadius = 1;
-            stateProperties1.BorderThickness = 1;
-            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties1.IconLeftImage = null;
-            stateProperties1.IconRightImage = null;
-            this.bunifuButton2.onHoverState = stateProperties1;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties3.BorderRadius = 1;
+            stateProperties3.BorderThickness = 1;
+            stateProperties3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties3.IconLeftImage = null;
+            stateProperties3.IconRightImage = null;
+            this.bunifuButton2.onHoverState = stateProperties3;
             this.bunifuButton2.Size = new System.Drawing.Size(83, 21);
             this.bunifuButton2.TabIndex = 14;
             this.bunifuButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -301,24 +304,13 @@
             this.cmbloaidl.Size = new System.Drawing.Size(165, 21);
             this.cmbloaidl.TabIndex = 13;
             // 
-            // label6
+            // txtsearch
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(339, 80);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 19);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Email";
-            // 
-            // txtemail
-            // 
-            this.txtemail.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtemail.Location = new System.Drawing.Point(450, 79);
-            this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(165, 20);
-            this.txtemail.TabIndex = 11;
+            this.txtsearch.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtsearch.Location = new System.Drawing.Point(31, 409);
+            this.txtsearch.Name = "txtsearch";
+            this.txtsearch.Size = new System.Drawing.Size(71, 20);
+            this.txtsearch.TabIndex = 11;
             // 
             // label7
             // 
@@ -381,13 +373,13 @@
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.Location = new System.Drawing.Point(31, 124);
             this.bunifuButton1.Name = "bunifuButton1";
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties2.BorderRadius = 1;
-            stateProperties2.BorderThickness = 1;
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties2.IconLeftImage = null;
-            stateProperties2.IconRightImage = null;
-            this.bunifuButton1.onHoverState = stateProperties2;
+            stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties4.BorderRadius = 1;
+            stateProperties4.BorderThickness = 1;
+            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties4.IconLeftImage = null;
+            stateProperties4.IconRightImage = null;
+            this.bunifuButton1.onHoverState = stateProperties4;
             this.bunifuButton1.Size = new System.Drawing.Size(69, 21);
             this.bunifuButton1.TabIndex = 6;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -439,6 +431,17 @@
             this.txtmadl.TabIndex = 1;
             this.txtmadl.TextChanged += new System.EventHandler(this.Txtmadl_);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label6.Location = new System.Drawing.Point(342, 88);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(58, 19);
+            this.label6.TabIndex = 27;
+            this.label6.Text = "Tiền Nợ";
+            // 
             // page_HoSo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -451,7 +454,6 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nmtienno)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvdl)).EndInit();
             this.ResumeLayout(false);
 
@@ -468,8 +470,7 @@
         private System.Windows.Forms.TextBox txtdiachi;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
         private System.Windows.Forms.ComboBox cmbloaidl;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtemail;
+        private System.Windows.Forms.TextBox txtsearch;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtngay;
         private System.Windows.Forms.Label label4;
@@ -484,6 +485,7 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnTim;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private System.Windows.Forms.TextBox txtcmnd;
-        private System.Windows.Forms.NumericUpDown nmtienno;
+        private System.Windows.Forms.TextBox txttien;
+        private System.Windows.Forms.Label label6;
     }
 }

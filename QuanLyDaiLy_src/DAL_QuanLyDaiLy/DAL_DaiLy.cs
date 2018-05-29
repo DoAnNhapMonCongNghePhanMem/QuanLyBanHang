@@ -81,6 +81,11 @@ namespace DAL_QuanLyDaiLy
 
         public static  int XoaDaiLy(int idDaiLy)
         {
+            DAL_ChiTietXuat.XoaChiTietXuat(idDaiLy);
+            DAL_PhieuXuat.XoaPhieuXuat(idDaiLy);
+            DAL_PhieuThuTien.XoaPhieuThu(idDaiLy);
+            DAL_CongNo.XoaCongNo(idDaiLy);
+            DAL_DoanhSo.XoaDoanhSo(idDaiLy);
             string query = "delete from DaiLy where IdDaiLy=" + idDaiLy;
             int result = ResultQuery.GetResultQuery(conn, query);
             return result;
@@ -106,6 +111,27 @@ namespace DAL_QuanLyDaiLy
             }
             return al;
         }
-
+        
+        public static ArrayList search(string name)
+        {
+            ArrayList al = new ArrayList();
+            string query = "select * from DaiLy where TenDaiLy like '%"+name+"%'";
+            DataTable tb = ResultQuery.GetTableResult(conn, query);
+            foreach (DataRow r in tb.Rows)
+            {
+                int id = (int)r["IdDaiLy"];
+                string tenDL = r["TenDaiLy"].ToString();
+                string sdt = r["SDT"].ToString();
+                string diaChi = r["DiaChi"].ToString();
+                int idquan = (int)r["IdQuan"];
+                DateTime ngayNhan = Convert.ToDateTime(r["NgayTiepNhan"]);
+                int idLoaiDL = (int)r["IdLoaiDL"];
+                string cmnd = r["CMND"].ToString();
+                float tienNo = (float)Convert.ToDouble(r["TienNo"]);
+                DTO_DaiLy dl = new DTO_DaiLy(id, idLoaiDL, tenDL, sdt, diaChi, idquan, ngayNhan, cmnd, tienNo);
+                al.Add(dl);
+            }
+            return al;
+        }
     }
 }

@@ -55,5 +55,10 @@ namespace QuanLyDaiLy
         {
             mouseDown = false;
         }
+
+        private void btnMatHang_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

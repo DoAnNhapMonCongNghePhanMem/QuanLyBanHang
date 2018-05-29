@@ -87,6 +87,7 @@
             this.btnMatHang.Size = new System.Drawing.Size(197, 90);
             this.btnMatHang.TabIndex = 4;
             this.btnMatHang.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnMatHang.Click += new System.EventHandler(this.btnMatHang_Click);
             // 
             // btnBaoCaoDoanhSo
             // 

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO_QuanLyDaiLy;
+using DAL_QuanLyDaiLy;
 
 namespace QuanLyDaiLy
 {
@@ -15,6 +17,10 @@ namespace QuanLyDaiLy
         public page_PhieuThuTien()
         {
             InitializeComponent();
+        }
+        void Loadlistptt()
+        {
+            
         }
     }
 }

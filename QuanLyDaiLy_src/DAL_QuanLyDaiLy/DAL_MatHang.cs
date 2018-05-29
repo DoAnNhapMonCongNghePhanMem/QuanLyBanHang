@@ -30,6 +30,24 @@ namespace DAL_QuanLyDaiLy
 
             return arrList;
         }
+        public static ArrayList search(string name)
+        {
+            ArrayList arrList = new ArrayList();
+            DataTable dt = new DataTable();
+            string query = "select * from DaiLy where TenMatHang like '%" + name + "%'";
+            DataTable tb = ResultQuery.GetTableResult(conn, query);
+            int id;
+            string ten;
+            foreach (DataRow r in dt.Rows)
+            {
+                id = (int)r["IdMatHang"];
+                ten = r["TenMatHang"].ToString();
+                DTO_MatHang matHang = new DTO_MatHang(id, ten);
+                arrList.Add(matHang);
+            }
+
+            return arrList;
+        }
         /*
          * ThemMatHang trả về
          * 1:thành công
@@ -59,6 +77,7 @@ namespace DAL_QuanLyDaiLy
          */
         public static int XoaMatHang(int id)
         {
+            DAL_ChiTietXuat.XoaChiTietXuat(id);
             string query = "delete MatHang where IdMatHang=" + id;
             int result = ResultQuery.GetResultQuery(conn, query);
             return result;

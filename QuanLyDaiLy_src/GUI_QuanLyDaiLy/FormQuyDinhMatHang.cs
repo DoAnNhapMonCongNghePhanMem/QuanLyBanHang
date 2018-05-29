@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL_QuanLyDaiLy;
+using DTO_QuanLyDaiLy;
 
 namespace QuanLyDaiLy
 {
@@ -50,5 +52,6 @@ namespace QuanLyDaiLy
         {
             mouseDown = false;
         }
+
     }
 }
