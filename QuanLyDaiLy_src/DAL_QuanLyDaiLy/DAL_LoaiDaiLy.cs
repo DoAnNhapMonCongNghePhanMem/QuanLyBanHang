@@ -52,11 +52,12 @@ namespace DAL_QuanLyDaiLy
         /*
          * ThemLoaiDaiLy trả về 
          * 1:thành công
-         * 0:thất bại
+         * 2:số loại đại lý vượt quá quy định
+         * 3:Tên loại đại lý đã tồn tại
          */
         public static int ThemLoaiDaiLy(string tenLoaiDL)
         {
-            int kq=0;
+            int kq;
             SqlCommand cmd = new SqlCommand("PR_InsertLoaiDaiLy", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@TenLoaiDL", SqlDbType.NVarChar).Value = tenLoaiDL;

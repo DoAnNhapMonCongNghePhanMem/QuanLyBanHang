@@ -49,6 +49,9 @@
     <Compile Include="DAL_PhieuXuat.cs" />
     <Compile Include="DAL_Quan.cs" />
     <Compile Include="DAL_QuanLyTaiKhoan.cs" />
+    <Compile Include="DAL_QuyCheToChuc.cs" />
+    <Compile Include="DAL_QuyDinhMatHang.cs" />
+    <Compile Include="DAL_QuyDinhTienNo.cs" />
     <Compile Include="DBSqlServerUtils.cs" />
     <Compile Include="DBUtils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

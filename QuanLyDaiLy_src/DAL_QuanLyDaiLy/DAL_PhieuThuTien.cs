@@ -66,12 +66,12 @@ namespace DAL_QuanLyDaiLy
          * 1:thành công
          * 0:thất bại
          */
-        public static int CapNhatPhieuThu(DTO_PhieuThuTien ptt)
-        {
-            string ngayThuSql = ptt.NgayThu.ToString("yyyy-MM-dd");
-            string query = "update PhieuThuTien set NgayThu ='" + ngayThuSql + "',SoTienThu=" + ptt.SoTienThu+ ",IdDaiLy="+ptt.IdDaiLy+" ,CMND='" + ptt.Cmnd + "' where IdPhieuThu=" + ptt.IdPhieuThu;
-            int result = ResultQuery.GetResultQuery(conn, query);
-            return result;
-        }
+        //public static int CapNhatPhieuThu(DTO_PhieuThuTien ptt)
+        //{
+        //    string ngayThuSql = ptt.NgayThu.ToString("yyyy-MM-dd");
+        //    string query = "update PhieuThuTien set NgayThu ='" + ngayThuSql + "',SoTienThu=" + ptt.SoTienThu+ ",IdDaiLy="+ptt.IdDaiLy+" ,CMND='" + ptt.Cmnd + "' where IdPhieuThu=" + ptt.IdPhieuThu;
+        //    int result = ResultQuery.GetResultQuery(conn, query);
+        //    return result;
+        //}
     }
 }

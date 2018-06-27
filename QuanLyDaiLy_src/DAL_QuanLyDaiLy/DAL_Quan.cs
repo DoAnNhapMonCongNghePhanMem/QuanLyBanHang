@@ -33,7 +33,8 @@ namespace DAL_QuanLyDaiLy
         /*
          * ThemQuan trả về 
          * 1:thành công
-         * 0:thất bại
+         * 2:số lượng quận vượt quy định
+         * 3:tên quận đã tồn tại
          */
         public static int ThemQuan(string tenQuan)
         {

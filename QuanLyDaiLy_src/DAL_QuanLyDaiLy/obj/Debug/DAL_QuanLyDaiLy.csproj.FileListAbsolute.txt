@@ -60,3 +60,10 @@ C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\obj\Debu
 C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\obj\Debug\DAL_QuanLyDaiLy.csproj.CopyComplete
 C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\obj\Debug\DAL_QuanLyDaiLy.dll
 C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\obj\Debug\DAL_QuanLyDaiLy.pdb
+C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\bin\Debug\DAL_QuanLyDaiLy.dll
+C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\bin\Debug\DAL_QuanLyDaiLy.pdb
+C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.dll
+C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.pdb
+C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\obj\Debug\DAL_QuanLyDaiLy.csprojResolveAssemblyReference.cache
+C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\obj\Debug\DAL_QuanLyDaiLy.dll
+C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\DAL_QuanLyDaiLy\obj\Debug\DAL_QuanLyDaiLy.pdb

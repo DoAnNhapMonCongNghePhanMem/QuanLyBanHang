@@ -10,7 +10,15 @@ namespace DTO_QuanLyDaiLy
     {
         private int idDaiLy;
         private int thang;
-        private float noDau, noCuoi, phatSinh;
+        private float tienNo;
+
+       
+        public DTO_CongNo(int id,int Thang,float tienno)
+        {
+            this.IdDaiLy = id;
+            this.Thang = Thang;
+            this.TienNo = tienno;
+        }
 
         public int IdDaiLy
         {
@@ -38,57 +46,17 @@ namespace DTO_QuanLyDaiLy
             }
         }
 
-        public float NoDau
+        public float TienNo
         {
             get
             {
-                return noDau;
+                return tienNo;
             }
 
             set
             {
-                noDau = value;
+                tienNo = value;
             }
         }
-
-        public float NoCuoi
-        {
-            get
-            {
-                return noCuoi;
-            }
-
-            set
-            {
-                noCuoi = value;
-            }
-        }
-
-        public float PhatSinh
-        {
-            get
-            {
-                return phatSinh;
-            }
-
-            set
-            {
-                phatSinh = value;
-            }
-        }
-
-        public DTO_CongNo()
-        {
-            
-        }
-        public DTO_CongNo(int id,int thang,float nodau,float nocuoi,float phatsinh)
-        {
-            this.IdDaiLy = id;
-            this.Thang = thang;
-            this.NoDau = nodau;
-            this.NoCuoi = nocuoi;
-            this.PhatSinh = phatsinh;
-        }
-       
     }
 }

@@ -21,7 +21,7 @@ namespace QuanLyDaiLy
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FormDangNhap());
-            Application.Run(new FormChuongTrinhQLDL());
+            //Application.Run(new FormChuongTrinhQLDL());
             Console.WriteLine("khánh-------------------------------");
 
             //int a = DAL_QuanLyTaiKhoan.KiemTraDangNhap("LE CONG KHANH", "khanh181097");
@@ -53,8 +53,24 @@ namespace QuanLyDaiLy
             //{
             //    Console.WriteLine(dl.NgayNhan);
             //}
-            string tenloai = DAL_LoaiDaiLy.GetTenById(1);
-            Console.WriteLine(tenloai);
+            //string tenloai = DAL_LoaiDaiLy.GetTenById(1);
+            //Console.WriteLine(tenloai);
+
+            //ArrayList al = DAL_DoanhSo.DoanhSo(7);
+
+            //foreach (DTO_DoanhSo ds in al)
+            //{
+            //    Console.WriteLine(ds.IdDaiLy + "," + ds.SoPhieuXuat + "," + ds.TiLe + "," + ds.TongDoanhSo + "," + ds.Thang);
+
+            //}
+
+            //ArrayList al = DAL_CongNo.CongNo(7);
+
+            //foreach (DTO_CongNo cn in al)
+            //{
+            //    Console.WriteLine(cn.IdDaiLy +","+ cn.Thang+","+cn.TienNo);
+
+            //}
         }
     }
 }

@@ -51,7 +51,8 @@ namespace DAL_QuanLyDaiLy
         /*
          * ThemMatHang trả về
          * 1:thành công
-         * 0:thất bại
+         * 2:Số lượng mặt hàng vượt quy định
+         * 3:tên mặt hàng đã tồn tại
          */
         public static int ThemMatHang(string tenMatHang)
         {

@@ -19,8 +19,8 @@ namespace DAL_QuanLyDaiLy
         }
         /*
          * 1 thêm thành công
-         * 0 tên đại lý tồn tại
-         * 
+         * 2 số lượng đại lý tại quận đó đã đủ theo quy định nên không thể thêm
+         * 3 tên đại lý tồn tại
          */
         public static int ThemDaiLy(DTO_DaiLy daiLy)
         {
@@ -47,30 +47,34 @@ namespace DAL_QuanLyDaiLy
             }
         }
         /*
-         *SuaDaiLy trả về 
-         * 0 : sửa thất bại
-         * 1 : sửa thành công
+         * Sửa đại lý
+         * 1:Sửa thành công
+         * 2:tiền nợ vượt quy định cho phép
          */
-        public static int SuaDaiLy(DTO_DaiLy newDaiLy)
+        public static int SuaDaiLy(DTO_DaiLy daiLy)
         {
-            int result;
-            int idDaiLy = newDaiLy.IdDL;
-            string tenDL = newDaiLy.TenDaiLy;
-            string sdt = newDaiLy.Sdt;
-            string diaChi = newDaiLy.DiaChi;
-            int idQuan = newDaiLy.IdQuan;
-            string ngayNhan= newDaiLy.NgayNhan.ToString("yyyy-MM-dd");
-            int idLoaiDL = newDaiLy.IdLoaiDL;
-            string cmnd = newDaiLy.Cmnd;
-            
-            string query = "UPDATE DaiLy SET TenDaiLy = N'" + tenDL + "', SDT = '" + sdt + "',DiaChi=N'" + diaChi + "',NgayTiepNhan='" + ngayNhan + "',IdLoaiDL='" + idLoaiDL + "',CMND='" + cmnd + "',IdQuan=" + idQuan + " WHERE IdDaiLy=" + idDaiLy;
-            result = ResultQuery.GetResultQuery(conn, query);
-            return result;
-        }
-
-        public static int ThemDaiLy(DAL_DaiLy dl)
-        {
-            throw new NotImplementedException();
+            int kq;
+            string ngayNhanSql = daiLy.NgayNhan.ToString("yyyy-MM-dd");
+            SqlCommand cmd = new SqlCommand("PR_UpdateDL", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@TenDaiLy", SqlDbType.NVarChar).Value = daiLy.TenDaiLy;
+            cmd.Parameters.Add("@SDT", SqlDbType.VarChar).Value = daiLy.Sdt;
+            cmd.Parameters.Add("@DiaChi", SqlDbType.NVarChar).Value = daiLy.DiaChi;
+            cmd.Parameters.Add("@IdQuan", SqlDbType.Int).Value = daiLy.IdQuan;
+            cmd.Parameters.Add("@NgayTiepNhan", SqlDbType.Date).Value = ngayNhanSql;
+            cmd.Parameters.Add("@IdLoaiDL", SqlDbType.Int).Value = daiLy.IdLoaiDL;
+            cmd.Parameters.Add("@CMND", SqlDbType.NVarChar).Value = daiLy.Cmnd;
+            cmd.Parameters.Add("@TienNo", SqlDbType.Float).Value = daiLy.Cmnd;
+            try
+            {
+                conn.Open();
+                kq = cmd.ExecuteNonQuery();
+                return kq;
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
 
         /*
@@ -84,7 +88,7 @@ namespace DAL_QuanLyDaiLy
             DAL_ChiTietXuat.XoaChiTietXuat(idDaiLy);
             DAL_PhieuXuat.XoaPhieuXuat(idDaiLy);
             DAL_PhieuThuTien.XoaPhieuThu(idDaiLy);
-            DAL_CongNo.XoaCongNo(idDaiLy);
+            //DAL_CongNo.XoaCongNo(idDaiLy);
             DAL_DoanhSo.XoaDoanhSo(idDaiLy);
             string query = "delete from DaiLy where IdDaiLy=" + idDaiLy;
             int result = ResultQuery.GetResultQuery(conn, query);

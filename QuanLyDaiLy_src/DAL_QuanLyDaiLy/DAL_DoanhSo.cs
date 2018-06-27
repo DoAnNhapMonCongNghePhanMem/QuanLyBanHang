@@ -70,5 +70,36 @@ namespace DAL_QuanLyDaiLy
             int result = ResultQuery.GetResultQuery(conn, query);
             return result;
         }
+
+        public static ArrayList DoanhSo(int thang)
+        {
+            ArrayList arrList = new ArrayList();
+            DataTable dt = new DataTable();
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("PR_BaoCaoDoanhSo", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@Thang", SqlDbType.Int).Value = thang;
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                sda.Fill(dt);
+                foreach(DataRow r in dt.Rows)
+                {
+                    int idDL = (int)r["idDL"];
+                    float TongTien = (float)Convert.ToDouble(r["TongTien"]);
+                    int SoPhieuXuat = (int)r["SoPhieuXuat"];
+                    float tyle = (float)Convert.ToDouble(r["tyle"]);
+                    int Thang = (int)r["Thang"];
+                    //Console.WriteLine(tyle);
+                    DTO_DoanhSo dso = new DTO_DoanhSo(idDL, Thang, TongTien,SoPhieuXuat, tyle);
+                    arrList.Add(dso);
+                }
+                return arrList;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
     }
 }

@@ -85,7 +85,11 @@ namespace DTO_QuanLyDaiLy
         }
         public DTO_DoanhSo(int idDaiLy,int thang,float tongDoanhSo,int soPhieuXuat,float tiLe)
         {
-
+            this.idDaiLy = idDaiLy;
+            this.thang = thang;
+            this.tongDoanhSo = tongDoanhSo;
+            this.soPhieuXuat = soPhieuXuat;
+            this.tiLe = tiLe;
         }
     }
 }
