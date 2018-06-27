@@ -48,7 +48,7 @@ namespace DAL_QuanLyDaiLy
         //public static int ThemCongNo(DTO_CongNo congNo)
         //{
         //    int kq ;
-          
+
         //    SqlCommand cmd = new SqlCommand("PR_InsertCongNo", conn);
         //    cmd.CommandType = CommandType.StoredProcedure;
         //    cmd.Parameters.Add("@IdDaiLy", SqlDbType.Int).Value = congNo.IdDaiLy;
@@ -67,7 +67,7 @@ namespace DAL_QuanLyDaiLy
         //        conn.Close();
         //    }
         //}
-        
+
         ///*
         // * CapNhatCongNo trả về
         // * 1:thành công
@@ -106,8 +106,9 @@ namespace DAL_QuanLyDaiLy
                 foreach(DataRow r in tb.Rows)
                 {
                     int idDL = (int)r["IdDL"];
-                    float tienno = (float)Convert.ToDouble(r["tienno"]);
-                    DTO_CongNo cn = new DTO_CongNo(idDL, Thang, tienno);
+                    float noDau = (float)Convert.ToDouble(r["NoDau"]);
+                    float noCuoi= (float)Convert.ToDouble(r["NoCuoi"]);
+                    DTO_CongNo cn = new DTO_CongNo(idDL, Thang, noDau,noCuoi);
                     arr.Add(cn);
                 }
                 return arr;

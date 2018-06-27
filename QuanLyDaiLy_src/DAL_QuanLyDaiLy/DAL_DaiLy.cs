@@ -89,7 +89,7 @@ namespace DAL_QuanLyDaiLy
             DAL_PhieuXuat.XoaPhieuXuat(idDaiLy);
             DAL_PhieuThuTien.XoaPhieuThu(idDaiLy);
             //DAL_CongNo.XoaCongNo(idDaiLy);
-            DAL_DoanhSo.XoaDoanhSo(idDaiLy);
+            //DAL_DoanhSo.XoaDoanhSo(idDaiLy);
             string query = "delete from DaiLy where IdDaiLy=" + idDaiLy;
             int result = ResultQuery.GetResultQuery(conn, query);
             return result;
