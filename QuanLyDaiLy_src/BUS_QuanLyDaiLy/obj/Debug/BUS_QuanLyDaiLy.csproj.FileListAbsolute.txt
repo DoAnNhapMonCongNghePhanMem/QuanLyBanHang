@@ -74,3 +74,12 @@ C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\BUS_QuanLyDaiLy\bin\Debug\D
 C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\BUS_QuanLyDaiLy\obj\Debug\BUS_QuanLyDaiLy.csprojResolveAssemblyReference.cache
 C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\BUS_QuanLyDaiLy\obj\Debug\BUS_QuanLyDaiLy.dll
 C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\BUS_QuanLyDaiLy\obj\Debug\BUS_QuanLyDaiLy.pdb
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\BUS_QuanLyDaiLy\bin\Debug\BUS_QuanLyDaiLy.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\BUS_QuanLyDaiLy\bin\Debug\BUS_QuanLyDaiLy.pdb
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\BUS_QuanLyDaiLy\bin\Debug\DAL_QuanLyDaiLy.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\BUS_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\BUS_QuanLyDaiLy\bin\Debug\DAL_QuanLyDaiLy.pdb
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\BUS_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.pdb
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\BUS_QuanLyDaiLy\obj\Debug\BUS_QuanLyDaiLy.csprojResolveAssemblyReference.cache
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\BUS_QuanLyDaiLy\obj\Debug\BUS_QuanLyDaiLy.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\BUS_QuanLyDaiLy\obj\Debug\BUS_QuanLyDaiLy.pdb

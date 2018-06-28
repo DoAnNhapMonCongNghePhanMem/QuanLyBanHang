@@ -1,104 +1,223 @@
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\QuanLyDaiLy.exe.config
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\QuanLyDaiLy.exe
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\QuanLyDaiLy.pdb
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\BUS_QuanLyDaiLy.dll
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DAL_QuanLyDaiLy.dll
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.dll
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\Bunifu.Core.dll
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\BUS_QuanLyDaiLy.pdb
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DAL_QuanLyDaiLy.pdb
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.pdb
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\GUI_QuanLyDaiLy.csprojResolveAssemblyReference.cache
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormChuongTrinhQLDL.resources
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormDangNhap.resources
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormKetXuat.resources
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormLuuTru.resources
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormQuyDinhTienNo.resources
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormToChuc.resources
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormTroGiup.resources
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_BaoCaoCongNo.resources
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_BaoCaoDoanhSo.resources
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_DoiMatKhau.resources
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_GioiThieu.resources
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_HoSo.resources
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_HuongDanSuDung.resources
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_MatHang.resources
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_PhieuThuTien.resources
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_PhieuXuatHang.resources
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_QuyChe.resources
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.Properties.Resources.resources
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormQuyCheToChuc.resources
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormQuyDinhMatHang.resources
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\GUI_QuanLyDaiLy.csproj.GenerateResource.Cache
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.exe
-C:\Users\leeco\Desktop\New folder (2)\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.pdb
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\QuanLyDaiLy.exe.config
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\QuanLyDaiLy.exe
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\QuanLyDaiLy.pdb
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\BUS_QuanLyDaiLy.dll
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DAL_QuanLyDaiLy.dll
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.dll
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\Bunifu.Core.dll
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\BUS_QuanLyDaiLy.pdb
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DAL_QuanLyDaiLy.pdb
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.pdb
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\GUI_QuanLyDaiLy.csprojAssemblyReference.cache
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormChuongTrinhQLDL.resources
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormDangNhap.resources
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormKetXuat.resources
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormLuuTru.resources
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormQuyDinhTienNo.resources
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormToChuc.resources
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormTroGiup.resources
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_BaoCaoCongNo.resources
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_BaoCaoDoanhSo.resources
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_DoiMatKhau.resources
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_GioiThieu.resources
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_HoSo.resources
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_HuongDanSuDung.resources
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_MatHang.resources
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_PhieuThuTien.resources
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_PhieuXuatHang.resources
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_QuyChe.resources
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.Properties.Resources.resources
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormQuyCheToChuc.resources
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormQuyDinhMatHang.resources
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\GUI_QuanLyDaiLy.csproj.GenerateResource.cache
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\GUI_QuanLyDaiLy.csproj.CoreCompileInputs.cache
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\GUI_QuanLyDaiLy.csproj.CopyComplete
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.exe
-C:\Users\vu\Desktop\Githut5\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.pdb
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\QuanLyDaiLy.exe.config
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.exe
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.pdb
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\GUI_QuanLyDaiLy.csprojResolveAssemblyReference.cache
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormChuongTrinhQLDL.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormDangNhap.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormKetXuat.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormLuuTru.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormQuyDinhTienNo.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormToChuc.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormTroGiup.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_BaoCaoCongNo.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_BaoCaoDoanhSo.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_DoiMatKhau.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_GioiThieu.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_HoSo.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_HuongDanSuDung.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_MatHang.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_PhieuThuTien.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_PhieuXuatHang.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.page_QuyChe.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.Properties.Resources.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormQuyCheToChuc.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.FormQuyDinhMatHang.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\GUI_QuanLyDaiLy.csproj.GenerateResource.Cache
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\QuanLyDaiLy.exe
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\QuanLyDaiLy.pdb
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\BUS_QuanLyDaiLy.dll
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DAL_QuanLyDaiLy.dll
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.dll
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\Bunifu.Core.dll
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\BUS_QuanLyDaiLy.pdb
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DAL_QuanLyDaiLy.pdb
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.pdb
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\QuanLyDaiLy.exe.config
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\QuanLyDaiLy.exe
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\QuanLyDaiLy.pdb
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\BUS_QuanLyDaiLy.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DAL_QuanLyDaiLy.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Data.v18.1.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Printing.v18.1.Core.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Utils.v18.1.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraEditors.v18.1.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Pdf.v18.1.Core.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Sparkline.v18.1.Core.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\BUS_QuanLyDaiLy.pdb
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DAL_QuanLyDaiLy.pdb
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.pdb
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Data.v18.1.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Printing.v18.1.Core.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Utils.v18.1.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraEditors.v18.1.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Pdf.v18.1.Core.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Sparkline.v18.1.Core.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.Data.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.Data.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.Data.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.Data.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.Printing.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.Printing.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.Printing.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.Printing.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.Utils.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.Utils.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.Utils.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.Utils.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.XtraEditors.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.XtraEditors.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.XtraEditors.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.XtraEditors.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.Pdf.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.Pdf.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.Pdf.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.Pdf.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.Sparkline.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.Sparkline.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.Sparkline.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.Sparkline.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\GUI_QuanLyDaiLy.csprojResolveAssemblyReference.cache
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.Properties.Resources.resources
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.TrangChuQuanLy.resources
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\GUI_QuanLyDaiLy.csproj.GenerateResource.Cache
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.exe
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.pdb
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Images.v18.1.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraBars.v18.1.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraBars.v18.1.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.XtraBars.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.XtraBars.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.XtraBars.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.XtraBars.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.exe.licenses
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.Login.resources
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.fupdateAcount.resources
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraGrid.v18.1.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraLayout.v18.1.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraPrinting.v18.1.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.RichEdit.v18.1.Core.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraTreeList.v18.1.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Office.v18.1.Core.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraGrid.v18.1.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraLayout.v18.1.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraPrinting.v18.1.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.RichEdit.v18.1.Core.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraTreeList.v18.1.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Office.v18.1.Core.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.XtraGrid.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.XtraGrid.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.XtraGrid.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.XtraGrid.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.XtraLayout.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.XtraLayout.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.XtraLayout.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.XtraLayout.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.XtraPrinting.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.XtraPrinting.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.XtraPrinting.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.XtraPrinting.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.RichEdit.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.RichEdit.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.RichEdit.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.RichEdit.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.XtraTreeList.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.XtraTreeList.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.XtraTreeList.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.XtraTreeList.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.Office.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.Office.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.Office.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.Office.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Charts.v18.1.Core.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Dashboard.v18.1.Core.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Dashboard.v18.1.Win.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.DataAccess.v18.1.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.DataAccess.v18.1.UI.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Map.v18.1.Core.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.PivotGrid.v18.1.Core.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.TreeMap.v18.1.Core.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Utils.v18.1.UI.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Xpo.v18.1.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraCharts.v18.1.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraCharts.v18.1.UI.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraCharts.v18.1.Wizard.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraGauges.v18.1.Core.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraGauges.v18.1.Presets.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraGauges.v18.1.Win.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraMap.v18.1.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraPivotGrid.v18.1.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraReports.v18.1.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraRichEdit.v18.1.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraTreeMap.v18.1.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.CodeParser.v18.1.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Diagram.v18.1.Core.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraDiagram.v18.1.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraVerticalGrid.v18.1.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraNavBar.v18.1.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Dashboard.v18.1.Core.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Dashboard.v18.1.Win.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.DataAccess.v18.1.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.DataAccess.v18.1.UI.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Map.v18.1.Core.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.PivotGrid.v18.1.Core.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.TreeMap.v18.1.Core.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Utils.v18.1.UI.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Xpo.v18.1.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraCharts.v18.1.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraCharts.v18.1.UI.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraCharts.v18.1.Wizard.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraGauges.v18.1.Core.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraGauges.v18.1.Presets.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraGauges.v18.1.Win.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraMap.v18.1.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraPivotGrid.v18.1.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraReports.v18.1.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraRichEdit.v18.1.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraTreeMap.v18.1.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.Diagram.v18.1.Core.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraDiagram.v18.1.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraVerticalGrid.v18.1.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\DevExpress.XtraNavBar.v18.1.xml
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.Dashboard.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.Dashboard.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.Dashboard.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.Dashboard.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.Dashboard.v18.1.Win.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.Dashboard.v18.1.Win.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.Dashboard.v18.1.Win.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.Dashboard.v18.1.Win.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.DataAccess.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.DataAccess.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.DataAccess.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.DataAccess.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.DataAccess.v18.1.UI.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.DataAccess.v18.1.UI.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.DataAccess.v18.1.UI.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.DataAccess.v18.1.UI.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.Map.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.Map.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.Map.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.Map.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.PivotGrid.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.PivotGrid.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.PivotGrid.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.PivotGrid.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.Utils.v18.1.UI.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.Utils.v18.1.UI.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.Utils.v18.1.UI.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.Utils.v18.1.UI.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.Xpo.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.Xpo.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.Xpo.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.Xpo.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.XtraCharts.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.XtraCharts.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.XtraCharts.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.XtraCharts.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.XtraCharts.v18.1.Wizard.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.XtraCharts.v18.1.Wizard.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.XtraCharts.v18.1.Wizard.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.XtraCharts.v18.1.Wizard.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.XtraGauges.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.XtraGauges.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.XtraGauges.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.XtraGauges.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.XtraGauges.v18.1.Presets.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.XtraGauges.v18.1.Presets.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.XtraGauges.v18.1.Presets.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.XtraGauges.v18.1.Presets.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.XtraPivotGrid.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.XtraPivotGrid.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.XtraPivotGrid.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.XtraPivotGrid.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.XtraReports.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.XtraReports.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.XtraReports.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.XtraReports.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.XtraRichEdit.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.XtraRichEdit.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.XtraRichEdit.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.XtraRichEdit.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.Diagram.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.Diagram.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.Diagram.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.Diagram.v18.1.Core.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.XtraVerticalGrid.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.XtraVerticalGrid.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.XtraVerticalGrid.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.XtraVerticalGrid.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\de\DevExpress.XtraNavBar.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpress.XtraNavBar.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.XtraNavBar.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.XtraNavBar.v18.1.resources.dll
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.baocaocongno.resources
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QLDAILY.phieuthutien.resources
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.phieuxuathang.resources
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.hosodl.resources
