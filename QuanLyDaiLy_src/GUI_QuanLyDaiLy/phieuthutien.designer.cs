@@ -1,4 +1,4 @@
-﻿namespace QLDAILY
+﻿namespace QuanLyDaiLy
 {
     partial class phieuthutien
     {
@@ -92,7 +92,7 @@
             this.ribbon.MaxItemId = 1;
             this.ribbon.Name = "ribbon";
             this.ribbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.MacOffice;
-            this.ribbon.Size = new System.Drawing.Size(788, 49);
+            this.ribbon.Size = new System.Drawing.Size(779, 49);
             // 
             // panel1
             // 
@@ -450,7 +450,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(788, 510);
+            this.ClientSize = new System.Drawing.Size(779, 510);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel1);
@@ -459,6 +459,7 @@
             this.Name = "phieuthutien";
             this.Ribbon = this.ribbon;
             this.Text = "phieuthutien";
+         //   this.Load += new System.EventHandler(this.phieuthutien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);

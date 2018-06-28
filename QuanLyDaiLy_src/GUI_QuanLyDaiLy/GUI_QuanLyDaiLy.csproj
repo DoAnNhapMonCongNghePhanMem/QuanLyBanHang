@@ -107,6 +107,12 @@
     <Compile Include="Login.designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="MatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatHang.Designer.cs">
+      <DependentUpon>MatHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="phieuthutien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuyCheToChuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuyCheToChuc.Designer.cs">
+      <DependentUpon>QuyCheToChuc.cs</DependentUpon>
+    </Compile>
     <Compile Include="TrangChuQuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +151,9 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MatHang.resx">
+      <DependentUpon>MatHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="phieuthutien.resx">
       <DependentUpon>phieuthutien.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +171,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="QuyCheToChuc.resx">
+      <DependentUpon>QuyCheToChuc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TrangChuQuanLy.resx">
       <DependentUpon>TrangChuQuanLy.cs</DependentUpon>
     </EmbeddedResource>

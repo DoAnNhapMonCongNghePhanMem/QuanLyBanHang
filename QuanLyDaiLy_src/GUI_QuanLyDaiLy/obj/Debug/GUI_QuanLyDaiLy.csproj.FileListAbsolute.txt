@@ -218,6 +218,8 @@ E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\es\DevExpres
 E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.XtraNavBar.v18.1.resources.dll
 E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.XtraNavBar.v18.1.resources.dll
 E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.baocaocongno.resources
-E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QLDAILY.phieuthutien.resources
 E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.phieuxuathang.resources
 E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.hosodl.resources
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.MatHang.resources
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.phieuthutien.resources
+E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.QuyCheToChuc.resources

@@ -7,18 +7,15 @@ using System.Text;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraBars;
+using DevExpress.XtraEditors;
 
 namespace QuanLyDaiLy
-
 {
-    public partial class phieuthutien : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class QuyCheMatHang : DevExpress.XtraEditors.XtraForm
     {
-        public phieuthutien()
+        public QuyCheMatHang()
         {
             InitializeComponent();
         }
-
-       
     }
 }

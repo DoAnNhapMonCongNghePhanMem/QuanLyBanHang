@@ -7,18 +7,20 @@ using System.Text;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraBars;
+using DevExpress.XtraEditors;
 
 namespace QuanLyDaiLy
-
 {
-    public partial class phieuthutien : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class QuyCheToChuc : DevExpress.XtraEditors.XtraForm
     {
-        public phieuthutien()
+        public QuyCheToChuc()
         {
             InitializeComponent();
         }
 
-       
+        private void labelControl8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
