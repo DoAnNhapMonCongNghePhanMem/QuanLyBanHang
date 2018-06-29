@@ -209,7 +209,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Name = "QuyCheToChuc";
-            this.Text = "QuyCheToChuc";
+            this.Text = "ẻ";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtsdt.Properties)).EndInit();

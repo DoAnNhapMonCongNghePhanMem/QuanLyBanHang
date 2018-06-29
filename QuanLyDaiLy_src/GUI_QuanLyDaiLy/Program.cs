@@ -1,4 +1,4 @@
-﻿using DAL_QuanLyDaiLy;
+﻿using BUS_QuanLyDaiLy;
 using DTO_QuanLyDaiLy;
 using System;
 using System.Collections;
@@ -20,7 +20,10 @@ namespace QuanLyDaiLy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QuyCheToChuc());
+           Application.Run(new hosodl());
+            //Application.Run(new phieuthutien());
+            //Application.Run(new baocaocongno());
+            //Application.Run(new phieuxuathang());
             //Application.Run(new FormChuongTrinhQLDL());
             Console.WriteLine("khánh-------------------------------");
 

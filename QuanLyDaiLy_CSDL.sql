@@ -278,7 +278,7 @@ print @rs
 go
 ------------------------------------------------------------------------------------
 --LOẠI ĐẠI LÝ
-alter proc PR_InsertLoaiDaiLy
+create proc PR_InsertLoaiDaiLy
 @TenLoaiDL nvarchar(50) 
 as
 begin

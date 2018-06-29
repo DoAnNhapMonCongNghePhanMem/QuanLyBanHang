@@ -17,11 +17,17 @@ namespace DAL_QuanLyDaiLy
         {
 
         }
+
+        public static int ThemDaiLy()
+        {
+            throw new NotImplementedException();
+        }
+
         /*
-         * 1 thêm thành công
-         * 2 số lượng đại lý tại quận đó đã đủ theo quy định nên không thể thêm
-         * 3 tên đại lý tồn tại
-         */
+* 1 thêm thành công
+* 2 số lượng đại lý tại quận đó đã đủ theo quy định nên không thể thêm
+* 3 tên đại lý tồn tại
+*/
         public static int ThemDaiLy(DTO_DaiLy daiLy)
         {
             int kq;

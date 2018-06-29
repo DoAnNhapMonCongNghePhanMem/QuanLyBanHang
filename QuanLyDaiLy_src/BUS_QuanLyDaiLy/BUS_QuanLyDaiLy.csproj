@@ -40,6 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="arraylist.cs" />
+    <Compile Include="BUS_LoaiDL.cs" />
+    <Compile Include="BUS_PhieuThuTien.cs" />
+    <Compile Include="BUS_PhieuXuat.cs" />
+    <Compile Include="BUS_Quan.cs" />
+    <Compile Include="BUS_DaiLy.cs" />
+    <Compile Include="BUS_Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -51,6 +58,9 @@
       <Project>{026a9d5d-fd95-4edc-a19b-ea2106cfb633}</Project>
       <Name>DTO_QuanLyDaiLy</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

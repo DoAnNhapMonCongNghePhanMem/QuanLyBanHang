@@ -33,53 +33,48 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txtdiachi = new DevExpress.XtraEditors.TextEdit();
             this.panel6 = new System.Windows.Forms.Panel();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.txtsotien = new DevExpress.XtraEditors.TextEdit();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtmail = new DevExpress.XtraEditors.TextEdit();
+            this.txtcmnd = new DevExpress.XtraEditors.TextEdit();
             this.panel2 = new System.Windows.Forms.Panel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.txtsdt = new DevExpress.XtraEditors.TextEdit();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.txtngaythu = new DevExpress.XtraEditors.TextEdit();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.cblistdaily = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cmblistdl = new System.Windows.Forms.ComboBox();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btnExit = new DevExpress.XtraEditors.SimpleButton();
             this.btnModify = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.dtgvdl = new System.Windows.Forms.DataGridView();
+            this.txtmaphieu = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.txtsearch = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtdiachi.Properties)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtsotien.Properties)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtmail.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtcmnd.Properties)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtsdt.Properties)).BeginInit();
             this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtngaythu.Properties)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cblistdaily.Properties)).BeginInit();
             this.panel7.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvdl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtmaphieu.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtsearch.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -92,10 +87,11 @@
             this.ribbon.MaxItemId = 1;
             this.ribbon.Name = "ribbon";
             this.ribbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.MacOffice;
-            this.ribbon.Size = new System.Drawing.Size(779, 49);
+            this.ribbon.Size = new System.Drawing.Size(810, 49);
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.labelControl6);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel3);
@@ -105,13 +101,13 @@
             this.panel1.Location = new System.Drawing.Point(10, 55);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(725, 157);
+            this.panel1.Size = new System.Drawing.Size(725, 206);
             this.panel1.TabIndex = 1;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.labelControl3);
-            this.panel4.Controls.Add(this.textEdit1);
+            this.panel4.Controls.Add(this.txtdiachi);
             this.panel4.Location = new System.Drawing.Point(3, 100);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
@@ -130,20 +126,20 @@
             this.labelControl3.TabIndex = 5;
             this.labelControl3.Text = "Địa chỉ :";
             // 
-            // textEdit1
+            // txtdiachi
             // 
-            this.textEdit1.Location = new System.Drawing.Point(109, 10);
-            this.textEdit1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(209, 26);
-            this.textEdit1.TabIndex = 4;
+            this.txtdiachi.Location = new System.Drawing.Point(109, 10);
+            this.txtdiachi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtdiachi.Name = "txtdiachi";
+            this.txtdiachi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtdiachi.Properties.Appearance.Options.UseFont = true;
+            this.txtdiachi.Size = new System.Drawing.Size(209, 26);
+            this.txtdiachi.TabIndex = 4;
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.labelControl5);
-            this.panel6.Controls.Add(this.textEdit2);
+            this.panel6.Controls.Add(this.txtsotien);
             this.panel6.Location = new System.Drawing.Point(351, 100);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
@@ -154,7 +150,7 @@
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(22, 12);
+            this.labelControl5.Location = new System.Drawing.Point(12, 12);
             this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl5.MaximumSize = new System.Drawing.Size(86, 41);
             this.labelControl5.Name = "labelControl5";
@@ -162,20 +158,20 @@
             this.labelControl5.TabIndex = 5;
             this.labelControl5.Text = "Số tiền  :";
             // 
-            // textEdit2
+            // txtsotien
             // 
-            this.textEdit2.Location = new System.Drawing.Point(141, 7);
-            this.textEdit2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Size = new System.Drawing.Size(225, 26);
-            this.textEdit2.TabIndex = 4;
+            this.txtsotien.Location = new System.Drawing.Point(141, 7);
+            this.txtsotien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtsotien.Name = "txtsotien";
+            this.txtsotien.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtsotien.Properties.Appearance.Options.UseFont = true;
+            this.txtsotien.Size = new System.Drawing.Size(225, 26);
+            this.txtsotien.TabIndex = 4;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.labelControl2);
-            this.panel3.Controls.Add(this.txtmail);
+            this.panel3.Controls.Add(this.txtcmnd);
             this.panel3.Location = new System.Drawing.Point(351, 47);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
@@ -186,23 +182,23 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(22, 12);
+            this.labelControl2.Location = new System.Drawing.Point(9, 12);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl2.MaximumSize = new System.Drawing.Size(86, 41);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(39, 19);
-            this.labelControl2.TabIndex = 5;
-            this.labelControl2.Text = "Mail :";
+            this.labelControl2.Size = new System.Drawing.Size(60, 19);
+            this.labelControl2.TabIndex = 7;
+            this.labelControl2.Text = "CMND  :";
             // 
-            // txtmail
+            // txtcmnd
             // 
-            this.txtmail.Location = new System.Drawing.Point(141, 7);
-            this.txtmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtmail.Name = "txtmail";
-            this.txtmail.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.txtmail.Properties.Appearance.Options.UseFont = true;
-            this.txtmail.Size = new System.Drawing.Size(225, 26);
-            this.txtmail.TabIndex = 4;
+            this.txtcmnd.Location = new System.Drawing.Point(141, 5);
+            this.txtcmnd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtcmnd.Name = "txtcmnd";
+            this.txtcmnd.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtcmnd.Properties.Appearance.Options.UseFont = true;
+            this.txtcmnd.Size = new System.Drawing.Size(225, 26);
+            this.txtcmnd.TabIndex = 6;
             // 
             // panel2
             // 
@@ -239,22 +235,13 @@
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.dateTimePicker1);
             this.panel9.Controls.Add(this.labelControl8);
+            this.panel9.Controls.Add(this.txtngaythu);
             this.panel9.Location = new System.Drawing.Point(351, 2);
             this.panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(371, 40);
             this.panel9.TabIndex = 5;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.dateTimePicker1.Location = new System.Drawing.Point(141, 8);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(226, 22);
-            this.dateTimePicker1.TabIndex = 7;
             // 
             // labelControl8
             // 
@@ -268,9 +255,19 @@
             this.labelControl8.TabIndex = 5;
             this.labelControl8.Text = "Ngày thu tiền  :";
             // 
+            // txtngaythu
+            // 
+            this.txtngaythu.Location = new System.Drawing.Point(141, 9);
+            this.txtngaythu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtngaythu.Name = "txtngaythu";
+            this.txtngaythu.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtngaythu.Properties.Appearance.Options.UseFont = true;
+            this.txtngaythu.Size = new System.Drawing.Size(225, 26);
+            this.txtngaythu.TabIndex = 4;
+            // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.cblistdaily);
+            this.panel5.Controls.Add(this.cmblistdl);
             this.panel5.Controls.Add(this.labelControl4);
             this.panel5.Location = new System.Drawing.Point(3, 2);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -278,18 +275,13 @@
             this.panel5.Size = new System.Drawing.Size(321, 40);
             this.panel5.TabIndex = 1;
             // 
-            // cblistdaily
+            // cmblistdl
             // 
-            this.cblistdaily.Location = new System.Drawing.Point(106, 10);
-            this.cblistdaily.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cblistdaily.MenuManager = this.ribbon;
-            this.cblistdaily.Name = "cblistdaily";
-            this.cblistdaily.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.cblistdaily.Properties.Appearance.Options.UseFont = true;
-            this.cblistdaily.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cblistdaily.Size = new System.Drawing.Size(212, 26);
-            this.cblistdaily.TabIndex = 6;
+            this.cmblistdl.FormattingEnabled = true;
+            this.cmblistdl.Location = new System.Drawing.Point(109, 10);
+            this.cmblistdl.Name = "cmblistdl";
+            this.cmblistdl.Size = new System.Drawing.Size(212, 21);
+            this.cmblistdl.TabIndex = 6;
             // 
             // labelControl4
             // 
@@ -305,14 +297,15 @@
             // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.txtsearch);
             this.panel7.Controls.Add(this.btnExit);
             this.panel7.Controls.Add(this.btnModify);
             this.panel7.Controls.Add(this.btnDelete);
             this.panel7.Controls.Add(this.btnAdd);
-            this.panel7.Location = new System.Drawing.Point(99, 224);
+            this.panel7.Location = new System.Drawing.Point(78, 265);
             this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(577, 56);
+            this.panel7.Size = new System.Drawing.Size(615, 56);
             this.panel7.TabIndex = 6;
             // 
             // btnExit
@@ -324,6 +317,7 @@
             this.btnExit.Size = new System.Drawing.Size(96, 37);
             this.btnExit.TabIndex = 3;
             this.btnExit.Text = "làm mới ";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnModify
             // 
@@ -344,6 +338,7 @@
             this.btnDelete.Size = new System.Drawing.Size(90, 37);
             this.btnDelete.TabIndex = 3;
             this.btnDelete.Text = "Xóa";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -354,104 +349,56 @@
             this.btnAdd.Size = new System.Drawing.Size(87, 37);
             this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "Thêm ";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // groupBox1
+            // dtgvdl
             // 
-            this.groupBox1.Controls.Add(this.gridControl1);
-            this.groupBox1.Location = new System.Drawing.Point(10, 313);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(774, 193);
-            this.groupBox1.TabIndex = 8;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Danh sách những đại lý đã thu tiền ";
+            this.dtgvdl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvdl.Location = new System.Drawing.Point(10, 373);
+            this.dtgvdl.Name = "dtgvdl";
+            this.dtgvdl.Size = new System.Drawing.Size(725, 150);
+            this.dtgvdl.TabIndex = 10;
+            this.dtgvdl.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvdl_CellContentClick);
             // 
-            // gridControl1
+            // txtmaphieu
             // 
-            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl1.Location = new System.Drawing.Point(5, 18);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl1.MenuManager = this.ribbon;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(751, 162);
-            this.gridControl1.TabIndex = 0;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.txtmaphieu.Location = new System.Drawing.Point(125, 216);
+            this.txtmaphieu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtmaphieu.Name = "txtmaphieu";
+            this.txtmaphieu.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtmaphieu.Properties.Appearance.Options.UseFont = true;
+            this.txtmaphieu.Size = new System.Drawing.Size(209, 26);
+            this.txtmaphieu.TabIndex = 12;
             // 
-            // gridView1
+            // labelControl6
             // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6});
-            this.gridView1.DetailHeight = 284;
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.labelControl6.Appearance.Options.UseFont = true;
+            this.labelControl6.Location = new System.Drawing.Point(21, 164);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl6.MaximumSize = new System.Drawing.Size(86, 41);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(70, 19);
+            this.labelControl6.TabIndex = 7;
+            this.labelControl6.Text = "Mã Phiếu:";
             // 
-            // gridColumn1
+            // txtsearch
             // 
-            this.gridColumn1.Caption = "STT";
-            this.gridColumn1.MinWidth = 17;
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 39;
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.Caption = "Đại lý";
-            this.gridColumn2.MinWidth = 17;
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
-            this.gridColumn2.Width = 110;
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.Caption = "Đại chỉ ";
-            this.gridColumn3.MinWidth = 17;
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
-            this.gridColumn3.Width = 110;
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.Caption = "SDT";
-            this.gridColumn4.MinWidth = 17;
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
-            // 
-            // gridColumn5
-            // 
-            this.gridColumn5.Caption = "Ngày thu tiền ";
-            this.gridColumn5.MinWidth = 17;
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 4;
-            this.gridColumn5.Width = 126;
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.Caption = "Số tiền thu";
-            this.gridColumn6.MinWidth = 17;
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 5;
-            this.gridColumn6.Width = 135;
+            this.txtsearch.Location = new System.Drawing.Point(505, 14);
+            this.txtsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtsearch.Name = "txtsearch";
+            this.txtsearch.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtsearch.Properties.Appearance.Options.UseFont = true;
+            this.txtsearch.Size = new System.Drawing.Size(107, 26);
+            this.txtsearch.TabIndex = 13;
             // 
             // phieuthutien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(779, 510);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(810, 496);
+            this.Controls.Add(this.txtmaphieu);
+            this.Controls.Add(this.dtgvdl);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ribbon);
@@ -459,30 +406,30 @@
             this.Name = "phieuthutien";
             this.Ribbon = this.ribbon;
             this.Text = "phieuthutien";
-         //   this.Load += new System.EventHandler(this.phieuthutien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtdiachi.Properties)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtsotien.Properties)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtmail.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtcmnd.Properties)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtsdt.Properties)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtngaythu.Properties)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cblistdaily.Properties)).EndInit();
             this.panel7.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvdl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtmaphieu.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtsearch.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -493,36 +440,31 @@
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbon;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
-        private DevExpress.XtraEditors.ComboBoxEdit cblistdaily;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.TextEdit txtsdt;
         private System.Windows.Forms.Panel panel4;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txtdiachi;
         private System.Windows.Forms.Panel panel6;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit txtsotien;
         private System.Windows.Forms.Panel panel3;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.TextEdit txtmail;
+        private DevExpress.XtraEditors.TextEdit txtngaythu;
         private System.Windows.Forms.Panel panel7;
         private DevExpress.XtraEditors.SimpleButton btnExit;
         private DevExpress.XtraEditors.SimpleButton btnModify;
         private DevExpress.XtraEditors.SimpleButton btnDelete;
         private DevExpress.XtraEditors.SimpleButton btnAdd;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        private DevExpress.XtraEditors.TextEdit txtcmnd;
+        private System.Windows.Forms.DataGridView dtgvdl;
+        private System.Windows.Forms.ComboBox cmblistdl;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl labelControl6;
+        private DevExpress.XtraEditors.TextEdit txtmaphieu;
+        private DevExpress.XtraEditors.TextEdit txtsearch;
     }
 }

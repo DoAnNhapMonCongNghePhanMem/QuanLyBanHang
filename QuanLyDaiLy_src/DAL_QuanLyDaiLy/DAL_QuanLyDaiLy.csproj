@@ -52,6 +52,8 @@
     <Compile Include="DAL_QuyCheToChuc.cs" />
     <Compile Include="DAL_QuyDinhMatHang.cs" />
     <Compile Include="DAL_QuyDinhTienNo.cs" />
+    <Compile Include="DAL_TGPhieuThuTien.cs" />
+    <Compile Include="DAL_TGPhieuXuat.cs" />
     <Compile Include="DBSqlServerUtils.cs" />
     <Compile Include="DBUtils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

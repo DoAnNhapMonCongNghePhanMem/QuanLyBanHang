@@ -195,10 +195,6 @@
       <Project>{ac4c74e4-ff83-4c44-bc54-e038fa0f3e26}</Project>
       <Name>BUS_QuanLyDaiLy</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DAL_QuanLyDaiLy\DAL_QuanLyDaiLy.csproj">
-      <Project>{F180F4F1-6CD4-4D87-BB9F-8337F981F57F}</Project>
-      <Name>DAL_QuanLyDaiLy</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DTO_QuanLyDaiLy\DTO_QuanLyDaiLy.csproj">
       <Project>{026A9D5D-FD95-4EDC-A19B-EA2106CFB633}</Project>
       <Name>DTO_QuanLyDaiLy</Name>

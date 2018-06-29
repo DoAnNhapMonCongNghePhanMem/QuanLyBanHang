@@ -50,3 +50,9 @@ E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\bin\Debug\DTO_QuanLyDa
 E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.csprojResolveAssemblyReference.cache
 E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.dll
 E:\DO_AN_QLDL\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.pdb
+C:\Users\vu\Desktop\Githut6\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.dll
+C:\Users\vu\Desktop\Githut6\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\bin\Debug\DTO_QuanLyDaiLy.pdb
+C:\Users\vu\Desktop\Githut6\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.csprojAssemblyReference.cache
+C:\Users\vu\Desktop\Githut6\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.csproj.CoreCompileInputs.cache
+C:\Users\vu\Desktop\Githut6\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.dll
+C:\Users\vu\Desktop\Githut6\QuanLyDaiLy\QuanLyDaiLy_src\DTO_QuanLyDaiLy\obj\Debug\DTO_QuanLyDaiLy.pdb

@@ -13,58 +13,6 @@ namespace DTO_QuanLyDaiLy
         private string tenDaiLy, sdt, diaChi, cmnd;
         DateTime ngayNhan;
 
-        public int IdDL
-        {
-            get
-            {
-                return idDL;
-            }
-
-            set
-            {
-                idDL = value;
-            }
-        }
-
-        public int IdLoaiDL
-        {
-            get
-            {
-                return idLoaiDL;
-            }
-
-            set
-            {
-                idLoaiDL = value;
-            }
-        }
-
-        public int IdQuan
-        {
-            get
-            {
-                return idQuan;
-            }
-
-            set
-            {
-                idQuan = value;
-            }
-        }
-
-        public float TienNo
-        {
-            get
-            {
-                return tienNo;
-            }
-
-            set
-            {
-                tienNo = value;
-            }
-        }
-
         public string TenDaiLy
         {
             get
@@ -77,6 +25,9 @@ namespace DTO_QuanLyDaiLy
                 tenDaiLy = value;
             }
         }
+        
+
+
 
         public string Sdt
         {
@@ -129,6 +80,58 @@ namespace DTO_QuanLyDaiLy
                 ngayNhan = value;
             }
         }
+        public float TienNo
+        {
+            get
+            {
+                return tienNo;
+            }
+
+            set
+            {
+                tienNo = value;
+            }
+        }
+        public int IdDL
+        {
+            get
+            {
+                return idDL;
+            }
+
+            set
+            {
+                idDL = value;
+            }
+        }
+
+        public int IdLoaiDL
+        {
+            get
+            {
+                return idLoaiDL;
+            }
+
+            set
+            {
+                idLoaiDL = value;
+            }
+        }
+
+        public int IdQuan
+        {
+            get
+            {
+                return idQuan;
+            }
+
+            set
+            {
+                idQuan = value;
+            }
+        }
+
+       
 
         public DTO_DaiLy()
         {
