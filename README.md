@@ -3,11 +3,8 @@
 **Giới thiệu nhóm**
 
    >Tên nhóm: Boy
-
    >Khoa: Khoa học máy tính
-
    >Thành viên: Tấn Vũ , Công Khánh , Hoàng Linh
-
    >Giảng viên hướng dẫn :Nguyễn Công Hoan
 
 **Công cụ sử dụng**
