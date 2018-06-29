@@ -9,10 +9,12 @@
 - WPF UI Framework
   <ul>
   </ul>
-- -Công cụ lập trình: Visual Studio 2017.
+- Công cụ lập trình: Visual Studio 2017.
   <ul>
   </ul>
-  -Ngôn ngữ lập trình: C#,SQL.
+ - Ngôn ngữ lập trình: C#,SQL.
+  <ul>
+  </ul>
 
 **Chức năng và mô tả**
 
