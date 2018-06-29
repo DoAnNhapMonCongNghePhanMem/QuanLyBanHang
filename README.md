@@ -36,7 +36,13 @@
 |Thay đổi qui đinh| Cho phép người dùng thay đổi các thông tin : số lượng đại lý, mặt hàng,đơn vị tính,tiền nợ tối đa|
 
 **Thông tin vê thành viên**
-
--Sinh viên năm 3 trường đại học công nghệ thông tin
+- Sinh viên năm 3 trường đại học công nghệ thông tin.
   <ul>
   </ul>
+- Kiến thức:
+  <ul>
+  </ul>
+ - Ngôn ngữ lập trình: C#,SQL.
+  <ul>
+  </ul>
+ 
