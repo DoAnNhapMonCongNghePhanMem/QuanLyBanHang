@@ -6,12 +6,13 @@
     -Công cụ lập trình: Visual Studio 2017.
     -Ngôn ngữ lập trình: C#,SQL.
 
-- Gạch đầu dòng thứ nhất
+- WPF UI Framework
   <ul>
   </ul>
-- Gạch đầu dòng thứ hai
+- -Công cụ lập trình: Visual Studio 2017.
   <ul>
   </ul>
+  -Ngôn ngữ lập trình: C#,SQL.
 
 **Chức năng và mô tả**
 
