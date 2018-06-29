@@ -2,7 +2,7 @@
 
 **Giới thiệu nhóm**
 
-   Tên nhóm: Boy
+   >Tên nhóm: Boy
 
    Khoa: Khoa học máy tính
 
