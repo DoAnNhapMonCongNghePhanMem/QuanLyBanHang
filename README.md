@@ -41,8 +41,8 @@
   </ul>
 - Kiến thức:
   <ul>
+  <li>Ngôn ngữ lập trình: C++,Java,c#</li>
+  <li>Hệ quản trị cơ sở dữ liệu: Sql server,Mysql</li>
   </ul>
- - Ngôn ngữ lập trình: C#,SQL.
-  <ul>
-  </ul>
+ 
  
