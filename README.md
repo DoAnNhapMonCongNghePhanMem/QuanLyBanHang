@@ -5,7 +5,11 @@
    >Tên nhóm: Boy                                                                                                                          
    Khoa: Khoa học máy tính                                                                                                                  
    Thành viên: Tấn Vũ , Công Khánh , Hoàng Linh                                                                                            
-   Giảng viên hướng dẫn :Nguyễn Công Hoan                                                                                                  
+   Giảng viên hướng dẫn :Nguyễn Công Hoan                                                                                                 
+   
+ **Giới thiệu**
+ 
+ >Ứng dụng tin học trong việc quản lí dường như không còn xa lạ với các doanh nghiệp, công ty hiện nay. Lợi ích mà các chương trình phần mềm quản lí đem lại khiến ta không thể không thừa nhận tính hiệu quả của nó. Trong thực tế, các công ty mẹ hay các đại lí lớn đều muốn có một sự quản lí các công ty con, đại lý con một cách chính xác, hiệu quả và nhanh chóng. Nắm bắt được nhu cầu đó, nhóm viết phần mềm này để dáp ứng các nhu cầu hiện nay.
 
 **Công cụ sử dụng**
 
@@ -30,3 +34,9 @@
 |Lập phiếu thu tiền| Lập phiếu thu tiền đại lý|
 |Lập báo cáo tháng| Lập báo cáo công nợ và doanh số theo tháng|
 |Thay đổi qui đinh| Cho phép người dùng thay đổi các thông tin : số lượng đại lý, mặt hàng,đơn vị tính,tiền nợ tối đa|
+
+**Thông tin vê thành viên**
+
+-Sinh viên năm 3 trường đại học công nghệ thông tin
+  <ul>
+  </ul>
