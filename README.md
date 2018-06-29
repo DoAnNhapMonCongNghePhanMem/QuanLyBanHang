@@ -6,7 +6,12 @@
     -Công cụ lập trình: Visual Studio 2017.
     -Ngôn ngữ lập trình: C#,SQL.
 
-
+- Gạch đầu dòng thứ nhất
+  <ul>
+  </ul>
+- Gạch đầu dòng thứ hai
+  <ul>
+  </ul>
 
 **Chức năng và mô tả**
 
