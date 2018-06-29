@@ -1,5 +1,11 @@
 # Quản Lý Đại Lý
 
+**Công cụ sử dụng**
+    -WPF UI Framework
+    -Công cụ lập trình: Visual Studio 2017.
+    -Ngôn ngữ lập trình: C#,SQL.
+
+
 **Chức năng và mô tả**
 
 
