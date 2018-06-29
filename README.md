@@ -1,3 +1,9 @@
+
+
+
+
+
+
 # Quản Lý Đại Lý
 
 **Giới thiệu nhóm**
@@ -36,6 +42,8 @@
 |Thay đổi qui đinh| Cho phép người dùng thay đổi các thông tin : số lượng đại lý, mặt hàng,đơn vị tính,tiền nợ tối đa|
 
 **Thông tin vê thành viên**
+
+[Nguyễn Tấn Vũ](https:https://www.facebook.com/profile.php?id=100010081189283),[Lê Công Khánh](https:https://www.facebook.com/leecongkhanh),[Hoàng Linh](https:https://www.facebook.com/profile.php?id=100004322238688)
 - Sinh viên năm 3 trường đại học công nghệ thông tin.
   <ul>
   </ul>
