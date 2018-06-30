@@ -62,5 +62,47 @@ namespace QuanLyDaiLy
         {
 
         }
+
+        private void simpleButton1_Click_1(object sender, EventArgs e)
+        {
+            
+            tbTrangChu.Hide();
+            hosodl hs = new hosodl();
+            hs.TopLevel = false;
+
+            // Gắn vào panel
+            this.pnlTrangChu.Controls.Add(hs);
+
+            // Hiển thị form
+            hs.Show();
+
+
+        }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnBaoCaoDS_Click(object sender, EventArgs e)
+        {
+            tbTrangChu.Hide();
+            BaoCaoDoanhSo ds = new BaoCaoDoanhSo();
+            pnlTrangChu.Controls.Add(ds);
+            ds.Show();
+        }
+
+        private void btnBaoCaoCN_Click(object sender, EventArgs e)
+        {
+            tbTrangChu.Hide();
+            BaoCaoCongNo ds = new BaoCaoCongNo();
+            pnlTrangChu.Controls.Add(ds);
+            ds.Show();
+        }
     }
 }

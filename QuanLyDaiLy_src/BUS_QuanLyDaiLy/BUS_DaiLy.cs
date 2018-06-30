@@ -37,5 +37,9 @@ namespace BUS_QuanLyDaiLy
             int a = DAL_DaiLy.SuaDaiLy(dl);
             return a;
         }
+        public static string GetTenById(int id)
+        {
+            return DAL_DaiLy.GetTen(id);
+        }
     }
 }

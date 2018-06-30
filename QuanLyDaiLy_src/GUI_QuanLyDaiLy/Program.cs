@@ -20,7 +20,7 @@ namespace QuanLyDaiLy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           Application.Run(new hosodl());
+           Application.Run(new TrangChuQuanLy());
             //Application.Run(new phieuthutien());
             //Application.Run(new baocaocongno());
             //Application.Run(new phieuxuathang());

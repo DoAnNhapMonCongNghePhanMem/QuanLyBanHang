@@ -73,5 +73,13 @@ namespace DTO_QuanLyDaiLy
             this.SoQuan = SoQuan;
 
         }
+        public DTO_QuyCheToChuc()
+        {
+            this.SoLoaiDaiLy = SoLoaiDaiLy;
+            this.SoDaiLyToiDa = SoDaiLyToiDa;
+            this.SoMatHang = SoMatHang;
+            this.SoQuan = SoQuan;
+
+        }
     }
 }

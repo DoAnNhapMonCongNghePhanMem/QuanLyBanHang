@@ -1,105 +1,135 @@
 ﻿namespace QuanLyDaiLy
 {
-    partial class baocaocongno
-    {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
+	partial class BaoCaoCongNo
+	{
+		/// <summary> 
+		/// Required designer variable.
+		/// </summary>
+		private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+		/// <summary> 
+		/// Clean up any resources being used.
+		/// </summary>
+		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		protected override void Dispose(bool disposing)
+		{
+			if (disposing && (components != null))
+			{
+				components.Dispose();
+			}
+			base.Dispose(disposing);
+		}
 
-        #region Windows Form Designer generated code
+		#region Component Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
-            this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
+		/// <summary> 
+		/// Required method for Designer support - do not modify 
+		/// the contents of this method with the code editor.
+		/// </summary>
+		private void InitializeComponent()
+		{
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbCN = new System.Windows.Forms.ComboBox();
+            this.gvCN = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvCN)).BeginInit();
             this.SuspendLayout();
-            // 
-            // ribbon
-            // 
-            this.ribbon.ExpandCollapseItem.Id = 0;
-            this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbon.ExpandCollapseItem});
-            this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ribbon.MaxItemId = 1;
-            this.ribbon.Name = "ribbon";
-            this.ribbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.MacOffice;
-            this.ribbon.Size = new System.Drawing.Size(696, 49);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(169, 63);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(311, 43);
-            this.panel1.TabIndex = 3;
+            this.panel1.Size = new System.Drawing.Size(769, 481);
+            this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(137, 33);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(517, 100);
+            this.panel2.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.label1.Location = new System.Drawing.Point(16, 12);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 25F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(98, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 19);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Tháng :";
+            this.label1.Size = new System.Drawing.Size(310, 41);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Báo Cáo Công Nợ";
             // 
-            // textBox1
+            // panel3
             // 
-            this.textBox1.Location = new System.Drawing.Point(98, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(165, 21);
-            this.textBox1.TabIndex = 2;
+            this.panel3.Controls.Add(this.gvCN);
+            this.panel3.Controls.Add(this.cbCN);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Location = new System.Drawing.Point(0, 140);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(766, 338);
+            this.panel3.TabIndex = 1;
             // 
-            // baocaocongno
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(52, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Tháng";
+            // 
+            // cbCN
+            // 
+            this.cbCN.FormattingEnabled = true;
+            this.cbCN.Location = new System.Drawing.Point(127, 16);
+            this.cbCN.Name = "cbCN";
+            this.cbCN.Size = new System.Drawing.Size(121, 21);
+            this.cbCN.TabIndex = 1;
+            this.cbCN.SelectedIndexChanged += new System.EventHandler(this.cbCN_SelectedIndexChanged);
+            // 
+            // gvCN
+            // 
+            this.gvCN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvCN.Location = new System.Drawing.Point(55, 111);
+            this.gvCN.Name = "gvCN";
+            this.gvCN.Size = new System.Drawing.Size(708, 224);
+            this.gvCN.TabIndex = 2;
+            // 
+            // BaoCaoCongNo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 361);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.ribbon);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "baocaocongno";
-            this.Ribbon = this.ribbon;
-            this.Text = "baocaocongno";
-            this.Load += new System.EventHandler(this.baocaocongno_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
+            this.Name = "BaoCaoCongNo";
+            this.Size = new System.Drawing.Size(769, 481);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvCN)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
-        }
+		}
 
         #endregion
 
-        private DevExpress.XtraBars.Ribbon.RibbonControl ribbon;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DataGridView gvCN;
+        private System.Windows.Forms.ComboBox cbCN;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }

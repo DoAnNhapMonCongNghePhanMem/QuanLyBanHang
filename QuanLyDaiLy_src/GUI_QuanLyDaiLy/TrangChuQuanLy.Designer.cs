@@ -45,6 +45,7 @@
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -59,14 +60,23 @@
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
-            this.label1 = new System.Windows.Forms.Label();
+            this.tbTrangChu = new System.Windows.Forms.TableLayoutPanel();
+            this.btnQuanLyDL = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnBaoCaoCN = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
+            this.pnlTrangChu = new System.Windows.Forms.Panel();
+            this.btnBaoCaoDS = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            this.tbTrangChu.SuspendLayout();
+            this.pnlTrangChu.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbonControl1
             // 
+            this.ribbonControl1.AutoSizeItems = true;
             this.ribbonControl1.BackColor = System.Drawing.Color.Lime;
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.ForeColor = System.Drawing.Color.Lime;
@@ -97,7 +107,7 @@
             this.ribbonPage2,
             this.ribbonPage3,
             this.ribbonPage4});
-            this.ribbonControl1.Size = new System.Drawing.Size(794, 141);
+            this.ribbonControl1.Size = new System.Drawing.Size(758, 141);
             // 
             // barButtonItem1
             // 
@@ -241,6 +251,12 @@
             this.barButtonItem12.Name = "barButtonItem12";
             this.barButtonItem12.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem12_ItemClick);
             // 
+            // barButtonItem13
+            // 
+            this.barButtonItem13.Caption = "barButtonItem13";
+            this.barButtonItem13.Id = 20;
+            this.barButtonItem13.Name = "barButtonItem13";
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -326,41 +342,180 @@
             this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem7);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
             // 
-            // simpleButton1
+            // tbTrangChu
             // 
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(661, 69);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(117, 37);
-            this.simpleButton1.TabIndex = 1;
-            this.simpleButton1.Text = "Thoát";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.tbTrangChu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbTrangChu.AutoSize = true;
+            this.tbTrangChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.tbTrangChu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.tbTrangChu.ColumnCount = 4;
+            this.tbTrangChu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.37681F));
+            this.tbTrangChu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.62319F));
+            this.tbTrangChu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 211F));
+            this.tbTrangChu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 201F));
+            this.tbTrangChu.Controls.Add(this.btnQuanLyDL, 0, 0);
+            this.tbTrangChu.Controls.Add(this.simpleButton2, 1, 0);
+            this.tbTrangChu.Controls.Add(this.simpleButton4, 2, 0);
+            this.tbTrangChu.Controls.Add(this.simpleButton5, 2, 1);
+            this.tbTrangChu.Controls.Add(this.simpleButton6, 1, 1);
+            this.tbTrangChu.Controls.Add(this.btnBaoCaoDS, 3, 0);
+            this.tbTrangChu.Controls.Add(this.btnBaoCaoCN, 3, 1);
+            this.tbTrangChu.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
+            this.tbTrangChu.Location = new System.Drawing.Point(0, 8);
+            this.tbTrangChu.Name = "tbTrangChu";
+            this.tbTrangChu.RowCount = 2;
+            this.tbTrangChu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.47775F));
+            this.tbTrangChu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 52.52225F));
+            this.tbTrangChu.Size = new System.Drawing.Size(758, 333);
+            this.tbTrangChu.TabIndex = 6;
             // 
-            // barButtonItem13
+            // btnQuanLyDL
             // 
-            this.barButtonItem13.Caption = "barButtonItem13";
-            this.barButtonItem13.Id = 20;
-            this.barButtonItem13.Name = "barButtonItem13";
+            this.btnQuanLyDL.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnQuanLyDL.Appearance.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
+            this.btnQuanLyDL.Appearance.Options.UseFont = true;
+            this.btnQuanLyDL.AutoSize = true;
+            this.btnQuanLyDL.AutoWidthInLayoutControl = true;
+            this.btnQuanLyDL.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnQuanLyDL.ImageOptions.Image")));
+            this.btnQuanLyDL.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.btnQuanLyDL.Location = new System.Drawing.Point(3, 3);
+            this.btnQuanLyDL.Name = "btnQuanLyDL";
+            this.btnQuanLyDL.Size = new System.Drawing.Size(154, 152);
+            this.btnQuanLyDL.TabIndex = 4;
+            this.btnQuanLyDL.Text = "Quản lý đại lý";
+            this.btnQuanLyDL.Click += new System.EventHandler(this.simpleButton1_Click_1);
             // 
-            // label1
+            // simpleButton2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(325, 271);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 3;
+            this.simpleButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
+            this.simpleButton2.Appearance.Options.UseFont = true;
+            this.simpleButton2.AutoSize = true;
+            this.simpleButton2.AutoWidthInLayoutControl = true;
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton2.Location = new System.Drawing.Point(163, 3);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(179, 152);
+            this.simpleButton2.TabIndex = 5;
+            this.simpleButton2.Text = "Quản lý mặt hàng";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
+            // 
+            // btnBaoCaoCN
+            // 
+            this.btnBaoCaoCN.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBaoCaoCN.Appearance.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
+            this.btnBaoCaoCN.Appearance.Options.UseFont = true;
+            this.btnBaoCaoCN.AutoSize = true;
+            this.btnBaoCaoCN.AutoWidthInLayoutControl = true;
+            this.btnBaoCaoCN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.btnBaoCaoCN.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.btnBaoCaoCN.Location = new System.Drawing.Point(559, 161);
+            this.btnBaoCaoCN.Name = "btnBaoCaoCN";
+            this.btnBaoCaoCN.Size = new System.Drawing.Size(196, 169);
+            this.btnBaoCaoCN.TabIndex = 6;
+            this.btnBaoCaoCN.Text = "Báo cáo công nợ";
+            this.btnBaoCaoCN.Click += new System.EventHandler(this.btnBaoCaoCN_Click);
+            // 
+            // simpleButton4
+            // 
+            this.simpleButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
+            this.simpleButton4.Appearance.Options.UseFont = true;
+            this.simpleButton4.AutoSize = true;
+            this.simpleButton4.AutoWidthInLayoutControl = true;
+            this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
+            this.simpleButton4.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton4.Location = new System.Drawing.Point(348, 3);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(205, 152);
+            this.simpleButton4.TabIndex = 7;
+            this.simpleButton4.Text = "ADMIN";
+            // 
+            // simpleButton5
+            // 
+            this.simpleButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
+            this.simpleButton5.Appearance.Options.UseFont = true;
+            this.simpleButton5.AutoSize = true;
+            this.simpleButton5.AutoWidthInLayoutControl = true;
+            this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
+            this.simpleButton5.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton5.Location = new System.Drawing.Point(348, 161);
+            this.simpleButton5.Name = "simpleButton5";
+            this.simpleButton5.Size = new System.Drawing.Size(205, 169);
+            this.simpleButton5.TabIndex = 8;
+            this.simpleButton5.Text = "Quy chế tổ chức";
+            // 
+            // simpleButton6
+            // 
+            this.simpleButton6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.simpleButton6.Appearance.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
+            this.simpleButton6.Appearance.Options.UseFont = true;
+            this.simpleButton6.AutoSize = true;
+            this.simpleButton6.AutoWidthInLayoutControl = true;
+            this.simpleButton6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
+            this.simpleButton6.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton6.Location = new System.Drawing.Point(163, 161);
+            this.simpleButton6.Name = "simpleButton6";
+            this.simpleButton6.Size = new System.Drawing.Size(179, 169);
+            this.simpleButton6.TabIndex = 9;
+            this.simpleButton6.Text = "simpleButton6";
+            // 
+            // pnlTrangChu
+            // 
+            this.pnlTrangChu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlTrangChu.AutoSize = true;
+            this.pnlTrangChu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pnlTrangChu.Controls.Add(this.tbTrangChu);
+            this.pnlTrangChu.Location = new System.Drawing.Point(0, 139);
+            this.pnlTrangChu.Name = "pnlTrangChu";
+            this.pnlTrangChu.Size = new System.Drawing.Size(758, 349);
+            this.pnlTrangChu.TabIndex = 7;
+            // 
+            // btnBaoCaoDS
+            // 
+            this.btnBaoCaoDS.Appearance.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
+            this.btnBaoCaoDS.Appearance.Options.UseFont = true;
+            this.btnBaoCaoDS.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBaoCaoDS.ImageOptions.Image")));
+            this.btnBaoCaoDS.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.btnBaoCaoDS.Location = new System.Drawing.Point(559, 3);
+            this.btnBaoCaoDS.Name = "btnBaoCaoDS";
+            this.btnBaoCaoDS.Size = new System.Drawing.Size(196, 152);
+            this.btnBaoCaoDS.TabIndex = 10;
+            this.btnBaoCaoDS.Text = "Báo cáo doanh số";
+            this.btnBaoCaoDS.Click += new System.EventHandler(this.btnBaoCaoDS_Click);
             // 
             // TrangChuQuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 402);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.simpleButton1);
+            this.ClientSize = new System.Drawing.Size(758, 492);
+            this.Controls.Add(this.pnlTrangChu);
             this.Controls.Add(this.ribbonControl1);
             this.Name = "TrangChuQuanLy";
             this.Text = "TrangChuQuanLy";
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            this.tbTrangChu.ResumeLayout(false);
+            this.tbTrangChu.PerformLayout();
+            this.pnlTrangChu.ResumeLayout(false);
+            this.pnlTrangChu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -394,12 +549,19 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem10;
         private DevExpress.XtraBars.BarButtonItem barButtonItem11;
         private DevExpress.XtraBars.BarButtonItem barButtonItem12;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem13;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TableLayoutPanel tbTrangChu;
+        private DevExpress.XtraEditors.SimpleButton btnQuanLyDL;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton btnBaoCaoCN;
+        private DevExpress.XtraEditors.SimpleButton simpleButton4;
+        private DevExpress.XtraEditors.SimpleButton simpleButton5;
+        private DevExpress.XtraEditors.SimpleButton simpleButton6;
+        private System.Windows.Forms.Panel pnlTrangChu;
+        private DevExpress.XtraEditors.SimpleButton btnBaoCaoDS;
     }
 }

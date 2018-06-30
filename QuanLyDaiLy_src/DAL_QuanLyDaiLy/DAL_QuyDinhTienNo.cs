@@ -1,6 +1,8 @@
 ﻿using DTO_QuanLyDaiLy;
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -17,5 +19,20 @@ namespace DAL_QuanLyDaiLy
             int result = ResultQuery.GetResultQuery(conn, query);
             return result;
         }
+        public static ArrayList QDTienNo()
+        {
+            ArrayList arr = new ArrayList();
+            DataTable dt = new DataTable();
+            dt = ResultQuery.GetTableResult(conn, "SELECT * FROM QuyDinhTienNo");
+            foreach (DataRow r in dt.Rows)
+            {
+                DTO_QuyDinhTienNo qd = new DTO_QuyDinhTienNo();
+                qd.IdLoaiDL = (int)r["IdLoaiDL"];
+                qd.TienNoToiDa = (float) Convert.ToDouble(r["TienNoToiDa"]);
+                arr.Add(qd);
+            }
+            return arr;
+        }
+
     }
 }

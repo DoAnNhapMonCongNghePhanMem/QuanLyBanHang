@@ -84,10 +84,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="baocaocongno.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="baocaocongno.designer.cs">
       <DependentUpon>baocaocongno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCaoDoanhSo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaoCaoDoanhSo.Designer.cs">
+      <DependentUpon>BaoCaoDoanhSo.cs</DependentUpon>
     </Compile>
     <Compile Include="fupdateAcount.cs">
       <SubType>Form</SubType>
@@ -133,6 +139,12 @@
     <Compile Include="QuyCheToChuc.Designer.cs">
       <DependentUpon>QuyCheToChuc.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuyDinhTienNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuyDinhTienNo.Designer.cs">
+      <DependentUpon>QuyDinhTienNo.cs</DependentUpon>
+    </Compile>
     <Compile Include="TrangChuQuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +153,9 @@
     </Compile>
     <EmbeddedResource Include="baocaocongno.resx">
       <DependentUpon>baocaocongno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoDoanhSo.resx">
+      <DependentUpon>BaoCaoDoanhSo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fupdateAcount.resx">
       <DependentUpon>fupdateAcount.cs</DependentUpon>
@@ -173,6 +188,9 @@
     </Compile>
     <EmbeddedResource Include="QuyCheToChuc.resx">
       <DependentUpon>QuyCheToChuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuyDinhTienNo.resx">
+      <DependentUpon>QuyDinhTienNo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrangChuQuanLy.resx">
       <DependentUpon>TrangChuQuanLy.cs</DependentUpon>

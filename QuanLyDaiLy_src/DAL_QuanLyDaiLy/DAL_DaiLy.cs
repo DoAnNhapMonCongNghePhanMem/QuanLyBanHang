@@ -143,5 +143,15 @@ namespace DAL_QuanLyDaiLy
             }
             return al;
         }
+        public static string GetTen(int id)
+        {
+            string ten = "";
+            DataTable tb = ResultQuery.GetTableResult(conn, "select TenDaiLy from DaiLy where IdDaiLy="+id);
+            foreach (DataRow r in tb.Rows)
+            {
+                ten = r["TenDaiLy"].ToString();
+            }
+            return ten;
+        }
     }
 }

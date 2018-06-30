@@ -16,6 +16,10 @@ namespace BUS_QuanLyDaiLy
             ArrayList al = DAL_LoaiDaiLy.DSLoaiDaiLy();
             return al;
         }
+        public static string GetTenById(int id)
+        {
+            return DAL_LoaiDaiLy.GetTenById(id);
+        }
 
     }
 }

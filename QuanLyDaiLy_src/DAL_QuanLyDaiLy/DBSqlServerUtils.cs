@@ -14,7 +14,7 @@ namespace DAL_QuanLyDaiLy
             //Data Source=DESKTOP-KG1KAOQ;Initial Catalog=QuanLyDaiLy;Integrated Security=True
             //Data Source=.;Initial Catalog=QuanLyDaiLy;Integrated Security=True
             //Data Source=DESKTOP-S7IROOQ;Initial Catalog=QuanLyDaiLy;User ID=sa;Password=123
-            string connString = @"Data Source=DESKTOP-S7IROOQ;Initial Catalog=QuanLyDaiLy;User ID=sa;Password=123";
+            string connString = @"Data Source=.;Initial Catalog=QuanLyDaiLy;Integrated Security=True";
             SqlConnection conn = new SqlConnection(connString);
             return conn;
         }

@@ -15,6 +15,11 @@ namespace DTO_QuanLyDaiLy
             this.IdLoaiDL = IdLoaiDL;
             this.TienNoToiDa = TienNoToiDa;
         }
+        public DTO_QuyDinhTienNo()
+        {
+            this.IdLoaiDL = IdLoaiDL;
+            this.TienNoToiDa = TienNoToiDa;
+        }
 
         public int IdLoaiDL
         {
