@@ -133,6 +133,36 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QCToChuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QCToChuc.Designer.cs">
+      <DependentUpon>QCToChuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QDMatHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QDMatHang.Designer.cs">
+      <DependentUpon>QDMatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QDTienNo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QDTienNo.Designer.cs">
+      <DependentUpon>QDTienNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyDaiLy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuanLyDaiLy.Designer.cs">
+      <DependentUpon>QuanLyDaiLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuyChe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuyChe.Designer.cs">
+      <DependentUpon>QuyChe.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuyCheToChuc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +216,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="QCToChuc.resx">
+      <DependentUpon>QCToChuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QDMatHang.resx">
+      <DependentUpon>QDMatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QDTienNo.resx">
+      <DependentUpon>QDTienNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyDaiLy.resx">
+      <DependentUpon>QuanLyDaiLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuyChe.resx">
+      <DependentUpon>QuyChe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuyCheToChuc.resx">
       <DependentUpon>QuyCheToChuc.cs</DependentUpon>
     </EmbeddedResource>

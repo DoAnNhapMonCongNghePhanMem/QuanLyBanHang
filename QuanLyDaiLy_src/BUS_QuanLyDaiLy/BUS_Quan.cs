@@ -15,5 +15,9 @@ namespace BUS_QuanLyDaiLy
             ArrayList al = DAL_Quan.DSQuan();
             return al;
         }
+        public static string GetTen(int id)
+        {
+            return DAL_Quan.GetTenById(id);
+        }
     }
 }

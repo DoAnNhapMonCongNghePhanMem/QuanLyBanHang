@@ -41,10 +41,12 @@ namespace DAL_QuanLyDaiLy
             cmd.Parameters.Add("@IdLoaiDL", SqlDbType.Int).Value = daiLy.IdLoaiDL;
             cmd.Parameters.Add("@CMND", SqlDbType.NVarChar).Value = daiLy.Cmnd;
             cmd.Parameters.Add("@IdQuan", SqlDbType.Int).Value = daiLy.IdQuan;
+            cmd.Parameters.Add("@out", SqlDbType.Int).Direction = ParameterDirection.Output;
             try
             {
                 conn.Open();
-                kq=cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
+                kq = (int)cmd.Parameters["@out"].Value;
                 return kq;
             }
             finally
@@ -56,6 +58,7 @@ namespace DAL_QuanLyDaiLy
          * Sửa đại lý
          * 1:Sửa thành công
          * 2:tiền nợ vượt quy định cho phép
+         * 
          */
         public static int SuaDaiLy(DTO_DaiLy daiLy)
         {
@@ -71,10 +74,13 @@ namespace DAL_QuanLyDaiLy
             cmd.Parameters.Add("@IdLoaiDL", SqlDbType.Int).Value = daiLy.IdLoaiDL;
             cmd.Parameters.Add("@CMND", SqlDbType.NVarChar).Value = daiLy.Cmnd;
             cmd.Parameters.Add("@TienNo", SqlDbType.Float).Value = daiLy.Cmnd;
+            cmd.Parameters.Add("@IdDaiLy", SqlDbType.Int).Value = daiLy.IdDL;
+            cmd.Parameters.Add("@out", SqlDbType.Int).Direction = ParameterDirection.Output;
             try
             {
-                conn.Open();
-                kq = cmd.ExecuteNonQuery();
+                 conn.Open();
+                 cmd.ExecuteNonQuery();
+                kq = (int)cmd.Parameters["@out"].Value;
                 return kq;
             }
             finally
@@ -91,9 +97,9 @@ namespace DAL_QuanLyDaiLy
 
         public static  int XoaDaiLy(int idDaiLy)
         {
-            DAL_ChiTietXuat.XoaChiTietXuat(idDaiLy);
-            DAL_PhieuXuat.XoaPhieuXuat(idDaiLy);
-            DAL_PhieuThuTien.XoaPhieuThu(idDaiLy);
+            //DAL_ChiTietXuat.XoaChiTietXuat(idDaiLy);
+            //DAL_PhieuXuat.XoaByIdDl(idDaiLy);
+            //DAL_PhieuThuTien.XoaByIdDl(idDaiLy);
             //DAL_CongNo.XoaCongNo(idDaiLy);
             //DAL_DoanhSo.XoaDoanhSo(idDaiLy);
             string query = "delete from DaiLy where IdDaiLy=" + idDaiLy;

@@ -8,24 +8,13 @@ namespace DTO_QuanLyDaiLy
 {
     public class DTO_NhanVienQuanLy
     {
-        private int idNV;
+        private string cmnd;
         private string tenNV;
         private DateTime ngaySinh;
         private string queQuan;
         private string sdt;
 
-        public int idNV1
-        {
-            get
-            {
-                return idNV;
-            }
-
-            set
-            {
-                idNV = value;
-            }
-        }
+        
 
         public string tenNV1
         {
@@ -79,17 +68,30 @@ namespace DTO_QuanLyDaiLy
             }
         }
 
+        public string Cmnd
+        {
+            get
+            {
+                return cmnd;
+            }
+
+            set
+            {
+                cmnd = value;
+            }
+        }
+
         public DTO_NhanVienQuanLy()
         {
 
         }
-        public DTO_NhanVienQuanLy(int idNV,string tenNV,DateTime ngaySinh,string queQuan,string sdt)
+        public DTO_NhanVienQuanLy(string Cmnd,string TenNV,DateTime NgaySinh,string QueQuan,string Sdt)
         {
-            this.idNV1 = idNV;
-            this.tenNV1 = tenNV;
-            this.ngaySinh1 = ngaySinh;
-            this.queQuan1 = queQuan;
-            this.sdt1 = sdt;
+            this.cmnd = Cmnd;
+            this.tenNV1 = TenNV;
+            this.ngaySinh1 = NgaySinh;
+            this.queQuan1 = QueQuan;
+            this.sdt1 = Sdt;
         }
 
     }

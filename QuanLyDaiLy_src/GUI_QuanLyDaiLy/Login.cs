@@ -9,11 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using BUS_QuanLyDaiLy;
-
+using DTO_QuanLyDaiLy;
 namespace QuanLyDaiLy
 {
     public partial class Login : DevExpress.XtraEditors.XtraForm
     {
+        DTO_NhanVienQuanLy nhanVien;
+        DTO_ThongTinTaiKhoan taiKhoan;
         public Login()
         {
             InitializeComponent();
@@ -26,27 +28,30 @@ namespace QuanLyDaiLy
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-            string user = txtPassWord.Text;
-            string pass = txtuserName.Text;
-            int login = BUS_Login.kiemtradangnhap(user, pass);
+            string user = txtuserName.Text.ToString();
+            string pass = txtPassWord.Text.ToString();
+            Console.WriteLine(user + " " + pass);
+            int login = BUS_QuanLyTaiKhoan.KiemTraLogin(user, pass);
             if (login == 0)
             {
-                TrangChuQuanLy f = new TrangChuQuanLy();
+                taiKhoan = BUS_QuanLyTaiKhoan.GetTaiKhoan(user,pass);
+                nhanVien = BUS_NhanVien.GetNhanVien(taiKhoan.Cmnd);
                 this.Hide();
-                f.ShowDialog();
-                this.Show();
+                TrangChuQuanLy f = new TrangChuQuanLy(taiKhoan,nhanVien);
+                f.Show();
+                
             }
             else if (login == 1)
             {
-                MessageBox.Show("user khong chinh xac");
+                MessageBox.Show("Tên user không chính xác");
             }
             else if (login == 2)
             {
-                MessageBox.Show("pass khonh chinh xac");
+                MessageBox.Show("Mật khẩu không chính xác");
             }
             else
             {
-                MessageBox.Show("ban bi kich boi admin");
+                MessageBox.Show("Tài khoản đã bị block bởi admin");
             }
         }
     }

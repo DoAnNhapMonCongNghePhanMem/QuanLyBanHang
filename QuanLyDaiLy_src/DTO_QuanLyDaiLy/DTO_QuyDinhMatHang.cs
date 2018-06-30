@@ -57,5 +57,9 @@ namespace DTO_QuanLyDaiLy
             this.DonViTinh = DonViTinh;
             this.DonGia = DonGia;
         }
+        public DTO_QuyDinhMatHang()
+        {
+           
+        }
     }
 }

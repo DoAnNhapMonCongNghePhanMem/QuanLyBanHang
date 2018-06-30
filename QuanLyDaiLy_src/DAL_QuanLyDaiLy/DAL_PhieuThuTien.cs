@@ -55,9 +55,15 @@ namespace DAL_QuanLyDaiLy
          * 1:thành công
          * 0:thất bại
          */
-        public static int XoaPhieuThu(int idPhieuThu)
+        public static int XoaByIdDl(int idPhieuThu)
         {
             string query = "delete PhieuThuTien where IdPhieuThu=" + idPhieuThu;
+            int result = ResultQuery.GetResultQuery(conn, query);
+            return result;
+        }
+        public static int XoaByIdDL(int idDl)
+        {
+            string query = "delete PhieuThuTien where IdDaiLy=" +idDl;
             int result = ResultQuery.GetResultQuery(conn, query);
             return result;
         }

@@ -676,3 +676,8 @@ C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\e
 C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ja\DevExpress.XtraNavBar.v18.1.resources.dll
 C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\ru\DevExpress.XtraNavBar.v18.1.resources.dll
 C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.BaoCaoDoanhSo.resources
+C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.QuanLyDaiLy.resources
+C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.QCToChuc.resources
+C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.QDMatHang.resources
+C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.QDTienNo.resources
+C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.QuyChe.resources

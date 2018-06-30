@@ -60,6 +60,12 @@ namespace DAL_QuanLyDaiLy
             int result = ResultQuery.GetResultQuery(conn, query);
             return result;
         }
+        public static int XoaByIdDl(int id)
+        {
+            string query = "delete PhieuThuTien where IdDaiLy=" + id;
+            int result = ResultQuery.GetResultQuery(conn, query);
+            return result;
+        }
         //public void Xoapxbyid(int id)
         //{
         //    string query = "delete PhieuXuatHang where IdPhieuXuat=" + id;

@@ -1,5 +1,6 @@
 ﻿using DTO_QuanLyDaiLy;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -22,6 +23,21 @@ namespace DAL_QuanLyDaiLy
             string query = "update QuyDinhMatHang set DonViTinh=N'"+qd.DonViTinh+"',DonGia="+qd.DonGia+" where IdMatHang="+qd.IdMatHang;
             int result = ResultQuery.GetResultQuery(conn, query);
             return result;
+        }
+        public static ArrayList QDMatHang()
+        {
+            ArrayList arr = new ArrayList();
+            DataTable dt = new DataTable();
+            dt = ResultQuery.GetTableResult(conn, "SELECT * FROM QuyDinhMatHang");
+            foreach (DataRow r in dt.Rows)
+            {
+                DTO_QuyDinhMatHang qd = new DTO_QuyDinhMatHang();
+                qd.IdMatHang = (int)r["IdMatHang"];
+                qd.DonViTinh=r["DonViTinh"].ToString();
+                qd.DonGia = (float)Convert.ToDouble(r["DonGia"]);
+                arr.Add(qd);
+            }
+            return arr;
         }
         public static string getDonViTinh(int idMatHang)
         {

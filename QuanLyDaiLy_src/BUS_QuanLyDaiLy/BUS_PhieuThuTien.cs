@@ -24,7 +24,7 @@ namespace BUS_QuanLyDaiLy
         }
         public static int XoaPhieuThu(int p)
         {
-            int al = DAL_PhieuThuTien.XoaPhieuThu(p);
+            int al = DAL_PhieuThuTien.XoaByIdDl(p);
             return al;
         }
         public static ArrayList search(string t)

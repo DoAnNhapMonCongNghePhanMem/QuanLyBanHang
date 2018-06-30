@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DTO_QuanLyDaiLy;
 
 namespace DAL_QuanLyDaiLy
 {
@@ -26,18 +27,18 @@ namespace DAL_QuanLyDaiLy
          */
         public static int KiemTraDangNhap(string userName, string pass)
         {
-            
+            int kq;
             SqlCommand cmd = new SqlCommand("PR_CheckLogin", conn);
             //cmd.CommandText = "PR_CheckLogin";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@UserName", SqlDbType.VarChar).Value = userName;
             cmd.Parameters.Add("@Pass", SqlDbType.VarChar).Value = pass;
-            cmd.Parameters.Add("@OutPut", SqlDbType.Int).Direction = ParameterDirection.Output;
+            cmd.Parameters.Add("@out", SqlDbType.Int).Direction = ParameterDirection.Output;
             try
             {
                 conn.Open();
                 cmd.ExecuteNonQuery();
-                int kq = (int)cmd.Parameters["@OutPut"].Value;
+                kq = (int)cmd.Parameters["@out"].Value;
                 return kq;
             }
             finally
@@ -80,7 +81,42 @@ namespace DAL_QuanLyDaiLy
                 conn.Close();
             }
         }
+        public static string GetTenNhanVien(string cmnd)
+        {
+            string query= "select TenNV from NhanVienQL where CMND="+cmnd;
+            DataTable dt = ResultQuery.GetTableResult(conn, query);
+            DataRow r = dt.Rows[0];
+            return r["TenNV"].ToString();
+        }
+        public static DTO_ThongTinTaiKhoan GetTaiKhoan(string user,string pass)
+        {
 
+            string query = "select* from ThongTinTaiKhoan where UserName = '"+user+"' and Pass = '"+pass+"'";
+            DataTable dt = ResultQuery.GetTableResult(conn, query);
+            DataRow r = dt.Rows[0];
+             string cmnd = r["CMND"].ToString();
+                int phanQuyen = (int) r["PhanQuyen"];
+                int trangThai = (int)r["PhanQuyen"];
+            DTO_ThongTinTaiKhoan tk = new DTO_ThongTinTaiKhoan(user, pass, cmnd, phanQuyen, trangThai);
+            return tk;
+ 
+        }
+        public static DTO_NhanVienQuanLy GetNhanVien(string cmnd)
+        {
+
+            string query = "select * from NhanVienQL where CMND='"+cmnd+"'";
+            DataTable dt = ResultQuery.GetTableResult(conn, query);
+            DataRow r = dt.Rows[0];
+            string ten = r["TenNV"].ToString();
+            DateTime ngaySinh = Convert.ToDateTime(r["NgaySinh"]);
+
+            string queQuan = r["QueQuan"].ToString();
+            string sdt = r["SDT"].ToString();
+
+            DTO_NhanVienQuanLy tk = new DTO_NhanVienQuanLy(cmnd,ten,ngaySinh,queQuan,sdt);
+            return tk;
+         
+        }
 
     }
 }

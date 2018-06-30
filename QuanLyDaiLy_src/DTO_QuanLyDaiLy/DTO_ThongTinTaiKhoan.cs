@@ -10,7 +10,7 @@ namespace DTO_QuanLyDaiLy
     {
         private string userName;
         private string pass;
-        private int idNV;
+        private string cmnd;
         private int phanQuyen;
         private int trangThai;
 
@@ -40,18 +40,7 @@ namespace DTO_QuanLyDaiLy
             }
         }
 
-        public int IdNV
-        {
-            get
-            {
-                return idNV;
-            }
-
-            set
-            {
-                idNV = value;
-            }
-        }
+        
 
         public int PhanQuyen
         {
@@ -79,15 +68,28 @@ namespace DTO_QuanLyDaiLy
             }
         }
 
+        public string Cmnd
+        {
+            get
+            {
+                return cmnd;
+            }
+
+            set
+            {
+                cmnd = value;
+            }
+        }
+
         public DTO_ThongTinTaiKhoan()
         {
 
         }
-        public DTO_ThongTinTaiKhoan(string userName,string pass,int idNV,int phanQuyen,int trangThai)
+        public DTO_ThongTinTaiKhoan(string userName,string pass,string cmnd,int phanQuyen,int trangThai)
         {
             this.UserName = userName;
             this.Pass = pass;
-            this.IdNV = idNV;
+            this.Cmnd = cmnd;
             this.PhanQuyen = phanQuyen;
             this.TrangThai = trangThai;
         }

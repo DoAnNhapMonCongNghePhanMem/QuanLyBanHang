@@ -64,6 +64,7 @@
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
             this.dtgvdl1 = new System.Windows.Forms.DataGridView();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txttien.Properties)).BeginInit();
@@ -94,8 +95,10 @@
             this.ribbon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ribbon.MaxItemId = 1;
             this.ribbon.Name = "ribbon";
+            this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.ribbonPage1});
             this.ribbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.MacOffice;
-            this.ribbon.Size = new System.Drawing.Size(887, 49);
+            this.ribbon.Size = new System.Drawing.Size(887, 130);
             // 
             // groupBox1
             // 
@@ -466,6 +469,11 @@
             this.dtgvdl1.TabIndex = 15;
             this.dtgvdl1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvdl1_CellContentClick);
             // 
+            // ribbonPage1
+            // 
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "ribbonPage1";
+            // 
             // hosodl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -549,5 +557,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.TextEdit txtsearch;
         private System.Windows.Forms.DataGridView dtgvdl1;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
     }
 }

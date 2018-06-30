@@ -61,10 +61,12 @@ namespace DAL_QuanLyDaiLy
             SqlCommand cmd = new SqlCommand("PR_InsertLoaiDaiLy", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@TenLoaiDL", SqlDbType.NVarChar).Value = tenLoaiDL;
+            cmd.Parameters.Add("@out", SqlDbType.Int).Direction = ParameterDirection.Output;
             try
             {
                 conn.Open();
-                kq = cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
+                kq = (int)cmd.Parameters["@out"].Value;
                 return kq;
             }
             finally

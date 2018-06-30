@@ -60,10 +60,12 @@ namespace DAL_QuanLyDaiLy
             SqlCommand cmd = new SqlCommand("PR_InsertMatHang", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@TenMatHang", SqlDbType.NVarChar).Value = tenMatHang;
+            cmd.Parameters.Add("@Out", SqlDbType.Int).Direction = ParameterDirection.Output;
             try
             {
                 conn.Open();
-                kq = cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
+                kq=(int)cmd.Parameters["@Out"].Value;
                 return kq;
             }
             finally
@@ -93,6 +95,16 @@ namespace DAL_QuanLyDaiLy
             string query = "update MatHang set TenMatHang=N'"+matHang.TenMatHang+"' where IdMatHang="+matHang.IdMatHang;
             int result = ResultQuery.GetResultQuery(conn, query);
             return result;
+        }
+        public static string GetTen(int id)
+        {
+            string ten = "";
+            DataTable tb = ResultQuery.GetTableResult(conn, "select TenMatHang from MatHang where IdMatHang=" + id);
+            foreach (DataRow r in tb.Rows)
+            {
+                ten = r["TenMatHang"].ToString();
+            }
+            return ten;
         }
 
     }
