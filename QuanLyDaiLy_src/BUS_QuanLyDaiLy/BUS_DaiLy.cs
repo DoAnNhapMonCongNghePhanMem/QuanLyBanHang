@@ -41,5 +41,13 @@ namespace BUS_QuanLyDaiLy
         {
             return DAL_DaiLy.GetTen(id);
         }
+        public static int UpdateTienNo(int idDL,float tienNo)
+        {
+            return DAL_DaiLy.UpdateTienNo(idDL, tienNo);
+        }
+        public static float GetTienNo(int id)
+        {
+            return DAL_DaiLy.GetTienNo(id);
+        }
     }
 }

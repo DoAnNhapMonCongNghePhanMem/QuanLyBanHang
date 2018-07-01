@@ -72,7 +72,7 @@ namespace DAL_QuanLyDaiLy
             cmd.Parameters.Add("@IdQuan", SqlDbType.Int).Value = daiLy.IdQuan;
             cmd.Parameters.Add("@NgayTiepNhan", SqlDbType.Date).Value = ngayNhanSql;
             cmd.Parameters.Add("@IdLoaiDL", SqlDbType.Int).Value = daiLy.IdLoaiDL;
-            cmd.Parameters.Add("@CMND", SqlDbType.NVarChar).Value = daiLy.Cmnd;
+            cmd.Parameters.Add("@CMND", SqlDbType.VarChar).Value = daiLy.Cmnd;
             cmd.Parameters.Add("@TienNo", SqlDbType.Float).Value = daiLy.Cmnd;
             cmd.Parameters.Add("@IdDaiLy", SqlDbType.Int).Value = daiLy.IdDL;
             cmd.Parameters.Add("@out", SqlDbType.Int).Direction = ParameterDirection.Output;
@@ -131,7 +131,7 @@ namespace DAL_QuanLyDaiLy
         public static ArrayList search(string name)
         {
             ArrayList al = new ArrayList();
-            string query = "select * from DaiLy where TenDaiLy like '%"+name+"%'";
+            string query = "select * from DaiLy where TenDaiLy like N'%"+name+"%'";
             DataTable tb = ResultQuery.GetTableResult(conn, query);
             foreach (DataRow r in tb.Rows)
             {
@@ -158,6 +158,42 @@ namespace DAL_QuanLyDaiLy
                 ten = r["TenDaiLy"].ToString();
             }
             return ten;
+        }
+
+        /*
+         * trả về 
+         * 1:update thành công
+         * 2:tiền nợ vượt quá quy định
+         */
+        public static int UpdateTienNo(int idDL,float tienNo)
+        {
+            int kq = 0;
+            SqlCommand cmd = new SqlCommand("PR_UpdateTienNo", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@idDL", SqlDbType.Int).Value = idDL;
+            cmd.Parameters.Add("@tienNo", SqlDbType.Float).Value = tienNo;
+            cmd.Parameters.Add("@out", SqlDbType.Int).Direction = ParameterDirection.Output;
+            try
+            {
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                kq = (int)cmd.Parameters["@out"].Value;
+                return kq;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+        public static float GetTienNo(int id)
+        {
+            float tien=0;
+            DataTable tb = ResultQuery.GetTableResult(conn, "select TienNo from DaiLy where IdDaiLy=" + id);
+            foreach (DataRow r in tb.Rows)
+            {
+                tien =(float) Convert.ToDouble(r["TienNo"].ToString());
+            }
+            return tien;
         }
     }
 }

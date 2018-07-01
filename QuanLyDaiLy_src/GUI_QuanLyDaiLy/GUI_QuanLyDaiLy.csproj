@@ -119,11 +119,29 @@
     <Compile Include="MatHang.Designer.cs">
       <DependentUpon>MatHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="MuaHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MuaHang.Designer.cs">
+      <DependentUpon>MuaHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhieuThu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PhieuThu.Designer.cs">
+      <DependentUpon>PhieuThu.cs</DependentUpon>
+    </Compile>
     <Compile Include="phieuthutien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="phieuthutien.designer.cs">
       <DependentUpon>phieuthutien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhieuXuat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PhieuXuat.Designer.cs">
+      <DependentUpon>PhieuXuat.cs</DependentUpon>
     </Compile>
     <Compile Include="phieuxuathang.cs">
       <SubType>Form</SubType>
@@ -156,6 +174,12 @@
     </Compile>
     <Compile Include="QuanLyDaiLy.Designer.cs">
       <DependentUpon>QuanLyDaiLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyMatHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuanLyMatHang.Designer.cs">
+      <DependentUpon>QuanLyMatHang.cs</DependentUpon>
     </Compile>
     <Compile Include="QuyChe.cs">
       <SubType>UserControl</SubType>
@@ -199,8 +223,17 @@
     <EmbeddedResource Include="MatHang.resx">
       <DependentUpon>MatHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MuaHang.resx">
+      <DependentUpon>MuaHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhieuThu.resx">
+      <DependentUpon>PhieuThu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="phieuthutien.resx">
       <DependentUpon>phieuthutien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhieuXuat.resx">
+      <DependentUpon>PhieuXuat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="phieuxuathang.resx">
       <DependentUpon>phieuxuathang.cs</DependentUpon>
@@ -227,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QuanLyDaiLy.resx">
       <DependentUpon>QuanLyDaiLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyMatHang.resx">
+      <DependentUpon>QuanLyMatHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QuyChe.resx">
       <DependentUpon>QuyChe.cs</DependentUpon>

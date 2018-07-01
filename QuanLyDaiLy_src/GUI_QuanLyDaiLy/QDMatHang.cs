@@ -75,5 +75,10 @@ namespace QuanLyDaiLy
                 txtDonGia.Text= gvQuyDinh.Rows[hang].Cells[3].Value.ToString();
             }
         }
+
+        private void cbMatHang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

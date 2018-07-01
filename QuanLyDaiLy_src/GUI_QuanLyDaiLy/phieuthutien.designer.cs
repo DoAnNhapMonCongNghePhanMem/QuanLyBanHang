@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(phieuthutien));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.panel4 = new System.Windows.Forms.Panel();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.txtdiachi = new DevExpress.XtraEditors.TextEdit();
@@ -50,14 +51,13 @@
             this.cmblistdl = new System.Windows.Forms.ComboBox();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.txtsearch = new DevExpress.XtraEditors.TextEdit();
             this.btnExit = new DevExpress.XtraEditors.SimpleButton();
             this.btnModify = new DevExpress.XtraEditors.SimpleButton();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
             this.dtgvdl = new System.Windows.Forms.DataGridView();
             this.txtmaphieu = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.txtsearch = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -72,9 +72,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtngaythu.Properties)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtsearch.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvdl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtmaphieu.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtsearch.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -87,7 +87,7 @@
             this.ribbon.MaxItemId = 1;
             this.ribbon.Name = "ribbon";
             this.ribbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.MacOffice;
-            this.ribbon.Size = new System.Drawing.Size(810, 49);
+            this.ribbon.Size = new System.Drawing.Size(856, 49);
             // 
             // panel1
             // 
@@ -103,6 +103,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(725, 206);
             this.panel1.TabIndex = 1;
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.labelControl6.Appearance.Options.UseFont = true;
+            this.labelControl6.Location = new System.Drawing.Point(21, 164);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl6.MaximumSize = new System.Drawing.Size(86, 41);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(70, 19);
+            this.labelControl6.TabIndex = 7;
+            this.labelControl6.Text = "Mã Phiếu:";
             // 
             // panel4
             // 
@@ -308,6 +320,16 @@
             this.panel7.Size = new System.Drawing.Size(615, 56);
             this.panel7.TabIndex = 6;
             // 
+            // txtsearch
+            // 
+            this.txtsearch.Location = new System.Drawing.Point(505, 14);
+            this.txtsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtsearch.Name = "txtsearch";
+            this.txtsearch.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtsearch.Properties.Appearance.Options.UseFont = true;
+            this.txtsearch.Size = new System.Drawing.Size(107, 26);
+            this.txtsearch.TabIndex = 13;
+            // 
             // btnExit
             // 
             this.btnExit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.ImageOptions.Image")));
@@ -370,33 +392,11 @@
             this.txtmaphieu.Size = new System.Drawing.Size(209, 26);
             this.txtmaphieu.TabIndex = 12;
             // 
-            // labelControl6
-            // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(21, 164);
-            this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl6.MaximumSize = new System.Drawing.Size(86, 41);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(70, 19);
-            this.labelControl6.TabIndex = 7;
-            this.labelControl6.Text = "Mã Phiếu:";
-            // 
-            // txtsearch
-            // 
-            this.txtsearch.Location = new System.Drawing.Point(505, 14);
-            this.txtsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtsearch.Name = "txtsearch";
-            this.txtsearch.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.txtsearch.Properties.Appearance.Options.UseFont = true;
-            this.txtsearch.Size = new System.Drawing.Size(107, 26);
-            this.txtsearch.TabIndex = 13;
-            // 
             // phieuthutien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(810, 496);
+            this.ClientSize = new System.Drawing.Size(856, 592);
             this.Controls.Add(this.txtmaphieu);
             this.Controls.Add(this.dtgvdl);
             this.Controls.Add(this.panel7);
@@ -427,9 +427,9 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtsearch.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvdl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtmaphieu.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtsearch.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

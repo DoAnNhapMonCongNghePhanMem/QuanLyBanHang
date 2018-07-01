@@ -49,6 +49,29 @@ namespace DAL_QuanLyDaiLy
             return kq;
 
         }
+        public static int ThemPhieuXuatTraVeId(DTO_PhieuXuatHang px)
+        {
+
+            int kq;
+            string ngayXuatSql = px.NgayXuat.ToString("yyyy-MM-dd");
+            SqlCommand cmd = new SqlCommand("PR_InsertPhieuXuat", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@DATE", SqlDbType.DateTime).Value = ngayXuatSql;
+            cmd.Parameters.Add("@IdDaiLy", SqlDbType.Int).Value = px.IdDaiLy;
+            cmd.Parameters.Add("@CMND", SqlDbType.VarChar).Value = px.Cmnd;
+            cmd.Parameters.Add("@out", SqlDbType.Int).Direction = ParameterDirection.Output;
+            try
+            {
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                kq = (int)cmd.Parameters["@out"].Value;
+                return kq;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
         /*
          * XoaPhieuXuat trả về 
          * 1:thành công
@@ -82,5 +105,6 @@ namespace DAL_QuanLyDaiLy
             int result = ResultQuery.GetResultQuery(conn, query);
             return result;
         }
+       
     }
 }

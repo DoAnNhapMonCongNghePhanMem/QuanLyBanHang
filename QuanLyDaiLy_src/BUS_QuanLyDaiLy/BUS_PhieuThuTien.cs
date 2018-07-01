@@ -12,7 +12,7 @@ namespace BUS_QuanLyDaiLy
 {
     public class BUS_PhieuThuTien
     {
-        public static ArrayList DsDaiLy()
+        public static ArrayList DsPhieuThu()
         {
             ArrayList al = DAL_TGPhieuThuTien.DSPhieuThu();
             return al;

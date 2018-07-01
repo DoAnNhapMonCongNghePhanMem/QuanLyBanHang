@@ -32,6 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.gvDaiLy = new System.Windows.Forms.DataGridView();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.btnReMove = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.txtsearch = new DevExpress.XtraEditors.TextEdit();
             this.btnSua = new DevExpress.XtraEditors.SimpleButton();
@@ -62,9 +63,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtTenDaiLy = new DevExpress.XtraEditors.TextEdit();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnReMove = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvDaiLy)).BeginInit();
             this.panel11.SuspendLayout();
@@ -85,7 +83,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenDaiLy.Properties)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -93,7 +90,6 @@
             this.panel1.Controls.Add(this.gvDaiLy);
             this.panel1.Controls.Add(this.panel11);
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -104,11 +100,12 @@
             // 
             this.gvDaiLy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvDaiLy.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gvDaiLy.Location = new System.Drawing.Point(0, 337);
+            this.gvDaiLy.Location = new System.Drawing.Point(0, 294);
             this.gvDaiLy.Name = "gvDaiLy";
-            this.gvDaiLy.Size = new System.Drawing.Size(765, 208);
+            this.gvDaiLy.Size = new System.Drawing.Size(765, 251);
             this.gvDaiLy.TabIndex = 16;
             this.gvDaiLy.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvDaiLy_CellClick);
+            this.gvDaiLy.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvDaiLy_CellContentClick);
             // 
             // panel11
             // 
@@ -117,11 +114,22 @@
             this.panel11.Controls.Add(this.btnSua);
             this.panel11.Controls.Add(this.btnXoa);
             this.panel11.Controls.Add(this.btnThem);
-            this.panel11.Location = new System.Drawing.Point(9, 273);
+            this.panel11.Location = new System.Drawing.Point(0, 226);
             this.panel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(750, 59);
+            this.panel11.Size = new System.Drawing.Size(762, 63);
             this.panel11.TabIndex = 10;
+            // 
+            // btnReMove
+            // 
+            this.btnReMove.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnReMove.ImageOptions.Image")));
+            this.btnReMove.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnReMove.Location = new System.Drawing.Point(389, 5);
+            this.btnReMove.Name = "btnReMove";
+            this.btnReMove.Size = new System.Drawing.Size(109, 47);
+            this.btnReMove.TabIndex = 7;
+            this.btnReMove.Text = "Clear all";
+            this.btnReMove.Click += new System.EventHandler(this.btnReMove_Click);
             // 
             // panelControl1
             // 
@@ -142,12 +150,11 @@
             this.txtsearch.Properties.Appearance.Options.UseFont = true;
             this.txtsearch.Size = new System.Drawing.Size(174, 26);
             this.txtsearch.TabIndex = 5;
-            this.txtsearch.EditValueChanged += new System.EventHandler(this.txtsearch_EditValueChanged);
-            this.txtsearch.TextChanged += new System.EventHandler(this.txtsearch_TextChanged);
+            this.txtsearch.EditValueChanged += new System.EventHandler(this.txtsearch_EditValueChanged_1);
             // 
             // btnSua
             // 
-            this.btnSua.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnModify.ImageOptions.Image")));
+            this.btnSua.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.ImageOptions.Image")));
             this.btnSua.Location = new System.Drawing.Point(262, 5);
             this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSua.Name = "btnSua";
@@ -158,7 +165,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.ImageOptions.Image")));
+            this.btnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.ImageOptions.Image")));
             this.btnXoa.Location = new System.Drawing.Point(136, 5);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
@@ -169,7 +176,7 @@
             // 
             // btnThem
             // 
-            this.btnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.ImageOptions.Image")));
+            this.btnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.ImageOptions.Image")));
             this.btnThem.Location = new System.Drawing.Point(3, 5);
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
@@ -188,11 +195,11 @@
             this.groupBox1.Controls.Add(this.panel6);
             this.groupBox1.Controls.Add(this.panel4);
             this.groupBox1.Controls.Add(this.panel3);
-            this.groupBox1.Location = new System.Drawing.Point(3, 67);
+            this.groupBox1.Location = new System.Drawing.Point(0, 2);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(762, 202);
+            this.groupBox1.Size = new System.Drawing.Size(762, 220);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chung";
@@ -447,35 +454,6 @@
             this.txtTenDaiLy.Size = new System.Drawing.Size(212, 26);
             this.txtTenDaiLy.TabIndex = 4;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(0, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(762, 59);
-            this.panel2.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 25F);
-            this.label1.Location = new System.Drawing.Point(259, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(226, 41);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Quản lý đại lý";
-            // 
-            // btnReMove
-            // 
-            this.btnReMove.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.btnReMove.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnReMove.Location = new System.Drawing.Point(389, 5);
-            this.btnReMove.Name = "btnReMove";
-            this.btnReMove.Size = new System.Drawing.Size(109, 47);
-            this.btnReMove.TabIndex = 7;
-            this.btnReMove.Text = "Clear all";
-            this.btnReMove.Click += new System.EventHandler(this.btnReMove_Click);
-            // 
             // QuanLyDaiLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -511,8 +489,6 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenDaiLy.Properties)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -545,8 +521,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit txtTenDaiLy;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel11;
         private DevExpress.XtraEditors.TextEdit txtsearch;
         private DevExpress.XtraEditors.SimpleButton btnSua;

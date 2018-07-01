@@ -36,7 +36,7 @@ namespace QuanLyDaiLy
         }
         void listphieuthu()
         {          
-            dtgvdl.DataSource = BUS_PhieuThuTien.DsDaiLy();
+            //dtgvdl.DataSource = BUS_PhieuThuTien.DsDaiLy();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

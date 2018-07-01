@@ -165,7 +165,10 @@ namespace QuanLyDaiLy
             
         }
 
-        
+        private void txtsearch_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     
     

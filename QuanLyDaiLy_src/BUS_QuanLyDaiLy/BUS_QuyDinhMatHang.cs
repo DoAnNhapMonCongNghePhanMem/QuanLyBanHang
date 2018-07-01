@@ -18,5 +18,15 @@ namespace BUS_QuanLyDaiLy
         {
             return DAL_QuyDinhMatHang.CapNhatQuyDinhMatHang(qd);
         }
+        public static string GetDonGia(int id)
+        {
+            return DAL_QuyDinhMatHang.getDonGia(id);
+            
+        }
+        public static string GetDonViTinh(int id)
+        {
+            return DAL_QuyDinhMatHang.getDonViTinh(id);
+
+        }
     }
 }

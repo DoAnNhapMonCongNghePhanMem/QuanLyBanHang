@@ -103,7 +103,7 @@
             // 
             // txtuserName
             // 
-            this.txtuserName.EditValue = "";
+            this.txtuserName.EditValue = "LECONGKHANH";
             this.txtuserName.Location = new System.Drawing.Point(146, 11);
             this.txtuserName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtuserName.Name = "txtuserName";
@@ -127,6 +127,7 @@
             this.txtPassWord.Name = "txtPassWord";
             this.txtPassWord.Size = new System.Drawing.Size(210, 21);
             this.txtPassWord.TabIndex = 2;
+            this.txtPassWord.Text = "khanh181097";
             this.txtPassWord.UseSystemPasswordChar = true;
             // 
             // lbcPassWord

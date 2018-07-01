@@ -13,7 +13,7 @@ namespace DAL_QuanLyDaiLy
     public class DAL_ChiTietXuat
     {
         private static SqlConnection conn = DBUtils.GetDBConnection();
-        public static ArrayList DSPhieuThu()
+        public static ArrayList DSPhieuXuat()
         {
             ArrayList arrList = new ArrayList();
             DataTable dt = new DataTable();

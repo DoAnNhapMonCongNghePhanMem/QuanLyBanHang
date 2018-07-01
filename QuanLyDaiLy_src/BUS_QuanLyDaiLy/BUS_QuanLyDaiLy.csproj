@@ -43,6 +43,7 @@
     <Compile Include="arraylist.cs" />
     <Compile Include="BUS_BaoCaoCongNo.cs" />
     <Compile Include="BUS_BaoCaoDoanhSo.cs" />
+    <Compile Include="BUS_ChiTietXuat.cs" />
     <Compile Include="BUS_LoaiDL.cs" />
     <Compile Include="BUS_MatHang.cs" />
     <Compile Include="BUS_NhanVien.cs" />

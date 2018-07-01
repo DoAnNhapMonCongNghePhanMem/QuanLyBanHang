@@ -107,6 +107,7 @@
             this.cbMatHang.Name = "cbMatHang";
             this.cbMatHang.Size = new System.Drawing.Size(158, 21);
             this.cbMatHang.TabIndex = 9;
+            this.cbMatHang.SelectedIndexChanged += new System.EventHandler(this.cbMatHang_SelectedIndexChanged);
             // 
             // btnCapNhat
             // 

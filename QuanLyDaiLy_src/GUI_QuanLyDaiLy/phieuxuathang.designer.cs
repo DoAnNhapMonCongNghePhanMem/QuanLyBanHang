@@ -30,6 +30,7 @@
         {
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cmblistdl = new System.Windows.Forms.ComboBox();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panel9 = new System.Windows.Forms.Panel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -43,6 +44,7 @@
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txttontien = new System.Windows.Forms.TextBox();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
@@ -52,9 +54,7 @@
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.btnxuatfile = new DevExpress.XtraEditors.SimpleButton();
             this.dtgvdl = new System.Windows.Forms.DataGridView();
-            this.cmblistdl = new System.Windows.Forms.ComboBox();
             this.load = new System.Windows.Forms.Button();
-            this.txttontien = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -77,6 +77,7 @@
             this.ribbon.Name = "ribbon";
             this.ribbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.MacOffice;
             this.ribbon.Size = new System.Drawing.Size(827, 49);
+            this.ribbon.Click += new System.EventHandler(this.ribbon_Click);
             // 
             // panel2
             // 
@@ -87,6 +88,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(345, 40);
             this.panel2.TabIndex = 3;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // cmblistdl
+            // 
+            this.cmblistdl.FormattingEnabled = true;
+            this.cmblistdl.Location = new System.Drawing.Point(87, 10);
+            this.cmblistdl.Name = "cmblistdl";
+            this.cmblistdl.Size = new System.Drawing.Size(232, 21);
+            this.cmblistdl.TabIndex = 6;
+            this.cmblistdl.SelectedIndexChanged += new System.EventHandler(this.cmblistdl_SelectedIndexChanged);
             // 
             // labelControl1
             // 
@@ -99,6 +110,7 @@
             this.labelControl1.Size = new System.Drawing.Size(56, 19);
             this.labelControl1.TabIndex = 5;
             this.labelControl1.Text = "Đại lý  :";
+            this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
             // 
             // panel9
             // 
@@ -109,6 +121,7 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(371, 40);
             this.panel9.TabIndex = 4;
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
             // dateTimePicker1
             // 
@@ -118,6 +131,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(212, 22);
             this.dateTimePicker1.TabIndex = 7;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // labelControl8
             // 
@@ -130,6 +144,7 @@
             this.labelControl8.Size = new System.Drawing.Size(122, 19);
             this.labelControl8.TabIndex = 5;
             this.labelControl8.Text = "Ngày lập phiếu  :";
+            this.labelControl8.Click += new System.EventHandler(this.labelControl8_Click);
             // 
             // gridControl1
             // 
@@ -143,6 +158,7 @@
             this.gridControl1.TabIndex = 5;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // gridView1
             // 
@@ -223,6 +239,14 @@
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // txttontien
+            // 
+            this.txttontien.Location = new System.Drawing.Point(126, 12);
+            this.txttontien.Name = "txttontien";
+            this.txttontien.Size = new System.Drawing.Size(136, 21);
+            this.txttontien.TabIndex = 6;
+            this.txttontien.TextChanged += new System.EventHandler(this.txttontien_TextChanged);
+            // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
@@ -234,6 +258,7 @@
             this.labelControl2.Size = new System.Drawing.Size(84, 19);
             this.labelControl2.TabIndex = 5;
             this.labelControl2.Text = "Tổng tiền  :";
+            this.labelControl2.Click += new System.EventHandler(this.labelControl2_Click);
             // 
             // panel3
             // 
@@ -257,6 +282,7 @@
             this.labelControl4.Size = new System.Drawing.Size(47, 19);
             this.labelControl4.TabIndex = 5;
             this.labelControl4.Text = ".000 đ";
+            this.labelControl4.Click += new System.EventHandler(this.labelControl4_Click);
             // 
             // labelControl5
             // 
@@ -269,6 +295,7 @@
             this.labelControl5.Size = new System.Drawing.Size(86, 19);
             this.labelControl5.TabIndex = 5;
             this.labelControl5.Text = "Số tiền trả  :";
+            this.labelControl5.Click += new System.EventHandler(this.labelControl5_Click);
             // 
             // panel4
             // 
@@ -292,6 +319,7 @@
             this.labelControl6.Size = new System.Drawing.Size(47, 19);
             this.labelControl6.TabIndex = 5;
             this.labelControl6.Text = ".000 đ";
+            this.labelControl6.Click += new System.EventHandler(this.labelControl6_Click);
             // 
             // labelControl7
             // 
@@ -304,6 +332,7 @@
             this.labelControl7.Size = new System.Drawing.Size(60, 19);
             this.labelControl7.TabIndex = 5;
             this.labelControl7.Text = "Còn lại :";
+            this.labelControl7.Click += new System.EventHandler(this.labelControl7_Click);
             // 
             // btnxuatfile
             // 
@@ -313,6 +342,7 @@
             this.btnxuatfile.Size = new System.Drawing.Size(103, 54);
             this.btnxuatfile.TabIndex = 7;
             this.btnxuatfile.Text = "Xuất file PDF";
+            this.btnxuatfile.Click += new System.EventHandler(this.btnxuatfile_Click);
             // 
             // dtgvdl
             // 
@@ -321,14 +351,7 @@
             this.dtgvdl.Name = "dtgvdl";
             this.dtgvdl.Size = new System.Drawing.Size(765, 150);
             this.dtgvdl.TabIndex = 9;
-            // 
-            // cmblistdl
-            // 
-            this.cmblistdl.FormattingEnabled = true;
-            this.cmblistdl.Location = new System.Drawing.Point(87, 10);
-            this.cmblistdl.Name = "cmblistdl";
-            this.cmblistdl.Size = new System.Drawing.Size(232, 21);
-            this.cmblistdl.TabIndex = 6;
+            this.dtgvdl.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvdl_CellContentClick);
             // 
             // load
             // 
@@ -339,13 +362,6 @@
             this.load.Text = "Load";
             this.load.UseVisualStyleBackColor = true;
             this.load.Click += new System.EventHandler(this.load_Click);
-            // 
-            // txttontien
-            // 
-            this.txttontien.Location = new System.Drawing.Point(126, 12);
-            this.txttontien.Name = "txttontien";
-            this.txttontien.Size = new System.Drawing.Size(136, 21);
-            this.txttontien.TabIndex = 6;
             // 
             // phieuxuathang
             // 

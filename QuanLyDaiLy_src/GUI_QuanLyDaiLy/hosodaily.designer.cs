@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(hosodl));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txttien = new DevExpress.XtraEditors.TextEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
@@ -64,7 +65,6 @@
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
             this.dtgvdl1 = new System.Windows.Forms.DataGridView();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txttien.Properties)).BeginInit();
@@ -99,6 +99,11 @@
             this.ribbonPage1});
             this.ribbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.MacOffice;
             this.ribbon.Size = new System.Drawing.Size(887, 130);
+            // 
+            // ribbonPage1
+            // 
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "ribbonPage1";
             // 
             // groupBox1
             // 
@@ -415,6 +420,7 @@
             this.txtsearch.Properties.Appearance.Options.UseFont = true;
             this.txtsearch.Size = new System.Drawing.Size(115, 26);
             this.txtsearch.TabIndex = 5;
+            this.txtsearch.EditValueChanged += new System.EventHandler(this.txtsearch_EditValueChanged);
             // 
             // btnExit
             // 
@@ -468,11 +474,6 @@
             this.dtgvdl1.Size = new System.Drawing.Size(737, 150);
             this.dtgvdl1.TabIndex = 15;
             this.dtgvdl1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvdl1_CellContentClick);
-            // 
-            // ribbonPage1
-            // 
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "ribbonPage1";
             // 
             // hosodl
             // 

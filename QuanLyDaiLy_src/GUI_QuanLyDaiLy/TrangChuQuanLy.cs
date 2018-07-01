@@ -17,7 +17,9 @@ namespace QuanLyDaiLy
         DTO_NhanVienQuanLy nhanVien;
         public TrangChuQuanLy()
         {
+
             InitializeComponent();
+            btnBack.Visible = false;
             this.TopMost = true;
             //this.FormBorderStyle = FormBorderStyle.SizableToolWindow;
             this.FormBorderStyle = FormBorderStyle.Sizable;
@@ -31,7 +33,8 @@ namespace QuanLyDaiLy
             InitializeComponent();
             //this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
-            
+            btnBack.Visible = false;
+
             taiKhoan = tk;
             nhanVien = nv;
         }
@@ -85,7 +88,10 @@ namespace QuanLyDaiLy
             
             tbTrangChu.Hide();
             QuanLyDaiLy hs = new QuanLyDaiLy(taiKhoan,nhanVien);
-            this.pnlTrangChu.Controls.Add(hs);
+            pnlTrangChu.Controls.Clear();
+            pnlTrangChu.Controls.Add(hs);
+            btnBack.Visible = true;
+            lbTieuDe.Text = "Quản lý đại lý";
             hs.Show();
 
 
@@ -93,7 +99,13 @@ namespace QuanLyDaiLy
 
         private void simpleButton2_Click(object sender, EventArgs e)
         {
-
+            tbTrangChu.Hide();
+            QuanLyMatHang hs = new QuanLyMatHang(taiKhoan, nhanVien);
+            pnlTrangChu.Controls.Clear();
+            pnlTrangChu.Controls.Add(hs);
+            btnBack.Visible = true;
+            lbTieuDe.Text = "Quản lý đại lý";
+            hs.Show();
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -105,7 +117,10 @@ namespace QuanLyDaiLy
         {
             tbTrangChu.Hide();
             BaoCaoDoanhSo ds = new BaoCaoDoanhSo();
+            pnlTrangChu.Controls.Clear();
             pnlTrangChu.Controls.Add(ds);
+            lbTieuDe.Text = "Báo cáo doanh số";
+            btnBack.Visible = true;
             ds.Show();
         }
 
@@ -113,7 +128,10 @@ namespace QuanLyDaiLy
         {
             tbTrangChu.Hide();
             BaoCaoCongNo ds = new BaoCaoCongNo();
+            pnlTrangChu.Controls.Clear();
             pnlTrangChu.Controls.Add(ds);
+            lbTieuDe.Text = "Báo cáo công nợ";
+            btnBack.Visible = true;
             ds.Show();
         }
 
@@ -121,8 +139,49 @@ namespace QuanLyDaiLy
         {
             tbTrangChu.Hide();
             QuyChe ds = new QuyChe();
+            pnlTrangChu.Controls.Clear();
             pnlTrangChu.Controls.Add(ds);
+            lbTieuDe.Text = "Quy chế tổ chức";
+            btnBack.Visible = true;
             ds.Show();
+        }
+
+        private void btnGiaoDich_Click(object sender, EventArgs e)
+        {
+            tbTrangChu.Hide();
+            //pnlTieuDe.Hide();
+            MuaHang hs = new MuaHang(taiKhoan, nhanVien);
+            pnlTrangChu.Controls.Clear();
+            pnlTrangChu.Controls.Add(hs);
+            lbTieuDe.Text = "Giao dịch";
+            btnBack.Visible = true; ;
+            hs.Show();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            pnlTieuDe.Show();
+            pnlTrangChu.Controls.Clear();
+            pnlTrangChu.Controls.Add(tbTrangChu);
+            btnBack.Visible = false;
+            tbTrangChu.Show();
+            lbTieuDe.Text = "Trang chủ";
+        }
+
+        private void simpleButton1_Click_2(object sender, EventArgs e)
+        {
+            tbTrangChu.Hide();
+            PhieuThu hs = new PhieuThu(taiKhoan, nhanVien);
+            pnlTrangChu.Controls.Clear();
+            pnlTrangChu.Controls.Add(hs);
+            btnBack.Visible = true;
+            lbTieuDe.Text = "Phiếu thu tiền";
+            hs.Show();
+        }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -109,8 +109,7 @@ namespace QuanLyDaiLy
         }
         private void ResetTable()
         {
-            tb.Clear();
-            dsDaiLy= BUS_DaiLy.DsDaiLy();
+            tb.Rows.Clear();
             arrIdDL = new int[dsDaiLy.Count];
             gvDaiLy.Columns["IdQuan"].Visible = false;
             gvDaiLy.Columns["IdLoaiDL"].Visible = false;
@@ -146,6 +145,7 @@ namespace QuanLyDaiLy
 
             }else
             {
+                dsDaiLy= BUS_DaiLy.DsDaiLy();
                 UpdateGvDaiLy();
             }
             
@@ -157,15 +157,18 @@ namespace QuanLyDaiLy
             dl.IdDL =idDL;
             dl.IdLoaiDL = arrIdLDL[cbLoaiDL.SelectedIndex];
             dl.IdQuan = arrIdQuan[cbQuan.SelectedIndex];
+            dl.TienNo = (float)Convert.ToDouble(txtTienNo.Text);
             dl.TenDaiLy = txtTenDaiLy.Text;
             dl.Sdt = txtSdt.Text;
-            dl.Cmnd = nhanVien.Cmnd;
             dl.DiaChi = txtDiaChi.Text;
+            dl.Cmnd = nhanVien.Cmnd;
             dl.NgayNhan = DateTime.Now;
-            dl.TienNo =(float) Convert.ToDouble(txtTienNo.Text);
-            int kq = BUS_DaiLy.SuaDaiLy(dl);
+            
+           int kq = BUS_DaiLy.SuaDaiLy(dl);
+
             if ( kq==1)
             {
+                dsDaiLy= BUS_DaiLy.DsDaiLy();
                 UpdateGvDaiLy();
             }
             else if(kq==2)
@@ -182,26 +185,6 @@ namespace QuanLyDaiLy
 
         }
 
-        private void txtsearch_TextChanged(object sender, EventArgs e)
-        {
-            if (txtsearch.Text.Equals("") == true)
-            {
-                dsDaiLy = BUS_DaiLy.DsDaiLy();
-                UpdateGvDaiLy();
-            }
-            else
-            {
-                dsDaiLy = BUS_DaiLy.Search(txtsearch.Text);
-                UpdateGvDaiLy();
-
-            }
-
-        }
-
-        private void txtsearch_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnReMove_Click(object sender, EventArgs e)
         {
@@ -214,6 +197,42 @@ namespace QuanLyDaiLy
             txtDiaChi.Text = "";
             cbQuan.SelectedItem = "";
             txtTienNo.Text = "";
+        }
+
+        private void txtsearch_EditValueChanged(object sender, EventArgs e)
+        {
+           
+            if (txtsearch.Text.Equals("") == false)
+            {
+                dsDaiLy = BUS_DaiLy.Search(txtsearch.Text);
+                UpdateGvDaiLy();
+            }
+            else
+            {
+                dsDaiLy = BUS_DaiLy.DsDaiLy();
+                UpdateGvDaiLy();
+
+            }
+        }
+
+        private void gvDaiLy_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtsearch_EditValueChanged_1(object sender, EventArgs e)
+        {
+            if (txtsearch.Text.Equals("") == false)
+            {
+                dsDaiLy = BUS_DaiLy.Search(txtsearch.Text);
+                UpdateGvDaiLy();
+            }
+            else
+            {
+                dsDaiLy = BUS_DaiLy.DsDaiLy();
+                UpdateGvDaiLy();
+
+            }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -233,6 +252,7 @@ namespace QuanLyDaiLy
 
             }else
             {
+                dsDaiLy= BUS_DaiLy.DsDaiLy();
                 UpdateGvDaiLy();
             }
         }
@@ -240,8 +260,9 @@ namespace QuanLyDaiLy
         private void gvDaiLy_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int hang = e.RowIndex;
-            if (hang < dsDaiLy.Count)
+            if (0<=hang &&hang< dsDaiLy.Count)
             {
+                
                 idDL = int.Parse(gvDaiLy.Rows[hang].Cells[0].Value.ToString());
                 idLoaiDL = int.Parse(gvDaiLy.Rows[hang].Cells[1].Value.ToString());
                 idQuan = int.Parse(gvDaiLy.Rows[hang].Cells[2].Value.ToString());

@@ -13,7 +13,7 @@ namespace DAL_QuanLyDaiLy
     public class DAL_MatHang
     {
         private static SqlConnection conn = DBUtils.GetDBConnection();
-        public static ArrayList DSLoaiDaiLyL()
+        public static ArrayList DSMatHang()
         {
             ArrayList arrList = new ArrayList();
             DataTable dt = new DataTable();
@@ -33,20 +33,17 @@ namespace DAL_QuanLyDaiLy
         public static ArrayList search(string name)
         {
             ArrayList arrList = new ArrayList();
-            DataTable dt = new DataTable();
-            string query = "select * from DaiLy where TenMatHang like '%" + name + "%'";
+            string query = "select * from MatHang where TenMatHang like N'%" + name + "%'";
             DataTable tb = ResultQuery.GetTableResult(conn, query);
-            int id;
-            string ten;
-            foreach (DataRow r in dt.Rows)
+            foreach (DataRow r in tb.Rows)
             {
-                id = (int)r["IdMatHang"];
-                ten = r["TenMatHang"].ToString();
+                int id = (int)r["IdMatHang"];
+                string ten = r["TenMatHang"].ToString();
                 DTO_MatHang matHang = new DTO_MatHang(id, ten);
                 arrList.Add(matHang);
             }
 
-            return arrList;
+            return arrList; 
         }
         /*
          * ThemMatHang trả về
