@@ -97,5 +97,34 @@ namespace QuanLyDaiLy
             txtSdt.Text = tb.Rows[index][2].ToString();
             txtTienNo.Text= tb.Rows[index][3].ToString();
         }
+
+        private void btnThu_Click(object sender, EventArgs e)
+        {
+            if (txtTienThu.Text.Equals("") == false)
+            {
+                float tienNo = (float)Convert.ToDouble(txtTienNo.Text);
+                float tienThu = (float)Convert.ToDouble(txtTienThu.Text);
+                if (tienThu <= tienNo)
+                {
+                    int id = dsIdDL[cbDaiLy.SelectedIndex];
+                    DateTime ngayThu = dtNgayThu.Value;
+                    float soTienThu = (float)Convert.ToDouble(txtTienThu.Text);
+                    string cmnd = nhanVien.Cmnd;
+                    DTO_PhieuThuTien pt = new DTO_PhieuThuTien(0, ngayThu, soTienThu, id, cmnd);
+                    BUS_PhieuThuTien.ThemPhieuThu(pt);
+                    float tienNoMoi = tienNo - tienThu;
+                    BUS_DaiLy.UpdateTienNo(id, tienNoMoi);
+                }
+
+            }
+        }
+
+        private void cbDaiLy_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            int index = cbDaiLy.SelectedIndex;
+            txtDiaChi.Text = tb.Rows[index][1].ToString();
+            txtSdt.Text = tb.Rows[index][2].ToString();
+            txtTienNo.Text = tb.Rows[index][3].ToString();
+        }
     }
 }

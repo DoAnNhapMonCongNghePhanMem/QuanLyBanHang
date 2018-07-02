@@ -83,6 +83,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="baocaocongno.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -94,6 +100,18 @@
     </Compile>
     <Compile Include="BaoCaoDoanhSo.Designer.cs">
       <DependentUpon>BaoCaoDoanhSo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangKyTaiKhoancs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DangKyTaiKhoancs.Designer.cs">
+      <DependentUpon>DangKyTaiKhoancs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoiMatKhau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DoiMatKhau.Designer.cs">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
     <Compile Include="fupdateAcount.cs">
       <SubType>Form</SubType>
@@ -118,6 +136,12 @@
     </Compile>
     <Compile Include="MatHang.Designer.cs">
       <DependentUpon>MatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoRongDaiLy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MoRongDaiLy.Designer.cs">
+      <DependentUpon>MoRongDaiLy.cs</DependentUpon>
     </Compile>
     <Compile Include="MuaHang.cs">
       <SubType>UserControl</SubType>
@@ -199,17 +223,38 @@
     <Compile Include="QuyDinhTienNo.Designer.cs">
       <DependentUpon>QuyDinhTienNo.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThemLoaiDaiLy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThemLoaiDaiLy.Designer.cs">
+      <DependentUpon>ThemLoaiDaiLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemQuan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThemQuan.Designer.cs">
+      <DependentUpon>ThemQuan.cs</DependentUpon>
+    </Compile>
     <Compile Include="TrangChuQuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TrangChuQuanLy.Designer.cs">
       <DependentUpon>TrangChuQuanLy.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="baocaocongno.resx">
       <DependentUpon>baocaocongno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BaoCaoDoanhSo.resx">
       <DependentUpon>BaoCaoDoanhSo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangKyTaiKhoancs.resx">
+      <DependentUpon>DangKyTaiKhoancs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoiMatKhau.resx">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fupdateAcount.resx">
       <DependentUpon>fupdateAcount.cs</DependentUpon>
@@ -222,6 +267,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MatHang.resx">
       <DependentUpon>MatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoRongDaiLy.resx">
+      <DependentUpon>MoRongDaiLy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MuaHang.resx">
       <DependentUpon>MuaHang.cs</DependentUpon>
@@ -258,7 +306,16 @@
     <EmbeddedResource Include="QDTienNo.resx">
       <DependentUpon>QDTienNo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyDaiLy.bin.resx">
+      <DependentUpon>QuanLyDaiLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyDaiLy.da.resx">
+      <DependentUpon>QuanLyDaiLy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuanLyDaiLy.resx">
+      <DependentUpon>QuanLyDaiLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyDaiLy.vi-VN.resx">
       <DependentUpon>QuanLyDaiLy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QuanLyMatHang.resx">
@@ -272,6 +329,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QuyDinhTienNo.resx">
       <DependentUpon>QuyDinhTienNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemLoaiDaiLy.resx">
+      <DependentUpon>ThemLoaiDaiLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemQuan.resx">
+      <DependentUpon>ThemQuan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrangChuQuanLy.resx">
       <DependentUpon>TrangChuQuanLy.cs</DependentUpon>

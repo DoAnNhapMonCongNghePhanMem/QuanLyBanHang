@@ -31,22 +31,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyMatHang));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.txtTim = new DevExpress.XtraEditors.TextEdit();
             this.btnSua = new DevExpress.XtraEditors.SimpleButton();
             this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
             this.btnThem = new DevExpress.XtraEditors.SimpleButton();
             this.gvMatHang = new System.Windows.Forms.DataGridView();
             this.txtTen = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtTim = new DevExpress.XtraEditors.TextEdit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvMatHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTim.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvMatHang)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel1.Controls.Add(this.panelControl1);
             this.panel1.Controls.Add(this.btnSua);
             this.panel1.Controls.Add(this.btnXoa);
@@ -61,43 +63,85 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelControl1.ContentImage = ((System.Drawing.Image)(resources.GetObject("panelControl1.ContentImage")));
             this.panelControl1.ContentImageAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.panelControl1.Controls.Add(this.txtTim);
-            this.panelControl1.Location = new System.Drawing.Point(558, 79);
+            this.panelControl1.Location = new System.Drawing.Point(582, 88);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(184, 51);
+            this.panelControl1.Size = new System.Drawing.Size(184, 42);
             this.panelControl1.TabIndex = 7;
+            // 
+            // txtTim
+            // 
+            this.txtTim.Location = new System.Drawing.Point(40, 5);
+            this.txtTim.Name = "txtTim";
+            this.txtTim.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTim.Properties.Appearance.Options.UseFont = true;
+            this.txtTim.Size = new System.Drawing.Size(139, 28);
+            this.txtTim.TabIndex = 0;
+            this.txtTim.EditValueChanged += new System.EventHandler(this.txtTim_EditValueChanged);
             // 
             // btnSua
             // 
+            this.btnSua.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSua.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.btnSua.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSua.Appearance.Options.UseFont = true;
+            this.btnSua.Appearance.Options.UseForeColor = true;
+            this.btnSua.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.ImageOptions.Image")));
             this.btnSua.Location = new System.Drawing.Point(464, 456);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(95, 38);
+            this.btnSua.Size = new System.Drawing.Size(105, 49);
             this.btnSua.TabIndex = 5;
             this.btnSua.Text = "Sửa";
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
+            this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnXoa.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.btnXoa.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnXoa.Appearance.Options.UseFont = true;
+            this.btnXoa.Appearance.Options.UseForeColor = true;
+            this.btnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.ImageOptions.Image")));
             this.btnXoa.Location = new System.Drawing.Point(334, 456);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(100, 38);
+            this.btnXoa.Size = new System.Drawing.Size(100, 49);
             this.btnXoa.TabIndex = 4;
             this.btnXoa.Text = "Xoá";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
+            this.btnThem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThem.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.btnThem.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnThem.Appearance.Options.UseFont = true;
+            this.btnThem.Appearance.Options.UseForeColor = true;
+            this.btnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.ImageOptions.Image")));
             this.btnThem.Location = new System.Drawing.Point(204, 456);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(101, 38);
+            this.btnThem.Size = new System.Drawing.Size(101, 49);
             this.btnThem.TabIndex = 3;
             this.btnThem.Text = "Thêm ";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // gvMatHang
             // 
+            this.gvMatHang.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gvMatHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gvMatHang.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.gvMatHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvMatHang.Location = new System.Drawing.Point(33, 136);
             this.gvMatHang.Name = "gvMatHang";
@@ -108,27 +152,28 @@
             // 
             // txtTen
             // 
-            this.txtTen.Location = new System.Drawing.Point(159, 79);
+            this.txtTen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTen.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.txtTen.Location = new System.Drawing.Point(190, 58);
             this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(223, 21);
+            this.txtTen.Size = new System.Drawing.Size(190, 32);
             this.txtTen.TabIndex = 1;
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 79);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(29, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 13);
+            this.label1.Size = new System.Drawing.Size(135, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên mặt hàng";
-            // 
-            // txtTim
-            // 
-            this.txtTim.Location = new System.Drawing.Point(40, 17);
-            this.txtTim.Name = "txtTim";
-            this.txtTim.Size = new System.Drawing.Size(139, 20);
-            this.txtTim.TabIndex = 0;
-            this.txtTim.EditValueChanged += new System.EventHandler(this.txtTim_EditValueChanged);
             // 
             // QuanLyMatHang
             // 
@@ -141,8 +186,8 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvMatHang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTim.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvMatHang)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -72,7 +72,7 @@ namespace QuanLyDaiLy
             cbLoaiDL.SelectedItem ="";
             txtSdt.Text = "";
             cbQuan.SelectedItem = "";
-            txtNgayTiepNhan.Text = "";
+            dtNgayNhan.Value = DateTime.Now;
             txtNguoiNhan.Text = "";
             txtTienNo.Text = "";
             txtDiaChi.Text = "";
@@ -235,6 +235,136 @@ namespace QuanLyDaiLy
             }
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel11_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelControl1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cbLoaiDL_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelControl4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtNgayTiepNhan_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelControl8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void labelControl9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void labelControl6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNguoiNhan_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cbQuan_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelControl7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void labelControl5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSdt_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void labelControl3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDiaChi_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtTenDaiLy_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             DTO_DaiLy dl = new DTO_DaiLy();
@@ -270,7 +400,7 @@ namespace QuanLyDaiLy
                 cbLoaiDL.SelectedItem = gvDaiLy.Rows[hang].Cells[4].Value.ToString();
                 txtSdt.Text = gvDaiLy.Rows[hang].Cells[5].Value.ToString();
                 cbQuan.SelectedItem = gvDaiLy.Rows[hang].Cells[6].Value.ToString();
-                txtNgayTiepNhan.Text = gvDaiLy.Rows[hang].Cells[7].Value.ToString();
+                dtNgayNhan.Value = (DateTime) Convert.ToDateTime(gvDaiLy.Rows[hang].Cells[7].Value.ToString());
                 txtNguoiNhan.Text = gvDaiLy.Rows[hang].Cells[8].Value.ToString();
                 txtTienNo.Text = gvDaiLy.Rows[hang].Cells[9].Value.ToString();
                 txtDiaChi.Text = gvDaiLy.Rows[hang].Cells[10].Value.ToString();

@@ -54,5 +54,22 @@ namespace QuanLyDaiLy
                 MessageBox.Show("Tài khoản đã bị block bởi admin");
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbHienThi_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbHienThi.Checked == true)
+            {
+                txtPassWord.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtPassWord.UseSystemPasswordChar = true;
+            }
+        }
     }
 }

@@ -34,6 +34,7 @@ namespace QuanLyDaiLy
             //this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
             btnBack.Visible = false;
+            rbTrangChu.AutoHideEmptyItems = true;
 
             taiKhoan = tk;
             nhanVien = nv;
@@ -86,13 +87,23 @@ namespace QuanLyDaiLy
         private void simpleButton1_Click_1(object sender, EventArgs e)
         {
             
-            tbTrangChu.Hide();
+            //tbTrangChu.Hide();
             QuanLyDaiLy hs = new QuanLyDaiLy(taiKhoan,nhanVien);
-            pnlTrangChu.Controls.Clear();
+            //hs.Anchor = AnchorStyles.Bottom;
+            //hs.Anchor = AnchorStyles.Left;
+            //hs.Anchor = AnchorStyles.Right;
+            //hs.Anchor = AnchorStyles.Top;
+            hs.Width = pnlTrangChu.Width;
+            hs.Height = pnlTrangChu.Height;
+        
+
+            pnlTrangChu.Controls.RemoveAt(0);
             pnlTrangChu.Controls.Add(hs);
             btnBack.Visible = true;
             lbTieuDe.Text = "Quản lý đại lý";
-            hs.Show();
+            //hs.Show();
+            //pnlTrangChu.Padding = new Padding(50, 0, 50, 0);
+            
 
 
         }
@@ -101,10 +112,12 @@ namespace QuanLyDaiLy
         {
             tbTrangChu.Hide();
             QuanLyMatHang hs = new QuanLyMatHang(taiKhoan, nhanVien);
+            hs.Width = pnlTrangChu.Width;
+            hs.Height = pnlTrangChu.Height;
             pnlTrangChu.Controls.Clear();
             pnlTrangChu.Controls.Add(hs);
             btnBack.Visible = true;
-            lbTieuDe.Text = "Quản lý đại lý";
+            lbTieuDe.Text = "Quản lý mặt hàng";
             hs.Show();
         }
 
@@ -117,6 +130,8 @@ namespace QuanLyDaiLy
         {
             tbTrangChu.Hide();
             BaoCaoDoanhSo ds = new BaoCaoDoanhSo();
+            ds.Width = pnlTrangChu.Width;
+            ds.Height = pnlTrangChu.Height;
             pnlTrangChu.Controls.Clear();
             pnlTrangChu.Controls.Add(ds);
             lbTieuDe.Text = "Báo cáo doanh số";
@@ -128,17 +143,21 @@ namespace QuanLyDaiLy
         {
             tbTrangChu.Hide();
             BaoCaoCongNo ds = new BaoCaoCongNo();
+            ds.Width = pnlTrangChu.Width;
+            ds.Height = pnlTrangChu.Height;
             pnlTrangChu.Controls.Clear();
             pnlTrangChu.Controls.Add(ds);
             lbTieuDe.Text = "Báo cáo công nợ";
             btnBack.Visible = true;
-            ds.Show();
+            //ds.Show();
         }
 
         private void btnQuyChe_Click(object sender, EventArgs e)
         {
             tbTrangChu.Hide();
             QuyChe ds = new QuyChe();
+            ds.Width = pnlTrangChu.Width;
+            ds.Height = pnlTrangChu.Height;
             pnlTrangChu.Controls.Clear();
             pnlTrangChu.Controls.Add(ds);
             lbTieuDe.Text = "Quy chế tổ chức";
@@ -151,6 +170,8 @@ namespace QuanLyDaiLy
             tbTrangChu.Hide();
             //pnlTieuDe.Hide();
             MuaHang hs = new MuaHang(taiKhoan, nhanVien);
+            hs.Width = pnlTrangChu.Width;
+            hs.Height = pnlTrangChu.Height;
             pnlTrangChu.Controls.Clear();
             pnlTrangChu.Controls.Add(hs);
             lbTieuDe.Text = "Giao dịch";
@@ -161,6 +182,7 @@ namespace QuanLyDaiLy
         private void btnBack_Click(object sender, EventArgs e)
         {
             pnlTieuDe.Show();
+            
             pnlTrangChu.Controls.Clear();
             pnlTrangChu.Controls.Add(tbTrangChu);
             btnBack.Visible = false;
@@ -172,6 +194,8 @@ namespace QuanLyDaiLy
         {
             tbTrangChu.Hide();
             PhieuThu hs = new PhieuThu(taiKhoan, nhanVien);
+            hs.Width = pnlTrangChu.Width;
+            hs.Height = pnlTrangChu.Height;
             pnlTrangChu.Controls.Clear();
             pnlTrangChu.Controls.Add(hs);
             btnBack.Visible = true;
@@ -180,6 +204,48 @@ namespace QuanLyDaiLy
         }
 
         private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            //tbTrangChu.Hide();
+            Admin hs = new Admin(taiKhoan, nhanVien);
+            hs.Width = pnlTrangChu.Width;
+            hs.Height = pnlTrangChu.Height;
+            pnlTrangChu.Controls.Clear();
+            pnlTrangChu.Controls.Add(hs);
+            btnBack.Visible = true;
+            lbTieuDe.Text = "ADMIN";
+            hs.Show();
+            //if (taiKhoan.PhanQuyen == 0)
+            //{
+
+            //}else
+            //{
+            //    //Chỉ admin mới truy cập được
+            //}
+        }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+            MoRongDaiLy hs = new MoRongDaiLy(taiKhoan, nhanVien);
+            hs.Width = pnlTrangChu.Width;
+            hs.Height = pnlTrangChu.Height;
+            pnlTrangChu.Controls.Clear();
+            pnlTrangChu.Controls.Add(hs);
+            btnBack.Visible = true;
+            lbTieuDe.Text = "Mở rộng đại lý";
+            hs.Show();
+        }
+
+        private void tbTrangChu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnlTrangChu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbTieuDe_Click(object sender, EventArgs e)
         {
 
         }

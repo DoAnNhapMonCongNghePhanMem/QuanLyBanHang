@@ -133,9 +133,49 @@ namespace QuanLyDaiLy
             PhieuXuat p = new PhieuXuat(tb, taiKhoan,nhanVien);
             pnlGiaoDich.Controls.Clear();
             pnlGiaoDich.Controls.Add(p);
-            lbGiaoDich.Text = "Phiếu xuất";
+            //lbGiaoDich.Text = "Phiếu xuất";
             p.Show();
 
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            tb.Rows.Add(idMatHang, cbMatHang.SelectedItem, (int)nbSoLuong.Value, txtDonViTinh.Text,
+                txtDonGia.Text, txtThanhTien.Text);
+        }
+
+        private void cbMatHang_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (cbMatHang.SelectedItem.Equals("") == false)
+            {
+                idMatHang = dsId[cbMatHang.SelectedIndex];
+                txtDonGia.Text = BUS_QuyDinhMatHang.GetDonGia(idMatHang);
+                txtDonViTinh.Text = BUS_QuyDinhMatHang.GetDonViTinh(idMatHang);
+                int soluong = int.Parse(nbSoLuong.Value.ToString());
+                int dongia = int.Parse(txtDonGia.Text);
+                int tien = soluong * dongia;
+                txtThanhTien.Text = tien.ToString();
+            }
+        }
+
+        private void nbSoLuong_ValueChanged_1(object sender, EventArgs e)
+        {
+            if (cbMatHang.SelectedItem.Equals("") == false)
+            {
+                int soluong = int.Parse(nbSoLuong.Value.ToString());
+                int dongia = int.Parse(txtDonGia.Text);
+                int tien = soluong * dongia;
+                txtThanhTien.Text = tien.ToString();
+            }
+        }
+
+        private void btnXuatHang_Click_1(object sender, EventArgs e)
+        {
+            PhieuXuat p = new PhieuXuat(tb, taiKhoan, nhanVien);
+            pnlGiaoDich.Controls.Clear();
+            pnlGiaoDich.Controls.Add(p);
+            //lbGiaoDich.Text = "Phiếu xuất";
+            p.Show();
         }
     }
 }

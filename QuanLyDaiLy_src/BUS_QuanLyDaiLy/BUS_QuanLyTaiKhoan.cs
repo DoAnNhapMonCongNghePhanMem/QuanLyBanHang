@@ -18,5 +18,14 @@ namespace BUS_QuanLyDaiLy
         {
             return DAL_QuanLyTaiKhoan.KiemTraDangNhap(user, pass);
         }
+        public static int CapNhatMatKhau(string user,string passCu,string passMoi)
+        {
+            return DAL_QuanLyTaiKhoan.CapNhatMatKhau(user, passCu, passMoi);
+        }
+        public static int DangKi(string cmnd, string tenNV, string ngaySinh, string queQuan, string sdt, string userName, string pass, int phanQuyen, int trangThai)
+        {
+            return DAL_QuanLyTaiKhoan.KiemTraDangKy( cmnd,  tenNV,  ngaySinh,  queQuan,  sdt,  userName,  pass, phanQuyen, trangThai);
+        }
+
     }
 }

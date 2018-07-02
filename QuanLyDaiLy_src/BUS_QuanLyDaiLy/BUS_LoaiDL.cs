@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL_QuanLyDaiLy;
-
+using DTO_QuanLyDaiLy;
 
 namespace BUS_QuanLyDaiLy
 {
@@ -19,6 +19,18 @@ namespace BUS_QuanLyDaiLy
         public static string GetTenById(int id)
         {
             return DAL_LoaiDaiLy.GetTenById(id);
+        }
+        public static int ThemLoaiDL(string ten)
+        {
+            return DAL_LoaiDaiLy.ThemLoaiDaiLy(ten);
+        }
+        public static int XoaLoaiDL(int id)
+        {
+            return DAL_LoaiDaiLy.XoaLoaiDaiLy(id);
+        }
+        public static int CapNhatLoaiDL(DTO_LoaiDL l)
+        {
+            return DAL_LoaiDaiLy.CapNhatLoaiDaiLy(l);
         }
 
     }

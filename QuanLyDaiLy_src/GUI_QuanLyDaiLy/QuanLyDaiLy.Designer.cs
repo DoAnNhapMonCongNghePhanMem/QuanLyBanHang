@@ -41,28 +41,28 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.cbLoaiDL = new System.Windows.Forms.ComboBox();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.txtNgayTiepNhan = new System.Windows.Forms.TextBox();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.panel10 = new System.Windows.Forms.Panel();
             this.txtTienNo = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.txtNguoiNhan = new DevExpress.XtraEditors.TextEdit();
             this.panel8 = new System.Windows.Forms.Panel();
             this.cbQuan = new System.Windows.Forms.ComboBox();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.txtSdt = new DevExpress.XtraEditors.TextEdit();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.txtDiaChi = new DevExpress.XtraEditors.TextEdit();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtTenDaiLy = new DevExpress.XtraEditors.TextEdit();
+            this.dtNgayNhan = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvDaiLy)).BeginInit();
             this.panel11.SuspendLayout();
@@ -87,106 +87,99 @@
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.gvDaiLy);
             this.panel1.Controls.Add(this.panel11);
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(765, 545);
-            this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // gvDaiLy
             // 
+            resources.ApplyResources(this.gvDaiLy, "gvDaiLy");
+            this.gvDaiLy.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gvDaiLy.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.gvDaiLy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvDaiLy.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gvDaiLy.Location = new System.Drawing.Point(0, 294);
             this.gvDaiLy.Name = "gvDaiLy";
-            this.gvDaiLy.Size = new System.Drawing.Size(765, 251);
-            this.gvDaiLy.TabIndex = 16;
             this.gvDaiLy.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvDaiLy_CellClick);
             this.gvDaiLy.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvDaiLy_CellContentClick);
             // 
             // panel11
             // 
+            resources.ApplyResources(this.panel11, "panel11");
             this.panel11.Controls.Add(this.btnReMove);
             this.panel11.Controls.Add(this.panelControl1);
             this.panel11.Controls.Add(this.btnSua);
             this.panel11.Controls.Add(this.btnXoa);
             this.panel11.Controls.Add(this.btnThem);
-            this.panel11.Location = new System.Drawing.Point(0, 226);
-            this.panel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(762, 63);
-            this.panel11.TabIndex = 10;
+            this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
             // 
             // btnReMove
             // 
+            this.btnReMove.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnReMove.Appearance.Font")));
+            this.btnReMove.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("btnReMove.Appearance.ForeColor")));
+            this.btnReMove.Appearance.Options.UseFont = true;
+            this.btnReMove.Appearance.Options.UseForeColor = true;
             this.btnReMove.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnReMove.ImageOptions.Image")));
             this.btnReMove.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnReMove.Location = new System.Drawing.Point(389, 5);
+            resources.ApplyResources(this.btnReMove, "btnReMove");
             this.btnReMove.Name = "btnReMove";
-            this.btnReMove.Size = new System.Drawing.Size(109, 47);
-            this.btnReMove.TabIndex = 7;
-            this.btnReMove.Text = "Clear all";
             this.btnReMove.Click += new System.EventHandler(this.btnReMove_Click);
             // 
             // panelControl1
             // 
+            resources.ApplyResources(this.panelControl1, "panelControl1");
             this.panelControl1.ContentImage = ((System.Drawing.Image)(resources.GetObject("panelControl1.ContentImage")));
             this.panelControl1.ContentImageAlignment = System.Drawing.ContentAlignment.MiddleRight;
             this.panelControl1.Controls.Add(this.txtsearch);
-            this.panelControl1.Location = new System.Drawing.Point(520, 15);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(212, 37);
-            this.panelControl1.TabIndex = 6;
+            this.panelControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl1_Paint);
             // 
             // txtsearch
             // 
-            this.txtsearch.Location = new System.Drawing.Point(5, 4);
-            this.txtsearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            resources.ApplyResources(this.txtsearch, "txtsearch");
             this.txtsearch.Name = "txtsearch";
-            this.txtsearch.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtsearch.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txtsearch.Properties.Appearance.Font")));
             this.txtsearch.Properties.Appearance.Options.UseFont = true;
-            this.txtsearch.Size = new System.Drawing.Size(174, 26);
-            this.txtsearch.TabIndex = 5;
             this.txtsearch.EditValueChanged += new System.EventHandler(this.txtsearch_EditValueChanged_1);
             // 
             // btnSua
             // 
+            this.btnSua.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnSua.Appearance.Font")));
+            this.btnSua.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("btnSua.Appearance.ForeColor")));
+            this.btnSua.Appearance.Options.UseFont = true;
+            this.btnSua.Appearance.Options.UseForeColor = true;
             this.btnSua.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.ImageOptions.Image")));
-            this.btnSua.Location = new System.Drawing.Point(262, 5);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            resources.ApplyResources(this.btnSua, "btnSua");
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(108, 47);
-            this.btnSua.TabIndex = 3;
-            this.btnSua.Text = "Cập nhật";
             this.btnSua.Click += new System.EventHandler(this.btnModify_Click);
             // 
             // btnXoa
             // 
+            this.btnXoa.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnXoa.Appearance.Font")));
+            this.btnXoa.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("btnXoa.Appearance.ForeColor")));
+            this.btnXoa.Appearance.Options.UseFont = true;
+            this.btnXoa.Appearance.Options.UseForeColor = true;
             this.btnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.ImageOptions.Image")));
-            this.btnXoa.Location = new System.Drawing.Point(136, 5);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            resources.ApplyResources(this.btnXoa, "btnXoa");
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(104, 47);
-            this.btnXoa.TabIndex = 3;
-            this.btnXoa.Text = "Xóa";
             this.btnXoa.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnThem
             // 
+            this.btnThem.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("btnThem.Appearance.Font")));
+            this.btnThem.Appearance.ForeColor = ((System.Drawing.Color)(resources.GetObject("btnThem.Appearance.ForeColor")));
+            this.btnThem.Appearance.Options.UseFont = true;
+            this.btnThem.Appearance.Options.UseForeColor = true;
             this.btnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.ImageOptions.Image")));
-            this.btnThem.Location = new System.Drawing.Point(3, 5);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            resources.ApplyResources(this.btnThem, "btnThem");
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(111, 47);
-            this.btnThem.TabIndex = 3;
-            this.btnThem.Text = "Thêm ";
             this.btnThem.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.panel5);
             this.groupBox1.Controls.Add(this.panel9);
             this.groupBox1.Controls.Add(this.panel10);
@@ -195,272 +188,181 @@
             this.groupBox1.Controls.Add(this.panel6);
             this.groupBox1.Controls.Add(this.panel4);
             this.groupBox1.Controls.Add(this.panel3);
-            this.groupBox1.Location = new System.Drawing.Point(0, 2);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(762, 220);
-            this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin chung";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.label2);
             this.panel5.Controls.Add(this.cbLoaiDL);
-            this.panel5.Controls.Add(this.labelControl4);
-            this.panel5.Location = new System.Drawing.Point(6, 63);
-            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            resources.ApplyResources(this.panel5, "panel5");
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(344, 40);
-            this.panel5.TabIndex = 0;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // cbLoaiDL
             // 
+            resources.ApplyResources(this.cbLoaiDL, "cbLoaiDL");
             this.cbLoaiDL.FormattingEnabled = true;
-            this.cbLoaiDL.Location = new System.Drawing.Point(120, 12);
             this.cbLoaiDL.Name = "cbLoaiDL";
-            this.cbLoaiDL.Size = new System.Drawing.Size(212, 21);
-            this.cbLoaiDL.TabIndex = 7;
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(10, 10);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl4.MaximumSize = new System.Drawing.Size(86, 41);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(83, 19);
-            this.labelControl4.TabIndex = 5;
-            this.labelControl4.Text = "Loại đại lý :";
+            this.cbLoaiDL.SelectedIndexChanged += new System.EventHandler(this.cbLoaiDL_SelectedIndexChanged);
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.txtNgayTiepNhan);
-            this.panel9.Controls.Add(this.labelControl8);
-            this.panel9.Location = new System.Drawing.Point(384, 108);
-            this.panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel9.Controls.Add(this.label7);
+            this.panel9.Controls.Add(this.dtNgayNhan);
+            resources.ApplyResources(this.panel9, "panel9");
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(371, 40);
-            this.panel9.TabIndex = 0;
-            // 
-            // txtNgayTiepNhan
-            // 
-            this.txtNgayTiepNhan.Location = new System.Drawing.Point(141, 12);
-            this.txtNgayTiepNhan.Name = "txtNgayTiepNhan";
-            this.txtNgayTiepNhan.Size = new System.Drawing.Size(212, 21);
-            this.txtNgayTiepNhan.TabIndex = 6;
-            // 
-            // labelControl8
-            // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(9, 10);
-            this.labelControl8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl8.MaximumSize = new System.Drawing.Size(129, 41);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(118, 19);
-            this.labelControl8.TabIndex = 5;
-            this.labelControl8.Text = "Ngày tiếp nhận :";
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
             // panel10
             // 
+            this.panel10.Controls.Add(this.label4);
             this.panel10.Controls.Add(this.txtTienNo);
-            this.panel10.Controls.Add(this.labelControl9);
-            this.panel10.Location = new System.Drawing.Point(6, 154);
-            this.panel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            resources.ApplyResources(this.panel10, "panel10");
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(344, 40);
-            this.panel10.TabIndex = 0;
+            this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
             // 
             // txtTienNo
             // 
-            this.txtTienNo.Location = new System.Drawing.Point(120, 8);
-            this.txtTienNo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            resources.ApplyResources(this.txtTienNo, "txtTienNo");
             this.txtTienNo.Name = "txtTienNo";
-            this.txtTienNo.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtTienNo.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txtTienNo.Properties.Appearance.Font")));
             this.txtTienNo.Properties.Appearance.Options.UseFont = true;
-            this.txtTienNo.Size = new System.Drawing.Size(212, 26);
-            this.txtTienNo.TabIndex = 7;
             this.txtTienNo.EditValueChanged += new System.EventHandler(this.txttien_EditValueChanged);
-            // 
-            // labelControl9
-            // 
-            this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(10, 11);
-            this.labelControl9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl9.MaximumSize = new System.Drawing.Size(129, 81);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(67, 19);
-            this.labelControl9.TabIndex = 6;
-            this.labelControl9.Text = "Tiền Nợ :";
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.labelControl6);
+            this.panel7.Controls.Add(this.label8);
             this.panel7.Controls.Add(this.txtNguoiNhan);
-            this.panel7.Location = new System.Drawing.Point(385, 152);
-            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            resources.ApplyResources(this.panel7, "panel7");
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(371, 40);
-            this.panel7.TabIndex = 0;
-            // 
-            // labelControl6
-            // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(10, 10);
-            this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl6.MaximumSize = new System.Drawing.Size(129, 41);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(125, 19);
-            this.labelControl6.TabIndex = 5;
-            this.labelControl6.Text = "Người tiếp nhận :";
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // txtNguoiNhan
             // 
-            this.txtNguoiNhan.Location = new System.Drawing.Point(140, 10);
-            this.txtNguoiNhan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            resources.ApplyResources(this.txtNguoiNhan, "txtNguoiNhan");
             this.txtNguoiNhan.Name = "txtNguoiNhan";
-            this.txtNguoiNhan.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtNguoiNhan.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txtNguoiNhan.Properties.Appearance.Font")));
             this.txtNguoiNhan.Properties.Appearance.Options.UseFont = true;
-            this.txtNguoiNhan.Size = new System.Drawing.Size(213, 26);
-            this.txtNguoiNhan.TabIndex = 4;
+            this.txtNguoiNhan.EditValueChanged += new System.EventHandler(this.txtNguoiNhan_EditValueChanged);
             // 
             // panel8
             // 
+            this.panel8.Controls.Add(this.label6);
             this.panel8.Controls.Add(this.cbQuan);
-            this.panel8.Controls.Add(this.labelControl7);
-            this.panel8.Location = new System.Drawing.Point(384, 63);
-            this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            resources.ApplyResources(this.panel8, "panel8");
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(371, 40);
-            this.panel8.TabIndex = 0;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // cbQuan
             // 
+            resources.ApplyResources(this.cbQuan, "cbQuan");
             this.cbQuan.FormattingEnabled = true;
-            this.cbQuan.Location = new System.Drawing.Point(141, 12);
             this.cbQuan.Name = "cbQuan";
-            this.cbQuan.Size = new System.Drawing.Size(212, 21);
-            this.cbQuan.TabIndex = 6;
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(10, 10);
-            this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl7.MaximumSize = new System.Drawing.Size(129, 41);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(54, 19);
-            this.labelControl7.TabIndex = 5;
-            this.labelControl7.Text = "Quận  :";
+            this.cbQuan.SelectedIndexChanged += new System.EventHandler(this.cbQuan_SelectedIndexChanged);
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.labelControl5);
+            this.panel6.Controls.Add(this.label3);
             this.panel6.Controls.Add(this.txtSdt);
-            this.panel6.Location = new System.Drawing.Point(6, 110);
-            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            resources.ApplyResources(this.panel6, "panel6");
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(344, 40);
-            this.panel6.TabIndex = 0;
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(10, 12);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl5.MaximumSize = new System.Drawing.Size(129, 81);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(104, 19);
-            this.labelControl5.TabIndex = 5;
-            this.labelControl5.Text = "Số điện thoại :";
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // txtSdt
             // 
-            this.txtSdt.Location = new System.Drawing.Point(120, 7);
-            this.txtSdt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            resources.ApplyResources(this.txtSdt, "txtSdt");
             this.txtSdt.Name = "txtSdt";
-            this.txtSdt.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtSdt.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txtSdt.Properties.Appearance.Font")));
             this.txtSdt.Properties.Appearance.Options.UseFont = true;
-            this.txtSdt.Size = new System.Drawing.Size(212, 26);
-            this.txtSdt.TabIndex = 4;
+            this.txtSdt.EditValueChanged += new System.EventHandler(this.txtSdt_EditValueChanged);
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.labelControl3);
+            this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.txtDiaChi);
-            this.panel4.Location = new System.Drawing.Point(385, 19);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(371, 40);
-            this.panel4.TabIndex = 0;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(10, 10);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl3.MaximumSize = new System.Drawing.Size(86, 41);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(59, 19);
-            this.labelControl3.TabIndex = 5;
-            this.labelControl3.Text = "Đại chỉ :";
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // txtDiaChi
             // 
-            this.txtDiaChi.Location = new System.Drawing.Point(140, 7);
-            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            resources.ApplyResources(this.txtDiaChi, "txtDiaChi");
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtDiaChi.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txtDiaChi.Properties.Appearance.Font")));
             this.txtDiaChi.Properties.Appearance.Options.UseFont = true;
-            this.txtDiaChi.Size = new System.Drawing.Size(213, 26);
-            this.txtDiaChi.TabIndex = 4;
+            this.txtDiaChi.EditValueChanged += new System.EventHandler(this.txtDiaChi_EditValueChanged);
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.labelControl2);
+            this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.txtTenDaiLy);
-            this.panel3.Location = new System.Drawing.Point(6, 19);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(344, 40);
-            this.panel3.TabIndex = 0;
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(10, 13);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl2.MaximumSize = new System.Drawing.Size(86, 41);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(76, 19);
-            this.labelControl2.TabIndex = 5;
-            this.labelControl2.Text = "Tên đại lý:";
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // txtTenDaiLy
             // 
-            this.txtTenDaiLy.Location = new System.Drawing.Point(120, 7);
-            this.txtTenDaiLy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            resources.ApplyResources(this.txtTenDaiLy, "txtTenDaiLy");
             this.txtTenDaiLy.Name = "txtTenDaiLy";
-            this.txtTenDaiLy.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtTenDaiLy.Properties.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("txtTenDaiLy.Properties.Appearance.Font")));
             this.txtTenDaiLy.Properties.Appearance.Options.UseFont = true;
-            this.txtTenDaiLy.Size = new System.Drawing.Size(212, 26);
-            this.txtTenDaiLy.TabIndex = 4;
+            this.txtTenDaiLy.EditValueChanged += new System.EventHandler(this.txtTenDaiLy_EditValueChanged);
+            // 
+            // dtNgayNhan
+            // 
+            resources.ApplyResources(this.dtNgayNhan, "dtNgayNhan");
+            this.dtNgayNhan.Name = "dtNgayNhan";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
             // 
             // QuanLyDaiLy
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.panel1);
             this.Name = "QuanLyDaiLy";
-            this.Size = new System.Drawing.Size(765, 545);
+            resources.ApplyResources(this, "$this");
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gvDaiLy)).EndInit();
             this.panel11.ResumeLayout(false);
@@ -498,27 +400,18 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox1;
         private DevExpress.XtraEditors.TextEdit txtTienNo;
-        private DevExpress.XtraEditors.LabelControl labelControl9;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.ComboBox cbLoaiDL;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox txtNgayTiepNhan;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.ComboBox cbQuan;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
         private System.Windows.Forms.Panel panel7;
-        private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.TextEdit txtNguoiNhan;
         private System.Windows.Forms.Panel panel6;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.TextEdit txtSdt;
         private System.Windows.Forms.Panel panel4;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.TextEdit txtDiaChi;
         private System.Windows.Forms.Panel panel3;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit txtTenDaiLy;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel11;
@@ -529,5 +422,14 @@
         private System.Windows.Forms.DataGridView gvDaiLy;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.SimpleButton btnReMove;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DateTimePicker dtNgayNhan;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label1;
     }
 }

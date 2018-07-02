@@ -118,5 +118,27 @@ namespace DAL_QuanLyDaiLy
          
         }
 
+        public static int CapNhatMatKhau(string user,string passCu,string passMoi)
+        {
+            int result;
+            SqlCommand cmd = new SqlCommand("PR_UpdatePass", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@passCu", SqlDbType.VarChar).Value = passCu;
+            cmd.Parameters.Add("@passMoi", SqlDbType.VarChar).Value = passMoi;
+            cmd.Parameters.Add("@userName", SqlDbType.VarChar).Value = user;
+            cmd.Parameters.Add("@out", SqlDbType.Int).Direction = ParameterDirection.Output;
+            try
+            {
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                result = (int)cmd.Parameters["@out"].Value;
+                return result;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
     }
 }

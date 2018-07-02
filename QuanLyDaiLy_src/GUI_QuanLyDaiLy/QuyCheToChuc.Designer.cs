@@ -42,8 +42,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtSoQuan = new DevExpress.XtraEditors.TextEdit();
             this.btnCapNhat = new DevExpress.XtraEditors.SimpleButton();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoLoaiDL.Properties)).BeginInit();
             this.panel1.SuspendLayout();
@@ -213,18 +213,6 @@
             this.btnCapNhat.Text = "Cập Nhật";
             this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
-            // panel5
-            // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.AutoSize = true;
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(65, 13);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(464, 68);
-            this.panel5.TabIndex = 16;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
-            // 
             // label5
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -239,6 +227,18 @@
             this.label5.Text = "Quy chế tổ chức";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.AutoSize = true;
+            this.panel5.Controls.Add(this.label5);
+            this.panel5.Location = new System.Drawing.Point(65, 13);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(464, 68);
+            this.panel5.TabIndex = 16;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // QuyCheToChuc
             // 
@@ -287,7 +287,7 @@
         private System.Windows.Forms.Label label4;
         private DevExpress.XtraEditors.TextEdit txtSoQuan;
         private DevExpress.XtraEditors.SimpleButton btnCapNhat;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel5;
     }
 }

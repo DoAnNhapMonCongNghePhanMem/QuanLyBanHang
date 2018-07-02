@@ -103,5 +103,52 @@ namespace QuanLyDaiLy
         {
 
         }
+
+        private void gvhang_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            int hang = e.RowIndex;
+            if (hang < tb.Rows.Count)
+            {
+
+            }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            int idDaiLy = dsIdDL[cbDaiLy.SelectedIndex];
+            DateTime ngayXuat = dtNgayLap.Value;
+            //Console.WriteLine(ngayXuat.ToString("yyyy-MM-dd"));
+            float tienCon = (float)Convert.ToDouble(txtTienCon.Text);
+            float tienNo = BUS_DaiLy.GetTienNo(idDaiLy);
+            float tienNoMoi = tienCon + tienNo;
+            int kqUpdate = BUS_DaiLy.UpdateTienNo(idDaiLy, tienNoMoi);
+            if (kqUpdate == 1)
+            {
+                string cmnd = taiKhoan.Cmnd;
+                DTO_PhieuXuatHang phieuXuatHang = new DTO_PhieuXuatHang(0, ngayXuat, idDaiLy, cmnd);
+                int idPhieuXuat = BUS_PhieuXuat.ThemPhieuXuatGetId(phieuXuatHang);
+                foreach (DataRow r in tb.Rows)
+                {
+                    DTO_ChiTietXuat ctx = new DTO_ChiTietXuat(idPhieuXuat, (int)r[0], (int)r[2], (float)r[4], r[3].ToString(), (float)r[5]);
+                    BUS_ChiTietXuat.ThemChiTietXuat(ctx);
+                }
+            }
+            else
+            {
+
+            }
+
+        }
+
+        private void txtSoTienTra_EditValueChanged_1(object sender, EventArgs e)
+        {
+            float tongTien = (float)Convert.ToDouble(txtTongTien.Text);
+            float tienTra = (float)Convert.ToDouble(txtSoTienTra.Text);
+            if (txtSoTienTra.Text != null && tienTra<=tongTien)
+            {
+                float tiencon = tongTien - tienTra;
+                txtTienCon.Text = tiencon.ToString();
+            }
+        }
     }
 }

@@ -28,178 +28,159 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            this.cbHienThi = new System.Windows.Forms.CheckBox();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lbcUserName = new DevExpress.XtraEditors.LabelControl();
             this.txtuserName = new DevExpress.XtraEditors.TextEdit();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.txtPassWord = new System.Windows.Forms.TextBox();
-            this.lbcPassWord = new DevExpress.XtraEditors.LabelControl();
-            this.label1 = new System.Windows.Forms.Label();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtPassWord = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtuserName.Properties)).BeginInit();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
-            this.panelControl1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // cbHienThi
             // 
-            this.panel1.Controls.Add(this.checkBox1);
-            this.panel1.Controls.Add(this.simpleButton1);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Location = new System.Drawing.Point(43, 74);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(482, 222);
-            this.panel1.TabIndex = 5;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(131, 144);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(115, 17);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Show PassWord";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbHienThi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cbHienThi.AutoSize = true;
+            this.cbHienThi.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.cbHienThi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cbHienThi.Location = new System.Drawing.Point(325, 305);
+            this.cbHienThi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbHienThi.Name = "cbHienThi";
+            this.cbHienThi.Size = new System.Drawing.Size(149, 21);
+            this.cbHienThi.TabIndex = 4;
+            this.cbHienThi.Text = "Hiển thị mật khẩu";
+            this.cbHienThi.UseVisualStyleBackColor = true;
+            this.cbHienThi.CheckedChanged += new System.EventHandler(this.cbHienThi_CheckedChanged);
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(131, 174);
+            this.simpleButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Verdana", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.Appearance.Options.UseForeColor = true;
+            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(325, 348);
             this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(185, 46);
+            this.simpleButton1.Size = new System.Drawing.Size(129, 66);
             this.simpleButton1.TabIndex = 2;
             this.simpleButton1.Text = "Login";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.lbcUserName);
-            this.panel2.Controls.Add(this.txtuserName);
-            this.panel2.Location = new System.Drawing.Point(20, 16);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(418, 49);
-            this.panel2.TabIndex = 0;
-            // 
-            // lbcUserName
-            // 
-            this.lbcUserName.Appearance.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbcUserName.Appearance.Options.UseFont = true;
-            this.lbcUserName.Location = new System.Drawing.Point(14, 9);
-            this.lbcUserName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lbcUserName.Name = "lbcUserName";
-            this.lbcUserName.Size = new System.Drawing.Size(102, 22);
-            this.lbcUserName.TabIndex = 1;
-            this.lbcUserName.Text = "UserName:";
-            // 
             // txtuserName
             // 
+            this.txtuserName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtuserName.EditValue = "LECONGKHANH";
-            this.txtuserName.Location = new System.Drawing.Point(146, 11);
+            this.txtuserName.Location = new System.Drawing.Point(325, 184);
             this.txtuserName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtuserName.Name = "txtuserName";
-            this.txtuserName.Size = new System.Drawing.Size(210, 20);
+            this.txtuserName.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtuserName.Properties.Appearance.Options.UseFont = true;
+            this.txtuserName.Size = new System.Drawing.Size(240, 28);
             this.txtuserName.TabIndex = 0;
             // 
-            // panel3
+            // panelControl1
             // 
-            this.panel3.Controls.Add(this.txtPassWord);
-            this.panel3.Controls.Add(this.lbcPassWord);
-            this.panel3.Location = new System.Drawing.Point(20, 80);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(418, 49);
-            this.panel3.TabIndex = 1;
+            this.panelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.panelControl1.ContentImage = ((System.Drawing.Image)(resources.GetObject("panelControl1.ContentImage")));
+            this.panelControl1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.panelControl1.Location = new System.Drawing.Point(288, 12);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(128, 96);
+            this.panelControl1.TabIndex = 6;
             // 
-            // txtPassWord
+            // labelControl1
             // 
-            this.txtPassWord.Location = new System.Drawing.Point(146, 13);
-            this.txtPassWord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtPassWord.Name = "txtPassWord";
-            this.txtPassWord.Size = new System.Drawing.Size(210, 21);
-            this.txtPassWord.TabIndex = 2;
-            this.txtPassWord.Text = "khanh181097";
-            this.txtPassWord.UseSystemPasswordChar = true;
-            // 
-            // lbcPassWord
-            // 
-            this.lbcPassWord.Appearance.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbcPassWord.Appearance.Options.UseFont = true;
-            this.lbcPassWord.Location = new System.Drawing.Point(22, 9);
-            this.lbcPassWord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lbcPassWord.Name = "lbcPassWord";
-            this.lbcPassWord.Size = new System.Drawing.Size(100, 22);
-            this.lbcPassWord.TabIndex = 1;
-            this.lbcPassWord.Text = "Password:";
+            this.labelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Arial Narrow", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Teal;
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.Location = new System.Drawing.Point(173, 114);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(338, 40);
+            this.labelControl1.TabIndex = 7;
+            this.labelControl1.Text = "Phần mềm quản lý đại lý";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 25F);
-            this.label1.Location = new System.Drawing.Point(132, 13);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(131, 187);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 41);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Đăng nhập";
+            this.label1.Size = new System.Drawing.Size(118, 24);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "User name";
             // 
-            // panelControl1
+            // label2
             // 
-            this.panelControl1.Controls.Add(this.label1);
-            this.panelControl1.Location = new System.Drawing.Point(43, 13);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(482, 56);
-            this.panelControl1.TabIndex = 6;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(136, 252);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(113, 24);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Pass word";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // txtPassWord
+            // 
+            this.txtPassWord.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.txtPassWord.Location = new System.Drawing.Point(325, 250);
+            this.txtPassWord.Name = "txtPassWord";
+            this.txtPassWord.Size = new System.Drawing.Size(240, 30);
+            this.txtPassWord.TabIndex = 5;
+            this.txtPassWord.Text = "123";
+            this.txtPassWord.UseSystemPasswordChar = true;
             // 
             // Login
             // 
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(539, 307);
+            this.ClientSize = new System.Drawing.Size(686, 449);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtuserName);
+            this.Controls.Add(this.labelControl1);
+            this.Controls.Add(this.txtPassWord);
             this.Controls.Add(this.panelControl1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cbHienThi);
+            this.Controls.Add(this.simpleButton1);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = "Đăng nhập";
             this.Load += new System.EventHandler(this.Login_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtuserName.Properties)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
-            this.panelControl1.ResumeLayout(false);
-            this.panelControl1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox cbHienThi;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private System.Windows.Forms.Panel panel2;
-        private DevExpress.XtraEditors.LabelControl lbcUserName;
         private DevExpress.XtraEditors.TextEdit txtuserName;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txtPassWord;
-        private DevExpress.XtraEditors.LabelControl lbcPassWord;
-        private System.Windows.Forms.Label label1;
         private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtPassWord;
     }
 }

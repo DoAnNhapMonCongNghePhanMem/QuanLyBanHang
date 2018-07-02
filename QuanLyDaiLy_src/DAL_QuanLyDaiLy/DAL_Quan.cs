@@ -60,7 +60,7 @@ namespace DAL_QuanLyDaiLy
          * 1:thành công
          * 0:thất bại
          */
-        public static int XoaLoaiDaiLy(int id)
+        public static int XoaQuan(int id)
         {
             string query = "delete Quan where IdQuan=" + id;
             int result = ResultQuery.GetResultQuery(conn, query);
@@ -71,7 +71,7 @@ namespace DAL_QuanLyDaiLy
          * 1:thành công
          * 0:thất bại
          */
-        public static int CapNhatLoaiDaiLy(DTO_Quan quan)
+        public static int CapNhatQuan(DTO_Quan quan)
         {
             string query = "update Quan set TenQuan =N'" + quan.TenQuan + "' where IdQuan=" + quan.IdQuan;
             int result = ResultQuery.GetResultQuery(conn, query);
