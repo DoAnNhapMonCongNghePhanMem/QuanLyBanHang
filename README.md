@@ -1,7 +1,5 @@
 
-
-
-
+[![](http://imageshack.com/a/img924/2928/KHxn5v.jpg)](https://www.uit.edu.vn/)
 
 
 # Quản Lý Đại Lý
