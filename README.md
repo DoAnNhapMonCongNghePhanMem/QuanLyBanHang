@@ -17,7 +17,7 @@
 
 **Công cụ sử dụng**
 
-- WPF UI Framework
+- Dvepress UI Framework
   <ul>
   </ul>
 - Công cụ lập trình: Visual Studio 2017.
