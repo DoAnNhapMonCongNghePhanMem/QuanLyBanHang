@@ -13,7 +13,7 @@
    
  **Giới thiệu**
  
- >Ứng dụng tin học trong việc quản lí dường như không còn xa lạ với các doanh nghiệp, công ty hiện nay. Lợi ích mà các chương trình phần mềm quản lí đem lại khiến ta không thể không thừa nhận tính hiệu quả của nó. Trong thực tế, các công ty mẹ hay các đại lí lớn đều muốn có một sự quản lí các công ty con, đại lý con một cách chính xác, hiệu quả và nhanh chóng. Nắm bắt được nhu cầu đó, nhóm viết phần mềm này để dáp ứng các nhu cầu hiện nay.
+ >Ứng dụng tin học trong việc quản lí dường như không còn xa lạ với các doanh nghiệp, công ty hiện nay. Lợi ích mà các chương trình phần mềm quản lí đem lại khiến ta không thể không thừa nhận tính hiệu quả của nó. Trong thực tế, các công ty mẹ hay các đại lí lớn đều muốn có một sự quản lí các công ty con, đại lý con một cách chính xác, hiệu quả và nhanh chóng. Nắm bắt được nhu cầu đó, nhóm viết phần mềm này để đáp ứng các nhu cầu hiện nay.
 
 **Công cụ sử dụng**
 
