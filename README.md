@@ -17,7 +17,7 @@
 
 **Công cụ sử dụng**
 
-- Dvepress UI Framework
+- DevExpress UI Framework
   <ul>
   </ul>
 - Công cụ lập trình: Visual Studio 2017.
