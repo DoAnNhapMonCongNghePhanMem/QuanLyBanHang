@@ -46,12 +46,28 @@ namespace QuanLyDaiLy
 
         private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            tbTrangChu.Hide();
+            PhieuThu hs = new PhieuThu(taiKhoan, nhanVien);
+            hs.Width = pnlTrangChu.Width;
+            hs.Height = pnlTrangChu.Height;
+            pnlTrangChu.Controls.Clear();
+            pnlTrangChu.Controls.Add(hs);
+            btnBack.Visible = true;
+            lbTieuDe.Text = "Phiếu thu tiền";
+            hs.Show();
         }
 
         private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            tbTrangChu.Hide();
+            BaoCaoCongNo ds = new BaoCaoCongNo();
+            ds.Width = pnlTrangChu.Width;
+            ds.Height = pnlTrangChu.Height;
+            pnlTrangChu.Controls.Clear();
+            pnlTrangChu.Controls.Add(ds);
+            lbTieuDe.Text = "Báo cáo công nợ";
+            btnBack.Visible = true;
+            //ds.Show();
         }
 
         private void Hu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -66,7 +82,22 @@ namespace QuanLyDaiLy
 
         private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            //tbTrangChu.Hide();
+            Admin hs = new Admin(taiKhoan, nhanVien);
+            hs.Width = pnlTrangChu.Width;
+            hs.Height = pnlTrangChu.Height;
+            pnlTrangChu.Controls.Clear();
+            pnlTrangChu.Controls.Add(hs);
+            btnBack.Visible = true;
+            lbTieuDe.Text = "ADMIN";
+            hs.Show();
+            //if (taiKhoan.PhanQuyen == 0)
+            //{
 
+            //}else
+            //{
+            //    //Chỉ admin mới truy cập được
+            //}
         }
 
         private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -81,7 +112,15 @@ namespace QuanLyDaiLy
 
         private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            tbTrangChu.Hide();
+            QuyChe ds = new QuyChe();
+            ds.Width = pnlTrangChu.Width;
+            ds.Height = pnlTrangChu.Height;
+            pnlTrangChu.Controls.Clear();
+            pnlTrangChu.Controls.Add(ds);
+            lbTieuDe.Text = "Quy chế tổ chức";
+            btnBack.Visible = true;
+            ds.Show();
         }
 
         private void simpleButton1_Click_1(object sender, EventArgs e)
@@ -248,6 +287,53 @@ namespace QuanLyDaiLy
         private void lbTieuDe_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            //tbTrangChu.Hide();
+            QuanLyDaiLy hs = new QuanLyDaiLy(taiKhoan, nhanVien);
+            //hs.Anchor = AnchorStyles.Bottom;
+            //hs.Anchor = AnchorStyles.Left;
+            //hs.Anchor = AnchorStyles.Right;
+            //hs.Anchor = AnchorStyles.Top;
+            hs.Width = pnlTrangChu.Width;
+            hs.Height = pnlTrangChu.Height;
+
+
+            pnlTrangChu.Controls.RemoveAt(0);
+            pnlTrangChu.Controls.Add(hs);
+            btnBack.Visible = true;
+            lbTieuDe.Text = "Quản lý đại lý";
+            //hs.Show();
+            //pnlTrangChu.Padding = new Padding(50, 0, 50, 0);
+
+        }
+
+        private void barButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            tbTrangChu.Hide();
+            QuanLyMatHang hs = new QuanLyMatHang(taiKhoan, nhanVien);
+            hs.Width = pnlTrangChu.Width;
+            hs.Height = pnlTrangChu.Height;
+            pnlTrangChu.Controls.Clear();
+            pnlTrangChu.Controls.Add(hs);
+            btnBack.Visible = true;
+            lbTieuDe.Text = "Quản lý mặt hàng";
+            hs.Show();
+        }
+
+        private void Bao_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            tbTrangChu.Hide();
+            BaoCaoDoanhSo ds = new BaoCaoDoanhSo();
+            ds.Width = pnlTrangChu.Width;
+            ds.Height = pnlTrangChu.Height;
+            pnlTrangChu.Controls.Clear();
+            pnlTrangChu.Controls.Add(ds);
+            lbTieuDe.Text = "Báo cáo doanh số";
+            btnBack.Visible = true;
+            ds.Show();
         }
     }
 }

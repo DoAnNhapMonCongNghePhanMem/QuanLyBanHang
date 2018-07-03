@@ -62,10 +62,8 @@ namespace QuanLyDaiLy
                 i++;
                 
             }
-            if (i > 0)
-            {
                 cbMatHang.SelectedIndex=0;
-            }
+            idMatHang = dsId[0];
             
         }
 
@@ -140,7 +138,7 @@ namespace QuanLyDaiLy
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            tb.Rows.Add(idMatHang, cbMatHang.SelectedItem, (int)nbSoLuong.Value, txtDonViTinh.Text,
+            tb.Rows.Add(idMatHang, cbMatHang.SelectedItem, int.Parse(nbSoLuong.Value.ToString()), txtDonViTinh.Text,
                 txtDonGia.Text, txtThanhTien.Text);
         }
 

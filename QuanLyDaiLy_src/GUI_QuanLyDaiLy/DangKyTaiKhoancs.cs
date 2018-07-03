@@ -45,16 +45,21 @@ namespace QuanLyDaiLy
                 if (kq == 0)
                 {
                     //0 dangki thanh cong
-                }else if (kq == 1)
+                    MessageBox.Show("Tài khoản đã được tạo");
+                }
+                else if (kq == 1)
                 {
+                    MessageBox.Show("User đã tồn tại");
                     // 1 trung user,
                 }
                 else if (kq == 2)
                 {
+                    MessageBox.Show("Nhân viên này đã có tài khoản");
                     //2 nhan vien da co tai khoan,
                 }
                 else
                 {
+                    MessageBox.Show("Lỗi");
                     //,3 loi
                 }
             }

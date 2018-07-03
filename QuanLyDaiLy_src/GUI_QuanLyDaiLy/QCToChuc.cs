@@ -38,11 +38,11 @@ namespace QuanLyDaiLy
             DTO_QuyCheToChuc qc = new DTO_QuyCheToChuc(soLoaiDL, soDLToiDa, soLuongMH, soQuan);
             if (BUS_QuyCheToChuc.CapNhatQuyChe(qc) == 0)
             {
-
+                MessageBox.Show("Cập nhật thất bại");
             }
             else
             {
-
+                MessageBox.Show("Cập nhật thành công");
             }
         }
     }

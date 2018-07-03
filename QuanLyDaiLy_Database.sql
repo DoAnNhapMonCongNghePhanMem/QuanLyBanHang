@@ -17,7 +17,7 @@ CREATE TABLE ThongTinTaiKhoan(
 	Pass VARCHAR(50) NOT NULL,
 	CMND VARCHAR(50) NOT NULL,
 	PhanQuyen INT DEFAULT 1 NOT NULL,--0 la  quyen Admin,1 la binh thuong
-	TrangThai INT NOT NULL,
+	TrangThai INT DEFAULT 0 NOT NULL,--0 binh thuong,1 bi block
 	FOREIGN KEY (CMND) REFERENCES NhanVienQL(CMND)
 )
 GO
@@ -103,6 +103,7 @@ GO
 CREATE TABLE QuyDinhTienNo(
 	IdLoaiDL int NOT NULL,
 	TienNoToiDa float NOT NULL
+	FOREIGN KEY (IdLoaiDL) REFERENCES LoaiDaiLy(IdLoaiDL)
 )
 GO
 
@@ -110,17 +111,113 @@ CREATE TABLE QuyDinhMatHang(
 	IdMatHang int Not Null,
 	DonViTinh nvarchar(50) Not null,
 	DonGia float not null
+	FOREIGN KEY (IdMatHang) REFERENCES MatHang(IdMatHang)
 )
 GO
+
 
 CREATE TABLE QuyCheToChuc(
-	SoLoaiDaiLy int,
-	SoDaiLyToiDa int,
-	SoMatHang int,
-	SoQuan int
+	SoLoaiDaiLy int NOT NULL,
+	SoDaiLyToiDa int NOT NULL,
+	SoMatHang int NOT NULL,
+	SoQuan int NOT NULL
 )
 GO
 
+----delete DaiLy-----
+ALTER TABLE DaiLy WITH NOCHECK 
+ADD CONSTRAINT FK_dl_ldl
+FOREIGN KEY (IdLoaiDL) 
+REFERENCES LoaiDaiLy (IdLoaiDL) 
+ON DELETE CASCADE
+go
+ALTER TABLE DaiLy WITH NOCHECK 
+ADD CONSTRAINT FK_dl_nv
+FOREIGN KEY (CMND) 
+REFERENCES NhanVienQL(CMND)
+ON DELETE CASCADE
+go
+ALTER TABLE DaiLy WITH NOCHECK 
+ADD CONSTRAINT FK_dl_q
+FOREIGN KEY (IdQuan) 
+REFERENCES Quan(IdQuan) 
+ON DELETE CASCADE
+go
+-------delele ThongTinTK------------
+ALTER TABLE ThongTinTaiKhoan WITH NOCHECK 
+ADD CONSTRAINT FK_tk_nv
+FOREIGN KEY (CMND) 
+REFERENCES NhanVienQL(CMND) 
+ON DELETE CASCADE
+go
+----------------PhieuThuTien-------------
+ALTER TABLE PhieuThuTien WITH NOCHECK 
+ADD CONSTRAINT FK_ptt_dl
+FOREIGN KEY (IdDaiLy) 
+REFERENCES DaiLy(IdDaiLy) 
+ON DELETE CASCADE
+go
+--ALTER TABLE PhieuThuTien WITH NOCHECK 
+--ADD CONSTRAINT FK_phieutt_nvql
+--FOREIGN KEY (CMND) 
+--REFERENCES NhanVienQL(CMND) 
+--ON DELETE CASCADE
+--go
+---------------PhieuXuatHang----------------
+ALTER TABLE PhieuXuatHang WITH NOCHECK 
+ADD CONSTRAINT FK_xh_dl
+FOREIGN KEY (IdDaiLy) 
+REFERENCES DaiLy(IdDaiLy) 
+ON DELETE CASCADE
+go
+--ALTER TABLE PhieuXuatHang WITH NOCHECK 
+--ADD CONSTRAINT FK_xh_nv
+--FOREIGN KEY (CMND) 
+--REFERENCES NhanVienQL(CMND) 
+--ON DELETE CASCADE
+--go
+-----------------ChiTietXuatHang---------------------
+ALTER TABLE ChiTietXuatHang WITH NOCHECK 
+ADD CONSTRAINT FK_ctx_px
+FOREIGN KEY (IdPhieuXuat) 
+REFERENCES PhieuXuatHang(IdPhieuXuat) 
+ON DELETE CASCADE
+go
+ALTER TABLE ChiTietXuatHang WITH NOCHECK 
+ADD CONSTRAINT FK_ctx_mh
+FOREIGN KEY (IdMatHang) 
+REFERENCES MatHang(IdMatHang) 
+ON DELETE CASCADE
+go
+---------------CongNo------------------
+ALTER TABLE CongNo WITH NOCHECK 
+ADD CONSTRAINT FK_cn_dl
+FOREIGN KEY (IdDaiLy) 
+REFERENCES DaiLy(IdDaiLy)
+ON DELETE CASCADE
+go
+-------------------------------
+ALTER TABLE DoanhSo WITH NOCHECK 
+ADD CONSTRAINT FK_ds_dl
+FOREIGN KEY (IdDaiLy) 
+REFERENCES DaiLy(IdDaiLy)
+ON DELETE CASCADE
+go
+-----------QuyDinhTienNo----------------
+ALTER TABLE QuyDinhTienNo WITH NOCHECK 
+ADD CONSTRAINT FK_tn_ldl
+FOREIGN KEY (IdLoaiDL) 
+REFERENCES LoaiDaiLy(IdLoaiDL)
+ON DELETE CASCADE
+go
+------------QuyDinhMatHang--------------
+ALTER TABLE QuyDinhMatHang WITH NOCHECK 
+ADD CONSTRAINT FK_mh_lmh
+FOREIGN KEY (IdMatHang) 
+REFERENCES MatHang(IdMatHang)
+ON DELETE CASCADE
+go
+--------------------------
 ---------------CHEN DU LIEU------------
 
 INSERT INTO NhanVienQL (CMND,TenNV,NgaySinh,QueQuan,SDT) VALUES ('206014565',N'LÊ CÔNG KHÁNH','1997-10-18','QN','01664451119')
@@ -188,10 +285,10 @@ insert QuyCheToChuc values (2,4,5,20)
 
 -------------------------------------------------------------------------------------------------
 --LOGIN AND REGISTER USER
-CREATE PROCEDURE PR_CheckLogin --0 cho phep dang nhap ,1 SAI USER,2 SAI PASS,3 BI BLOCK
+create PROCEDURE PR_CheckLogin --0 cho phep dang nhap ,1 SAI USER,2 SAI PASS,3 BI BLOCK
 @UserName VARCHAR(50),
 @Pass VARCHAR(50),
-@OutPut INT OUT
+@out int out
 AS 
 BEGIN
 	DECLARE @KtUserName INT
@@ -201,35 +298,30 @@ BEGIN
 	SELECT @KtTrangThai=TrangThai FROM ThongTinTaiKhoan WHERE UserName=@UserName AND TrangThai=0
 	IF @KtUserName=0
 	BEGIN
-		set @OutPut=1
-		
+		set @out=1	
 	END
 	ELSE
 	BEGIN
 		SELECT @KtPass=COUNT(UserName) FROM ThongTinTaiKhoan WHERE Pass=@Pass
 		IF @KtPass=0
 		BEGIN
-			SET @OutPut=2
+			set @out=2
 		END
 		ELSE
 		BEGIN
-		SELECT @KtTrangThai=COUNT(UserName) FROM ThongTinTaiKhoan WHERE TrangThai=0
+		SELECT @KtTrangThai=TrangThai FROM ThongTinTaiKhoan WHERE UserName=@UserName
 			IF @KtTrangThai=0
 			BEGIN
-				SET @OutPut=3
+				set @out=0
 			END
 			ELSE
 			BEGIN 
-			SET @OutPut=0
+				set @out=3
 			END
 		END
 	END
 END
-DECLARE @RS INT 
-EXECUTE PR_CheckLogin @UserName='LECONGKHANH',@Pass='khanh181097',@OutPut=@RS OUT
-PRINT @RS
 GO
-
 create proc PR_DangKi  ---- 0 dangki thanh cong, 1 trung user,2 nhan vien da co tai khoan,3 loi 
 @CMND varchar(50),
 @TenNV nvarchar(50),
@@ -272,14 +364,36 @@ begin
 		rollback transaction dk
 	end catch
 end
-declare @rs int
-EXEC PR_DangKi '123',N'haha','1998-10-10','hcm','123','LECONGKHANH','khanh123',0,0,@rs out
-print @rs
+--declare @rs int
+--EXEC PR_DangKi '123',N'haha','1998-10-10','hcm','123','LECONGKHANH','khanh123',0,0,@rs out
+--print @rs
+--go
+create proc PR_UpdatePass
+@passCu varchar(50),@passMoi varchar(50),@userName varchar(50),@out int out
+as
+begin
+	declare @ktPassCu int
+	select @ktPassCu=count(UserName) from ThongTinTaiKhoan where UserName=@userName and Pass=@passCu
+	if(@ktPassCu>0)
+	begin
+		update ThongTinTaiKhoan set Pass=@passMoi where UserName=@userName
+		set @out=1
+	end
+	else
+	begin
+		set @out=2
+	end
+end
 go
+
+CREATE TABLE ThongTinTaiKhoan(
+	UserName VARCHAR(50) PRIMARY KEY NOT NULL,
+	Pass VARCHAR(50)
 ------------------------------------------------------------------------------------
 --LOẠI ĐẠI LÝ
 create proc PR_InsertLoaiDaiLy
-@TenLoaiDL nvarchar(50) 
+@TenLoaiDL nvarchar(50),
+@out int out 
 as
 begin
 	declare @ktTen int
@@ -294,24 +408,42 @@ begin
 		if(@slLoaiDL<@quyDinhSoLoaiDL)
 		begin
 			insert into LoaiDaiLy (TenLoaiDL) values (@TenLoaiDL)
-			return 1
+			set @out=1
 		end
 		else
 		begin 
-			return 2
+			set @out=2
 		end	
 	end
 	else
 	begin
-		return 3
+		set @out=3
 	end
 end
 go
+-----------------------------------------------------------------
+--Thêm nhân viên
+create proc PR_ThemNhanVien
+@CMND VARCHAR(50),@TenNV NVARCHAR(50),@NgaySinh DATE,@QueQuan NVARCHAR(100),@SDT VARCHAR(50),@out int out
+as
+begin
+	declare @ktCmnd int 
+	select @ktCmnd=count(CMND) from NhanVienQL where CMND=@CMND
+	if(@ktCmnd=0)
+	begin
+		INSERT INTO NhanVienQL (CMND,TenNV,NgaySinh,QueQuan,SDT) VALUES (@CMND,@TenNV,@NgaySinh,@QueQuan,@SDT)
+		set @out =1
+	end
+	else
+	begin
+		set @out=2
+	end
+end
 ------------------------------------------------------------------------------------
 --TIẾP NHẬN ĐẠI LÝ 
 create PROC PR_InsertDl --0 thêm thành công ,1 tên đại lý tồn tại,2 lỗi thêm
 @TenDL nvarchar(50),@SDT varchar(50),@DiaChi nvarchar(50),@IdQuan int,@NgayTiepNhan date,
-@IdLoaiDL int,@CMND varchar(50)
+@IdLoaiDL int,@CMND varchar(50),@out int out
 as
 begin
 	declare @ktTenDL int
@@ -326,42 +458,82 @@ begin
 		begin
 			insert into DaiLy (TenDaiLy,SDT,DiaChi,IdQuan,NgayTiepNhan,IdLoaiDL,CMND) values (@TenDL,@SDT,@DiaChi,@IdQuan,
 			@NgayTiepNhan,@IdLoaiDL,@CMND)
-			return 1
+			set @out=1
 		end
 		else
 		begin
-			return 2
+			set @out=2
 		end
 	end
 	else 
 	begin
-		return 3
+		set @out=3
 	end
 end
 go
 create PROC PR_UpdateDL
 @IdDaiLy int,@TenDaiLy nvarchar(50),@SDT varchar(50),@DiaChi nvarchar(100),@IdQuan int,
-@NgayTiepNhan date,@IdLoaiDL int,@CMND varchar(50),@TienNo float
+@NgayTiepNhan date,@IdLoaiDL int,@CMND varchar(50),@TienNo float,@out int out
 as
 begin
 	declare @tienNoQuyDinh float
-	select @tienNoQuyDinh=TienNoToiDa from QuyDinhTienNo where IdLoaiDL=@IdLoaiDL
-	if(@TienNo<=@tienNoQuyDinh)
-	begin
-		UPDATE DaiLy SET TenDaiLy=@TenDaiLy,SDT =@SDT,DiaChi=@DiaChi,NgayTiepNhan=@NgayTiepNhan,
-		IdLoaiDL=@IdLoaiDL,CMND=@CMND,IdQuan=@IdQuan WHERE IdDaiLy=@IdDaiLy
-		return 1
+	declare @soDaiLyTrongQuan int
+	declare @soDaiLyQuyDinh int
+	--select @tienNoQuyDinh=TienNoToiDa from QuyDinhTienNo where IdLoaiDL=@IdLoaiDL
+	select @soDaiLyTrongQuan=count(IdDaiLy) from DaiLy where IdQuan=@IdQuan
+	select @soDaiLyQuyDinh =SoDaiLyToiDa from QuyCheToChuc 
+
+	if(@soDaiLyTrongQuan<=@soDaiLyQuyDinh)
+	begin 
+		--if(@TienNo<=@tienNoQuyDinh)
+		--begin
+			UPDATE DaiLy SET TenDaiLy=@TenDaiLy,SDT =@SDT,DiaChi=@DiaChi,NgayTiepNhan=@NgayTiepNhan,
+			IdLoaiDL=@IdLoaiDL,CMND=@CMND,IdQuan=@IdQuan WHERE IdDaiLy=@IdDaiLy
+			set @out=1
+		--end
+		--else
+		--begin
+		--set @out= 2
+		--end
 	end
 	else
 	begin
-		return 2
+		set @out=3
+	end
+	
+end
+go
+
+create proc PR_UpdateTienNo
+@idDL int,@tienNo int,@out int out
+as 
+begin
+	declare @tienNoQD float
+	declare @loaiDL int
+	declare @tienNoDLHT float
+	declare @rs int
+	select @loaiDL=IdLoaiDL from DaiLy where IdDaiLy=@idDL
+	select @tienNoQD=TienNoToiDa from QuyDinhTienNo where IdLoaiDL=@loaiDL
+	if @tienNo<@tienNoQD
+	begin
+		update DaiLy set TienNo=@tienNo where IdDaiLy=@idDL
+		set @out=1 
+	end
+	else
+	begin
+		set @out = 2
 	end
 end
 go
+select * from ChiTietXuatHang
+--declare @r int
+--exec PR_UpdateTienNo 1,15000,@r out
+--select TienNo from DaiLy where IdDaiLy=1
 --------------------------------------------------------------------------------------
 --MẶT HÀNG
-CREATE proc PR_InsertMatHang
-@TenMatHang nvarchar(50) 
+create proc PR_InsertMatHang
+@TenMatHang nvarchar(50),
+@Out int Out
 as
 begin
 	declare @ktTen int
@@ -372,26 +544,28 @@ begin
 	select @soLuongMatHang=count(IdMatHang) from MatHang
 	if @ktTen=0
 	begin
-		if(@soLuongMatHang<@soLuongMHQuyDinh)
+		if @soLuongMatHang<@soLuongMHQuyDinh
 		begin
 			insert into MatHang (TenMatHang) values (@TenMatHang)
-			return 1
+			set @Out=1
 		end
 		else
 		begin
-			return 2
+			set @Out=2
 		end
 	end
 	else
 	begin
-		return 3
+		set @Out=3
 	end
 end
 go
+
 ------------------------------------------------------
 -----Quận
 create proc PR_InsertQuan
-@TenQuan nvarchar(50) 
+@TenQuan nvarchar(50) ,
+@out int out
 as
 begin
 	declare @ktTen int
@@ -405,19 +579,36 @@ begin
 		if(@soLuongQuan<@quyDinhSLQuan)
 		begin 
 			insert into Quan (TenQuan) values (@TenQuan)
-			return 1
+			set @out= 1
 		end
 		else
 		begin
-			return 2
+			set @out= 2
 		end
 	end
 	else
 	begin
-		return 3
+		set @out= 3
 	end
 end
 go
+---------------------------------------------
+
+----Phiếu xuất
+create proc PR_InsertPhieuXuat
+@NgayXuat DATE,@IdDaiLy INT,@CMND VARCHAR(50),
+@out int out
+as
+begin
+	insert into PhieuXuatHang(NgayXuat,IdDaiLy,CMND) values (@NgayXuat,@IdDaiLy,@CMND)
+	declare @rs int
+	select top 1 @rs=IdPhieuXuat from PhieuXuatHang order by IdPhieuXuat DESC
+	set @out =@rs
+end
+go
+
+
+---Chi tiết xuất
 
 --------------------------------------------------------------------------------------
 --BÁO CÁO DOANH SỐ (ngày 26/6/2018)

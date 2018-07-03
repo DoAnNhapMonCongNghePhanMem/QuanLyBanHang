@@ -85,12 +85,8 @@
             // 
             // rbTrangChu
             // 
-            this.rbTrangChu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.rbTrangChu.AutoSizeItems = true;
             this.rbTrangChu.BackColor = System.Drawing.Color.Lime;
-            this.rbTrangChu.Dock = System.Windows.Forms.DockStyle.None;
             this.rbTrangChu.ExpandCollapseItem.Id = 0;
             this.rbTrangChu.ForeColor = System.Drawing.Color.Lime;
             this.rbTrangChu.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
@@ -111,7 +107,7 @@
             this.barButtonItem11,
             this.barButtonItem12,
             this.barButtonItem13});
-            this.rbTrangChu.Location = new System.Drawing.Point(3, 1);
+            this.rbTrangChu.Location = new System.Drawing.Point(0, 0);
             this.rbTrangChu.MaxItemId = 21;
             this.rbTrangChu.Name = "rbTrangChu";
             this.rbTrangChu.PageHeaderItemLinks.Add(this.barButtonItem10);
@@ -121,7 +117,7 @@
             this.ribbonPage3,
             this.ribbonPage4});
             this.rbTrangChu.ShowDisplayOptionsMenuButton = DevExpress.Utils.DefaultBoolean.False;
-            this.rbTrangChu.Size = new System.Drawing.Size(840, 116);
+            this.rbTrangChu.Size = new System.Drawing.Size(809, 116);
             this.rbTrangChu.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // barButtonItem1
@@ -134,6 +130,7 @@
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // barButtonItem2
             // 
@@ -182,6 +179,7 @@
             this.Bao.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("Bao.ImageOptions.LargeImage")));
             this.Bao.LargeWidth = 100;
             this.Bao.Name = "Bao";
+            this.Bao.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Bao_ItemClick);
             // 
             // barButtonItem6
             // 
@@ -255,6 +253,7 @@
             this.barButtonItem11.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.LargeImage")));
             this.barButtonItem11.LargeWidth = 100;
             this.barButtonItem11.Name = "barButtonItem11";
+            this.barButtonItem11.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem11_ItemClick);
             // 
             // barButtonItem12
             // 
@@ -366,11 +365,9 @@
             this.tbTrangChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.tbTrangChu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tbTrangChu.ColumnCount = 3;
-            this.tbTrangChu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.8764F));
-            this.tbTrangChu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.1236F));
-            this.tbTrangChu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 231F));
-            this.tbTrangChu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
-            this.tbTrangChu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 134F));
+            this.tbTrangChu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tbTrangChu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tbTrangChu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tbTrangChu.Controls.Add(this.btnQuanLyDL, 0, 0);
             this.tbTrangChu.Controls.Add(this.btnGiaoDich, 1, 1);
             this.tbTrangChu.Controls.Add(this.simpleButton2, 0, 1);
@@ -381,14 +378,14 @@
             this.tbTrangChu.Controls.Add(this.btnQuyChe, 1, 2);
             this.tbTrangChu.Controls.Add(this.btnAdmin, 2, 2);
             this.tbTrangChu.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
-            this.tbTrangChu.Location = new System.Drawing.Point(30, 3);
+            this.tbTrangChu.Location = new System.Drawing.Point(31, 3);
             this.tbTrangChu.Name = "tbTrangChu";
             this.tbTrangChu.Padding = new System.Windows.Forms.Padding(1);
             this.tbTrangChu.RowCount = 3;
-            this.tbTrangChu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 52.36052F));
-            this.tbTrangChu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.63948F));
-            this.tbTrangChu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 101F));
-            this.tbTrangChu.Size = new System.Drawing.Size(716, 317);
+            this.tbTrangChu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tbTrangChu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tbTrangChu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tbTrangChu.Size = new System.Drawing.Size(740, 336);
             this.tbTrangChu.TabIndex = 6;
             this.tbTrangChu.Paint += new System.Windows.Forms.PaintEventHandler(this.tbTrangChu_Paint);
             // 
@@ -405,7 +402,7 @@
             this.btnQuanLyDL.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.btnQuanLyDL.Location = new System.Drawing.Point(4, 4);
             this.btnQuanLyDL.Name = "btnQuanLyDL";
-            this.btnQuanLyDL.Size = new System.Drawing.Size(230, 106);
+            this.btnQuanLyDL.Size = new System.Drawing.Size(239, 105);
             this.btnQuanLyDL.TabIndex = 4;
             this.btnQuanLyDL.Text = "Quản lý đại lý";
             this.btnQuanLyDL.Click += new System.EventHandler(this.simpleButton1_Click_1);
@@ -421,9 +418,9 @@
             this.btnGiaoDich.AutoWidthInLayoutControl = true;
             this.btnGiaoDich.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGiaoDich.ImageOptions.Image")));
             this.btnGiaoDich.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.btnGiaoDich.Location = new System.Drawing.Point(240, 116);
+            this.btnGiaoDich.Location = new System.Drawing.Point(249, 115);
             this.btnGiaoDich.Name = "btnGiaoDich";
-            this.btnGiaoDich.Size = new System.Drawing.Size(240, 95);
+            this.btnGiaoDich.Size = new System.Drawing.Size(240, 105);
             this.btnGiaoDich.TabIndex = 9;
             this.btnGiaoDich.Text = "Giao dịch";
             this.btnGiaoDich.Click += new System.EventHandler(this.btnGiaoDich_Click);
@@ -439,9 +436,9 @@
             this.simpleButton2.AutoWidthInLayoutControl = true;
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
             this.simpleButton2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton2.Location = new System.Drawing.Point(4, 116);
+            this.simpleButton2.Location = new System.Drawing.Point(4, 115);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(230, 95);
+            this.simpleButton2.Size = new System.Drawing.Size(239, 105);
             this.simpleButton2.TabIndex = 5;
             this.simpleButton2.Text = "Quản lý mặt hàng";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
@@ -455,9 +452,9 @@
             this.simpleButton1.Appearance.Options.UseFont = true;
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
             this.simpleButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(240, 4);
+            this.simpleButton1.Location = new System.Drawing.Point(249, 4);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(240, 106);
+            this.simpleButton1.Size = new System.Drawing.Size(240, 105);
             this.simpleButton1.TabIndex = 11;
             this.simpleButton1.Text = "Thu Tiền";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click_2);
@@ -471,9 +468,9 @@
             this.btnBaoCaoDS.Appearance.Options.UseFont = true;
             this.btnBaoCaoDS.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBaoCaoDS.ImageOptions.Image")));
             this.btnBaoCaoDS.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.btnBaoCaoDS.Location = new System.Drawing.Point(486, 4);
+            this.btnBaoCaoDS.Location = new System.Drawing.Point(495, 4);
             this.btnBaoCaoDS.Name = "btnBaoCaoDS";
-            this.btnBaoCaoDS.Size = new System.Drawing.Size(226, 106);
+            this.btnBaoCaoDS.Size = new System.Drawing.Size(241, 105);
             this.btnBaoCaoDS.TabIndex = 10;
             this.btnBaoCaoDS.Text = "Báo cáo doanh số";
             this.btnBaoCaoDS.Click += new System.EventHandler(this.btnBaoCaoDS_Click);
@@ -487,9 +484,9 @@
             this.simpleButton3.Appearance.Options.UseFont = true;
             this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
             this.simpleButton3.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.simpleButton3.Location = new System.Drawing.Point(4, 217);
+            this.simpleButton3.Location = new System.Drawing.Point(4, 226);
             this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(230, 96);
+            this.simpleButton3.Size = new System.Drawing.Size(239, 106);
             this.simpleButton3.TabIndex = 12;
             this.simpleButton3.Text = "Mở rộng đại lý";
             this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
@@ -505,9 +502,9 @@
             this.btnBaoCaoCN.AutoWidthInLayoutControl = true;
             this.btnBaoCaoCN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBaoCaoCN.ImageOptions.Image")));
             this.btnBaoCaoCN.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.btnBaoCaoCN.Location = new System.Drawing.Point(486, 116);
+            this.btnBaoCaoCN.Location = new System.Drawing.Point(495, 115);
             this.btnBaoCaoCN.Name = "btnBaoCaoCN";
-            this.btnBaoCaoCN.Size = new System.Drawing.Size(226, 95);
+            this.btnBaoCaoCN.Size = new System.Drawing.Size(241, 105);
             this.btnBaoCaoCN.TabIndex = 6;
             this.btnBaoCaoCN.Text = "Báo cáo công nợ";
             this.btnBaoCaoCN.Click += new System.EventHandler(this.btnBaoCaoCN_Click);
@@ -523,9 +520,9 @@
             this.btnQuyChe.AutoWidthInLayoutControl = true;
             this.btnQuyChe.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnQuyChe.ImageOptions.Image")));
             this.btnQuyChe.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.btnQuyChe.Location = new System.Drawing.Point(240, 217);
+            this.btnQuyChe.Location = new System.Drawing.Point(249, 226);
             this.btnQuyChe.Name = "btnQuyChe";
-            this.btnQuyChe.Size = new System.Drawing.Size(240, 96);
+            this.btnQuyChe.Size = new System.Drawing.Size(240, 106);
             this.btnQuyChe.TabIndex = 8;
             this.btnQuyChe.Text = "Quy chế tổ chức";
             this.btnQuyChe.Click += new System.EventHandler(this.btnQuyChe_Click);
@@ -541,9 +538,9 @@
             this.btnAdmin.AutoWidthInLayoutControl = true;
             this.btnAdmin.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAdmin.ImageOptions.Image")));
             this.btnAdmin.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.btnAdmin.Location = new System.Drawing.Point(486, 217);
+            this.btnAdmin.Location = new System.Drawing.Point(495, 226);
             this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(226, 96);
+            this.btnAdmin.Size = new System.Drawing.Size(241, 106);
             this.btnAdmin.TabIndex = 7;
             this.btnAdmin.Text = "ADMIN";
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
@@ -559,7 +556,7 @@
             this.pnlTrangChu.Location = new System.Drawing.Point(3, 65);
             this.pnlTrangChu.Name = "pnlTrangChu";
             this.pnlTrangChu.Padding = new System.Windows.Forms.Padding(50, 0, 50, 0);
-            this.pnlTrangChu.Size = new System.Drawing.Size(779, 323);
+            this.pnlTrangChu.Size = new System.Drawing.Size(803, 342);
             this.pnlTrangChu.TabIndex = 7;
             this.pnlTrangChu.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlTrangChu_Paint);
             // 
@@ -572,7 +569,7 @@
             this.pnlTieuDe.Controls.Add(this.lbTieuDe);
             this.pnlTieuDe.Location = new System.Drawing.Point(3, 3);
             this.pnlTieuDe.Name = "pnlTieuDe";
-            this.pnlTieuDe.Size = new System.Drawing.Size(779, 56);
+            this.pnlTieuDe.Size = new System.Drawing.Size(803, 56);
             this.pnlTieuDe.TabIndex = 9;
             // 
             // btnBack
@@ -591,8 +588,8 @@
             // lbTieuDe
             // 
             this.lbTieuDe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lbTieuDe.Font = new System.Drawing.Font("Tahoma", 25F, System.Drawing.FontStyle.Bold);
-            this.lbTieuDe.Location = new System.Drawing.Point(208, 7);
+            this.lbTieuDe.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTieuDe.Location = new System.Drawing.Point(220, 7);
             this.lbTieuDe.Margin = new System.Windows.Forms.Padding(300, 0, 300, 0);
             this.lbTieuDe.Name = "lbTieuDe";
             this.lbTieuDe.Size = new System.Drawing.Size(394, 47);
@@ -603,15 +600,13 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel1.Controls.Add(this.pnlTrangChu);
             this.panel1.Controls.Add(this.pnlTieuDe);
-            this.panel1.Location = new System.Drawing.Point(12, 123);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 116);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(785, 391);
+            this.panel1.Size = new System.Drawing.Size(809, 410);
             this.panel1.TabIndex = 11;
             // 
             // TrangChuQuanLy

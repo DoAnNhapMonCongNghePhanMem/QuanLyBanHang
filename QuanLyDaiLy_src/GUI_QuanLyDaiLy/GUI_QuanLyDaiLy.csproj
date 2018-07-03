@@ -113,29 +113,17 @@
     <Compile Include="DoiMatKhau.Designer.cs">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
-    <Compile Include="fupdateAcount.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fupdateAcount.designer.cs">
-      <DependentUpon>fupdateAcount.cs</DependentUpon>
-    </Compile>
-    <Compile Include="hosodaily.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="hosodaily.designer.cs">
-      <DependentUpon>hosodaily.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="MatHang.cs">
+    <Compile Include="LoginDatabase.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MatHang.Designer.cs">
-      <DependentUpon>MatHang.cs</DependentUpon>
+    <Compile Include="LoginDatabase.Designer.cs">
+      <DependentUpon>LoginDatabase.cs</DependentUpon>
     </Compile>
     <Compile Include="MoRongDaiLy.cs">
       <SubType>UserControl</SubType>
@@ -155,23 +143,11 @@
     <Compile Include="PhieuThu.Designer.cs">
       <DependentUpon>PhieuThu.cs</DependentUpon>
     </Compile>
-    <Compile Include="phieuthutien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="phieuthutien.designer.cs">
-      <DependentUpon>phieuthutien.cs</DependentUpon>
-    </Compile>
     <Compile Include="PhieuXuat.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="PhieuXuat.Designer.cs">
       <DependentUpon>PhieuXuat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="phieuxuathang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="phieuxuathang.designer.cs">
-      <DependentUpon>phieuxuathang.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -211,18 +187,6 @@
     <Compile Include="QuyChe.Designer.cs">
       <DependentUpon>QuyChe.cs</DependentUpon>
     </Compile>
-    <Compile Include="QuyCheToChuc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QuyCheToChuc.Designer.cs">
-      <DependentUpon>QuyCheToChuc.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QuyDinhTienNo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QuyDinhTienNo.Designer.cs">
-      <DependentUpon>QuyDinhTienNo.cs</DependentUpon>
-    </Compile>
     <Compile Include="ThemLoaiDaiLy.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -256,17 +220,11 @@
     <EmbeddedResource Include="DoiMatKhau.resx">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fupdateAcount.resx">
-      <DependentUpon>fupdateAcount.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="hosodaily.resx">
-      <DependentUpon>hosodaily.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MatHang.resx">
-      <DependentUpon>MatHang.cs</DependentUpon>
+    <EmbeddedResource Include="LoginDatabase.resx">
+      <DependentUpon>LoginDatabase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MoRongDaiLy.resx">
       <DependentUpon>MoRongDaiLy.cs</DependentUpon>
@@ -277,14 +235,8 @@
     <EmbeddedResource Include="PhieuThu.resx">
       <DependentUpon>PhieuThu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="phieuthutien.resx">
-      <DependentUpon>phieuthutien.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PhieuXuat.resx">
       <DependentUpon>PhieuXuat.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="phieuxuathang.resx">
-      <DependentUpon>phieuxuathang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -323,12 +275,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QuyChe.resx">
       <DependentUpon>QuyChe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="QuyCheToChuc.resx">
-      <DependentUpon>QuyCheToChuc.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="QuyDinhTienNo.resx">
-      <DependentUpon>QuyDinhTienNo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThemLoaiDaiLy.resx">
       <DependentUpon>ThemLoaiDaiLy.cs</DependentUpon>

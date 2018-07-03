@@ -113,7 +113,18 @@ namespace QuanLyDaiLy
                     DTO_PhieuThuTien pt = new DTO_PhieuThuTien(0, ngayThu, soTienThu, id, cmnd);
                     BUS_PhieuThuTien.ThemPhieuThu(pt);
                     float tienNoMoi = tienNo - tienThu;
-                    BUS_DaiLy.UpdateTienNo(id, tienNoMoi);
+                    int kq=BUS_DaiLy.UpdateTienNo(id, tienNoMoi);
+                    if(kq == 1)
+                    {
+                        MessageBox.Show("Thu thành công");
+                    }else if (kq == 2)
+                    {
+                        MessageBox.Show("tiền nợ vượt quá quy định");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Thu thất bại");
+                    }
                 }
 
             }

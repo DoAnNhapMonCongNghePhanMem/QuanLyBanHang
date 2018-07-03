@@ -67,8 +67,20 @@ namespace QuanLyDaiLy
                 int kq=BUS_Quan.ThemQuan(quan);
                 if (kq == 1)
                 {
+                    MessageBox.Show("Thêm thành công");
                     dsQuan = BUS_Quan.DSquan();
                     updateGV();
+                }else if (kq == 2)
+                {
+                    MessageBox.Show("số lượng quận vượt quy định");
+                }
+                else if (kq == 3)
+                {
+                    MessageBox.Show("tên quận đã tồn tại");
+                }
+                else
+                {
+                    MessageBox.Show("Thêm thất bại");
                 }
          //       1:thành công
          //*2:số lượng quận vượt quy định
@@ -84,8 +96,13 @@ namespace QuanLyDaiLy
                 int kq = BUS_Quan.XoaQuan(id);
                 if (kq == 1)
                 {
+                    MessageBox.Show("Xoá thành công");
                     dsQuan = BUS_Quan.DSquan();
                     updateGV();
+                }
+                else
+                {
+                    MessageBox.Show("Xoá thất bại");
                 }
             }
             

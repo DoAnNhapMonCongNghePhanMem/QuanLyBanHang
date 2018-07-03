@@ -39,6 +39,7 @@ namespace QuanLyDaiLy
             tb.Columns.Add("Id", typeof(int));
             tb.Columns.Add("Tên mặt hàng", typeof(string));
             gvMatHang.DataSource = tb;
+            gvMatHang.Columns[0].Visible = false;
             upDateGV();
         }
         private void upDateGV()
@@ -59,8 +60,24 @@ namespace QuanLyDaiLy
             {
                 string ten = txtTen.Text;
                 int kq = BUS_MatHang.ThemMatHang(ten);
-                dsMatHang = BUS_MatHang.DsMatHang();
-                upDateGV();
+                if (kq == 1)
+                {
+                    MessageBox.Show("Thêm thành công");
+       
+                    dsMatHang = BUS_MatHang.DsMatHang();
+                    upDateGV();
+                }else if (kq == 2)
+                {
+                    MessageBox.Show("Số lượng mặt hàng vượt quy định");
+                }
+                else if(kq==3)
+                {
+                    MessageBox.Show("tên mặt hàng đã tồn tại");
+                }
+                else {
+                    MessageBox.Show("Thêm thất bại");
+                }
+ 
             }
             
         }
@@ -72,10 +89,15 @@ namespace QuanLyDaiLy
                 int kq = BUS_MatHang.Xoa(id);
                 if (kq == 1)
                 {
-
+                    MessageBox.Show("Xoá thành công");
+                    dsMatHang = BUS_MatHang.DsMatHang();
+                    upDateGV();
                 }
-                dsMatHang = BUS_MatHang.DsMatHang();
-                upDateGV();
+                else {
+                    MessageBox.Show("Xoá thất bại");
+                }
+
+               
             }
             
         }
@@ -92,9 +114,15 @@ namespace QuanLyDaiLy
                 DTO_MatHang mh = new DTO_MatHang(id, txtTen.Text);
                 int kq = BUS_MatHang.CapNhat(mh);
                  if (kq == 1) {
+                    MessageBox.Show("Sửa thành công");
+                    dsMatHang = BUS_MatHang.DsMatHang();
+                    upDateGV();
                 }
-                dsMatHang = BUS_MatHang.DsMatHang();
-                upDateGV();
+                else
+                {
+                    MessageBox.Show("Sửa thất bại");
+                }
+                
 
             }
         }

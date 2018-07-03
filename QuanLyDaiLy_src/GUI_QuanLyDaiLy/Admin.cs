@@ -25,7 +25,7 @@ namespace QuanLyDaiLy
             InitializeComponent();
             this.taiKhoan = tk;
             this.nhanVien = nv;
-            DangKyTaiKhoancs mk = new DangKyTaiKhoancs(taiKhoan, nhanVien);
+            DoiMatKhau mk = new DoiMatKhau(taiKhoan, nhanVien);
             pnlAmin.Controls.Clear();
             pnlAmin.Controls.Add(mk);
             mk.Show();

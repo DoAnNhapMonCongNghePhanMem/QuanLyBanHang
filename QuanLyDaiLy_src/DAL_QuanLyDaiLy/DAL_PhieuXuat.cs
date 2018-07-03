@@ -51,12 +51,12 @@ namespace DAL_QuanLyDaiLy
         }
         public static int ThemPhieuXuatTraVeId(DTO_PhieuXuatHang px)
         {
-
-            int kq;
+        
+             int kq;
             string ngayXuatSql = px.NgayXuat.ToString("yyyy-MM-dd");
             SqlCommand cmd = new SqlCommand("PR_InsertPhieuXuat", conn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@DATE", SqlDbType.DateTime).Value = ngayXuatSql;
+            cmd.Parameters.Add("@NgayXuat", SqlDbType.DateTime).Value = ngayXuatSql;
             cmd.Parameters.Add("@IdDaiLy", SqlDbType.Int).Value = px.IdDaiLy;
             cmd.Parameters.Add("@CMND", SqlDbType.VarChar).Value = px.Cmnd;
             cmd.Parameters.Add("@out", SqlDbType.Int).Direction = ParameterDirection.Output;

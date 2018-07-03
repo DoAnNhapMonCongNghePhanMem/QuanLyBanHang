@@ -53,5 +53,10 @@ namespace QuanLyDaiLy
             gvCN.DataSource = tb;
             gvCN.Columns["Id"].Visible = false;
         }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

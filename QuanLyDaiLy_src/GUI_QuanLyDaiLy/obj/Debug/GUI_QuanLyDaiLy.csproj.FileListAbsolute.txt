@@ -455,15 +455,8 @@ C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\Q
 C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.pdb
 C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\GUI_QuanLyDaiLy.csprojResolveAssemblyReference.cache
 C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.baocaocongno.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.fupdateAcount.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.hosodl.resources
 C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.Login.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.MatHang.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.phieuthutien.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.phieuxuathang.resources
 C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.Properties.Resources.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.QuyCheToChuc.resources
-C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.QuyDinhTienNo.resources
 C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.TrangChuQuanLy.resources
 C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\GUI_QuanLyDaiLy.csproj.GenerateResource.Cache
 C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.exe.licenses
@@ -700,3 +693,4 @@ C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\v
 C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\bin\Debug\da\QuanLyDaiLy.resources.dll
 C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.QuanLyDaiLy.da.resources
 C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\da\QuanLyDaiLy.resources.dll
+C:\Users\KhanhLe\Desktop\QuanLyDaiLy\QuanLyDaiLy_src\GUI_QuanLyDaiLy\obj\Debug\QuanLyDaiLy.LoginDatabase.resources

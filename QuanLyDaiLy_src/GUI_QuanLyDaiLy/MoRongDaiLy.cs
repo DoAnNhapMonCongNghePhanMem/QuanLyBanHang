@@ -28,6 +28,10 @@ namespace QuanLyDaiLy
             InitializeComponent();
             this.taiKhoan = tk;
             this.nhanVien = nv;
+            ThemLoaiDaiLy q = new ThemLoaiDaiLy(taiKhoan, nhanVien);
+            pnlMoRong.Controls.Clear();
+            pnlMoRong.Controls.Add(q);
+            q.Show();
         }
 
         private void btnThemQuan_Click(object sender, EventArgs e)

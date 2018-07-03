@@ -66,10 +66,21 @@ namespace QuanLyDaiLy
                 int kq = BUS_LoaiDL.ThemLoaiDL(ten);
                 if (kq == 1)
                 {
+                    MessageBox.Show("Thêm thành công");
                     dsLoaiDL = BUS_LoaiDL.DsLoaiDL();
                     updateGV();
+                }else if (kq == 2)
+                {
+                    MessageBox.Show("số loại đại lý vượt quá quy định");
                 }
-                
+                else if (kq == 3)
+                {
+                    MessageBox.Show("Tên loại đại lý đã tồn tại");
+                }
+                else
+                {
+                    MessageBox.Show("Thêm thất bại");
+                }
 
             }
         }
@@ -81,8 +92,13 @@ namespace QuanLyDaiLy
                 int kq = BUS_LoaiDL.XoaLoaiDL(id);
                 if (kq == 1)
                 {
+                    MessageBox.Show("Thêm thành công");
                     dsLoaiDL = BUS_LoaiDL.DsLoaiDL();
                     updateGV();
+                }
+                else
+                {
+                    MessageBox.Show("Thêm thất bại");
                 }
             }
         }

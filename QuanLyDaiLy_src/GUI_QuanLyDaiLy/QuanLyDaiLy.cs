@@ -65,6 +65,7 @@ namespace QuanLyDaiLy
         private void Load()
         {
            
+           
             idDL = -1;
             idLoaiDL = -1;
             idQuan = -1;
@@ -99,10 +100,9 @@ namespace QuanLyDaiLy
                 j++;
             }
             gvDaiLy.DataSource = tb;
-            
-            gvDaiLy.Columns["IdQuan"].Visible = false;
-            gvDaiLy.Columns["IdLoaiDL"].Visible = false;
             gvDaiLy.Columns["IdDL"].Visible = false;
+            gvDaiLy.Columns["IdLoaiDL"].Visible = false;
+            gvDaiLy.Columns["IdQuan"].Visible = false;
 
             UpdateGvDaiLy();
             
@@ -111,9 +111,9 @@ namespace QuanLyDaiLy
         {
             tb.Rows.Clear();
             arrIdDL = new int[dsDaiLy.Count];
-            gvDaiLy.Columns["IdQuan"].Visible = false;
-            gvDaiLy.Columns["IdLoaiDL"].Visible = false;
-            gvDaiLy.Columns["IdDL"].Visible = false;
+            //gvDaiLy.Columns["IdQuan"].Visible = false;
+            //gvDaiLy.Columns["IdLoaiDL"].Visible = false;
+            //gvDaiLy.Columns["IdDL"].Visible = false;
         }
         private void UpdateGvDaiLy()
         {
@@ -153,31 +153,41 @@ namespace QuanLyDaiLy
 
         private void btnModify_Click(object sender, EventArgs e)
         {
-            DTO_DaiLy dl = new DTO_DaiLy();
-            dl.IdDL =idDL;
-            dl.IdLoaiDL = arrIdLDL[cbLoaiDL.SelectedIndex];
-            dl.IdQuan = arrIdQuan[cbQuan.SelectedIndex];
-            dl.TienNo = (float)Convert.ToDouble(txtTienNo.Text);
-            dl.TenDaiLy = txtTenDaiLy.Text;
-            dl.Sdt = txtSdt.Text;
-            dl.DiaChi = txtDiaChi.Text;
-            dl.Cmnd = nhanVien.Cmnd;
-            dl.NgayNhan = DateTime.Now;
-            
-           int kq = BUS_DaiLy.SuaDaiLy(dl);
-
-            if ( kq==1)
+            if(idDL!=-1 && arrIdLDL[cbLoaiDL.SelectedIndex]>=0 && arrIdQuan[cbQuan.SelectedIndex]>=0 &&
+                txtTienNo.Text.Equals("")==false && txtTenDaiLy.Text.Equals("") == false &&
+                txtSdt.Text.Equals("") == false && txtDiaChi.Text.Equals("") == false)
             {
-                dsDaiLy= BUS_DaiLy.DsDaiLy();
-                UpdateGvDaiLy();
+
+                DTO_DaiLy dl = new DTO_DaiLy();
+                dl.IdDL = idDL;
+                dl.IdLoaiDL = arrIdLDL[cbLoaiDL.SelectedIndex];
+                dl.IdQuan = arrIdQuan[cbQuan.SelectedIndex];
+                dl.TienNo = (float)Convert.ToDouble(txtTienNo.Text);
+                dl.TenDaiLy = txtTenDaiLy.Text;
+                dl.Sdt = txtSdt.Text;
+                dl.DiaChi = txtDiaChi.Text;
+                dl.Cmnd = nhanVien.Cmnd;
+                dl.NgayNhan = DateTime.Now;
+
+                int kq = BUS_DaiLy.SuaDaiLy(dl);
+
+                if (kq == 1)
+                {
+                    dsDaiLy = BUS_DaiLy.DsDaiLy();
+                    UpdateGvDaiLy();
+                    MessageBox.Show("Cập nhật thành công");
+                }
+                else if (kq == 3)
+                {
+                    MessageBox.Show("Loại đại lý đã đủ số lượng");
+                }
+                else
+                {
+                    MessageBox.Show("Cập nhật thất bại");
+                }
             }
-            else if(kq==2)
-            {
 
-            }else
-            {
 
-            }
         }
 
         private void btnTim(object sender, EventArgs e)
@@ -189,6 +199,8 @@ namespace QuanLyDaiLy
         private void btnReMove_Click(object sender, EventArgs e)
         {
             idDL = -1;
+            txtSdt.Text = "";
+            txtNguoiNhan.Text = "";
             idLoaiDL = -1;
             idQuan = -1;
             txtTenDaiLy.Text = "";
@@ -367,23 +379,30 @@ namespace QuanLyDaiLy
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            DTO_DaiLy dl = new DTO_DaiLy();
-            dl.IdDL = 1;
-            dl.IdLoaiDL = arrIdLDL[cbLoaiDL.SelectedIndex];
-            dl.IdQuan = arrIdQuan[cbQuan.SelectedIndex];
-            dl.TenDaiLy = txtTenDaiLy.Text;
-            dl.Sdt = txtSdt.Text;
-            dl.Cmnd = nhanVien.Cmnd;
-            dl.DiaChi = txtDiaChi.Text;
-            dl.NgayNhan = DateTime.Now;
-            dl.TienNo = 0;
-            if (BUS_DaiLy.Themdaily(dl) == 0)
+            if (idDL != -1 && arrIdLDL[cbLoaiDL.SelectedIndex] >= 0 && arrIdQuan[cbQuan.SelectedIndex] >= 0 &&
+                txtTienNo.Text.Equals("") == false && txtTenDaiLy.Text.Equals("") == false &&
+                txtSdt.Text.Equals("") == false && txtDiaChi.Text.Equals("") == false)
             {
 
-            }else
-            {
-                dsDaiLy= BUS_DaiLy.DsDaiLy();
-                UpdateGvDaiLy();
+                DTO_DaiLy dl = new DTO_DaiLy();
+                dl.IdDL = 1;
+                dl.IdLoaiDL = arrIdLDL[cbLoaiDL.SelectedIndex];
+                dl.IdQuan = arrIdQuan[cbQuan.SelectedIndex];
+                dl.TenDaiLy = txtTenDaiLy.Text;
+                dl.Sdt = txtSdt.Text;
+                dl.Cmnd = nhanVien.Cmnd;
+                dl.DiaChi = txtDiaChi.Text;
+                dl.NgayNhan = DateTime.Now;
+                dl.TienNo = 0;
+                if (BUS_DaiLy.Themdaily(dl) == 0)
+                {
+
+                }
+                else
+                {
+                    dsDaiLy = BUS_DaiLy.DsDaiLy();
+                    UpdateGvDaiLy();
+                }
             }
         }
 

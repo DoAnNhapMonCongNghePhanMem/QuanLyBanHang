@@ -59,10 +59,11 @@ namespace QuanLyDaiLy
 
                 if (BUS_QuyDinhTienNo.CapNhatQuyDinh(qd) == 0)
                 {
-
+                    MessageBox.Show("Cập nhật thất bại");
                 }
                 else
                 {
+                    MessageBox.Show("Cập nhật thành công");
                     Load();
                 }
 

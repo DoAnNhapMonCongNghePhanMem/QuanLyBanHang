@@ -39,9 +39,11 @@ namespace QuanLyDaiLy
                     if (kq == 1)
                     {
                         //thanfh cong
+                        MessageBox.Show("Thay đổi thành công");
                     }else
                     {
                         //khongthanhcong
+                        MessageBox.Show("Thay đổi thất bại");
                     }
                 }
                 else

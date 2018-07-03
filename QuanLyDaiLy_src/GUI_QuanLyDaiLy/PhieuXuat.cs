@@ -32,12 +32,14 @@ namespace QuanLyDaiLy
             this.tb = Tb;
             taiKhoan = tk;
             nhanVien = nv;
+          
             Load();
         }
 
         private void Load()
         {
             tongTien = 0;
+            //tb = new DataTable();
             dsDaiLy = BUS_DaiLy.DsDaiLy();
             dsIdDL = new int[dsDaiLy.Count];
 
@@ -55,6 +57,9 @@ namespace QuanLyDaiLy
             cbDaiLy.SelectedIndex = 0;
             gvhang.DataSource = tb;
             txtTongTien.Text = tongTien.ToString();
+
+
+            
         }
 
         private void simpleButton1_Click(object sender, EventArgs e)
@@ -115,40 +120,70 @@ namespace QuanLyDaiLy
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            int idDaiLy = dsIdDL[cbDaiLy.SelectedIndex];
-            DateTime ngayXuat = dtNgayLap.Value;
-            //Console.WriteLine(ngayXuat.ToString("yyyy-MM-dd"));
-            float tienCon = (float)Convert.ToDouble(txtTienCon.Text);
-            float tienNo = BUS_DaiLy.GetTienNo(idDaiLy);
-            float tienNoMoi = tienCon + tienNo;
-            int kqUpdate = BUS_DaiLy.UpdateTienNo(idDaiLy, tienNoMoi);
-            if (kqUpdate == 1)
+            if (txtTienCon.Text.Equals("") == false)
             {
-                string cmnd = taiKhoan.Cmnd;
-                DTO_PhieuXuatHang phieuXuatHang = new DTO_PhieuXuatHang(0, ngayXuat, idDaiLy, cmnd);
-                int idPhieuXuat = BUS_PhieuXuat.ThemPhieuXuatGetId(phieuXuatHang);
-                foreach (DataRow r in tb.Rows)
+                int idDaiLy = dsIdDL[cbDaiLy.SelectedIndex];
+                DateTime ngayXuat = dtNgayLap.Value;
+                //Console.WriteLine(ngayXuat.ToString("yyyy-MM-dd"));
+                float tienCon = (float)Convert.ToDouble(txtTienCon.Text);
+                float tienNo = BUS_DaiLy.GetTienNo(idDaiLy);
+                Console.WriteLine(tienNo);
+                float tienNoMoi = tienCon + tienNo;
+                int kqUpdate = BUS_DaiLy.UpdateTienNo(idDaiLy, tienNoMoi);
+                if (kqUpdate == 1)
                 {
-                    DTO_ChiTietXuat ctx = new DTO_ChiTietXuat(idPhieuXuat, (int)r[0], (int)r[2], (float)r[4], r[3].ToString(), (float)r[5]);
-                    BUS_ChiTietXuat.ThemChiTietXuat(ctx);
+                    string cmnd = taiKhoan.Cmnd;
+                    DTO_PhieuXuatHang phieuXuatHang = new DTO_PhieuXuatHang(0, ngayXuat, idDaiLy, cmnd);
+                    int idPhieuXuat = BUS_PhieuXuat.ThemPhieuXuatGetId(phieuXuatHang);
+                    foreach (DataRow r in tb.Rows)
+                    {
+                        int idMatHang = (int)r[0];
+                        int soLuong =int.Parse(r[2].ToString());
+                        float donGia = (float)Convert.ToDouble(r[4]);
+                        string donViTinh = r[3].ToString();
+                        float thanhTien = (float)Convert.ToDouble(r[5]);
+                        // DTO_ChiTietXuat ctx = new DTO_ChiTietXuat(idPhieuXuat, (int)r[0], (int)r[2], (float)Convert.ToDouble(r[4]), r[3].ToString(), (float)Convert.ToDouble(r[5]));
+                        DTO_ChiTietXuat ctx = new DTO_ChiTietXuat(idPhieuXuat,idMatHang, soLuong, donGia,donViTinh, thanhTien);
+                        BUS_ChiTietXuat.ThemChiTietXuat(ctx);
+                    }
+                    MessageBox.Show("Xuất thành công");
+                }else if (kqUpdate == 2)
+                {
+                    MessageBox.Show("Số tiền còn lại cộng với nợ cũ vượt quy định");
                 }
-            }
-            else
-            {
+                else
+                {
+                    MessageBox.Show("Xuất thất bại");
+                }
 
+                //tb.Columns.Add("Id", typeof(int));
+                //tb.Columns.Add("Mặt hàng", typeof(string));
+                //tb.Columns.Add("Số lượng", typeof(string));
+                //tb.Columns.Add("đơn vị tính", typeof(string));
+                //tb.Columns.Add("Đơn giá", typeof(string));
+                //tb.Columns.Add("Thành tiền", typeof(string));
             }
+            
 
         }
 
         private void txtSoTienTra_EditValueChanged_1(object sender, EventArgs e)
         {
-            float tongTien = (float)Convert.ToDouble(txtTongTien.Text);
-            float tienTra = (float)Convert.ToDouble(txtSoTienTra.Text);
-            if (txtSoTienTra.Text != null && tienTra<=tongTien)
+            if(txtSoTienTra.Text.Equals("") == false && txtTongTien.Text.Equals("") == false)
             {
-                float tiencon = tongTien - tienTra;
-                txtTienCon.Text = tiencon.ToString();
+                float tongTien = (float)Convert.ToDouble(txtTongTien.Text);
+                float tienTra = (float)Convert.ToDouble(txtSoTienTra.Text);
+                if (txtSoTienTra.Text.Equals("") == false && tienTra <= tongTien)
+                {
+                    float tiencon = tongTien - tienTra;
+                    txtTienCon.Text = tiencon.ToString();
+                }
             }
+            else
+            {
+                txtTienCon.Text = "";
+            }
+            
         }
     }
 }

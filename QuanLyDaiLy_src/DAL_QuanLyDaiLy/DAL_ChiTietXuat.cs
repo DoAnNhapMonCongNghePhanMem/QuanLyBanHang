@@ -47,7 +47,7 @@ namespace DAL_QuanLyDaiLy
         public static int ThemChiTietXuat(DTO_ChiTietXuat ctx)
         {
             int kq = 0;
-            string query = " insert into ChiTietXuatHang(IdPhieuXuat, IdMatHang, SoLuong, DonGia, DonViTinh, ThanhTien) values("+ctx.IdPhieuXuat+","+ctx.IdMatHang+","+ctx.SoLuong+","+ctx.DonGia+", N'"+
+            string query = "insert into ChiTietXuatHang(IdPhieuXuat, IdMatHang, SoLuong, DonGia, DonViTinh, ThanhTien) values("+ctx.IdPhieuXuat+","+ctx.IdMatHang+","+ctx.SoLuong+","+ctx.DonGia+", N'"+
                 ctx.DonViTinh+"', "+ctx.ThanhTien+")";
             kq = ResultQuery.GetResultQuery(conn, query);
             return kq;
