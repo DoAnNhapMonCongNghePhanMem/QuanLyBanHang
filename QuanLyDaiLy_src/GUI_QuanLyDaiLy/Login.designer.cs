@@ -142,7 +142,7 @@
             this.txtPassWord.Name = "txtPassWord";
             this.txtPassWord.Size = new System.Drawing.Size(240, 30);
             this.txtPassWord.TabIndex = 5;
-            this.txtPassWord.Text = "123";
+            this.txtPassWord.Text = "khanh181097";
             this.txtPassWord.UseSystemPasswordChar = true;
             // 
             // Login

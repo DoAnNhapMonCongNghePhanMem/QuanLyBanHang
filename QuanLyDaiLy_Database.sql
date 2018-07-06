@@ -386,9 +386,7 @@ begin
 end
 go
 
-CREATE TABLE ThongTinTaiKhoan(
-	UserName VARCHAR(50) PRIMARY KEY NOT NULL,
-	Pass VARCHAR(50)
+
 ------------------------------------------------------------------------------------
 --LOẠI ĐẠI LÝ
 create proc PR_InsertLoaiDaiLy
@@ -525,7 +523,7 @@ begin
 	end
 end
 go
-select * from ChiTietXuatHang
+--select * from ChiTietXuatHang
 --declare @r int
 --exec PR_UpdateTienNo 1,15000,@r out
 --select TienNo from DaiLy where IdDaiLy=1
@@ -690,3 +688,4 @@ end
 go
 
 
+select * from ThongTinTaiKhoan

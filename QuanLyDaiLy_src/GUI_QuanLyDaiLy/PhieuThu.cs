@@ -117,6 +117,8 @@ namespace QuanLyDaiLy
                     if(kq == 1)
                     {
                         MessageBox.Show("Thu thành công");
+                        txtTienNo.Text = BUS_DaiLy.GetTienNo(id).ToString();
+                        txtTienThu.Text = "";
                     }else if (kq == 2)
                     {
                         MessageBox.Show("tiền nợ vượt quá quy định");

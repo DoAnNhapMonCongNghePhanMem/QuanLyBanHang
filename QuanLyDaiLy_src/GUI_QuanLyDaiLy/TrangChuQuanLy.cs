@@ -82,22 +82,10 @@ namespace QuanLyDaiLy
 
         private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            //tbTrangChu.Hide();
-            Admin hs = new Admin(taiKhoan, nhanVien);
-            hs.Width = pnlTrangChu.Width;
-            hs.Height = pnlTrangChu.Height;
-            pnlTrangChu.Controls.Clear();
-            pnlTrangChu.Controls.Add(hs);
-            btnBack.Visible = true;
-            lbTieuDe.Text = "ADMIN";
-            hs.Show();
-            //if (taiKhoan.PhanQuyen == 0)
-            //{
+            Login l = new Login();
+            this.Hide();
+            l.Show();
 
-            //}else
-            //{
-            //    //Chỉ admin mới truy cập được
-            //}
         }
 
         private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -334,6 +322,17 @@ namespace QuanLyDaiLy
             lbTieuDe.Text = "Báo cáo doanh số";
             btnBack.Visible = true;
             ds.Show();
+        }
+
+        private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            pnlTieuDe.Show();
+
+            pnlTrangChu.Controls.Clear();
+            pnlTrangChu.Controls.Add(tbTrangChu);
+            btnBack.Visible = false;
+            tbTrangChu.Show();
+            lbTieuDe.Text = "Trang chủ";
         }
     }
 }
